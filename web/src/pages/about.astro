@@ -17,12 +17,13 @@ const diffs = [
   { t: 'Independent & unbiased', b: 'We range only. No competing service lines, no vendor agenda — we act purely in the customer\'s best interest.' },
 ];
 const team = [
-  { name: 'Clinton Moss', img: '/assets/team-cm.png', role: 'FOUNDER & PRESIDENT', bio: '20+ years leading magnetic ranging, relief well and P&A operations worldwide. Former Global Product Line Champion for Magnetic Ranging at Halliburton–Sperry; founded Marksman Ranging Technologies (acquired by Scientific Drilling). Also worked with Wild Well Control.' },
-  { name: 'Dan Eby', img: '/assets/team-pe.png', role: 'VICE PRESIDENT', bio: 'A professional engineer with 40+ years in drilling, well control and well intervention. Experience with Wild Well, Cudd Well Control and Blowout Engineers before co-founding Gunnar Energy Services.' },
-  { name: 'Arthur LaPorta', img: '/assets/team-arthur.png', role: 'TECHNOLOGY / R&D', bio: 'Technology expert with 10+ years developing oil & gas tools, specializing in active magnetic ranging. Previously with Scientific Drilling and Marksman Ranging; former assistant professor at the University of Maryland, College Park.' },
-  { name: 'Fredrik "Chad" Moss', img: '/assets/team-chad.png', role: 'RANGING R&D', bio: '15+ years in MWD/LWD, survey management and relative wellbore placement. Former Halliburton, IPM Magnetics and Scientific Drilling; has developed, qualified and deployed multiple magnetic ranging tool suites.' },
-  { name: 'Georgy Rassadkin', img: '/assets/team-georgy.png', role: 'PRODUCT CHAMPION', bio: '10+ years in precision wellbore positioning. Began as a field engineer and advanced to technical trainer and product champion in wellbore surveying and ranging. Presented on ranging for CCUS at DEA(e), Stavanger.' },
-  { name: 'Nabil Khan', img: '/assets/team-nabil.png', role: 'CHIEF FINANCIAL OFFICER', bio: 'Executive specializing in sustainable growth through corporate finance and strategy. 15+ years across space, technology, telecom and mobility; INSEAD-educated; advisor at Loyal Venture Capital, Toronto.' },
+  { name: 'Clinton Moss', img: '/assets/team-cm.jpg', role: 'FOUNDER & CEO', cred: 'B. Technology · 20 yrs', bio: '20+ years leading magnetic ranging, relief well and P&A operations worldwide. Former Global Product Line Champion for Magnetic Ranging at Halliburton–Sperry; founded Marksman Ranging Technologies (acquired by Scientific Drilling). Also worked with Wild Well Control.' },
+  { name: 'Dan Eby', img: '/assets/team-pe.jpg', role: 'VICE PRESIDENT', cred: 'B. Science · 40 yrs', bio: 'A professional engineer with 40+ years in drilling, well control and well intervention. Experience with Wild Well, Cudd Well Control and Blowout Engineers before co-founding Gunnar Energy Services.' },
+  { name: 'Arthur LaPorta', img: '/assets/team-arthur.jpg', role: 'CHIEF TECHNOLOGY OFFICER', cred: 'Ph.D. Physics · 10 yrs', bio: 'Technology and tools development leader specializing in active magnetic ranging. Previously with Scientific Drilling and Marksman Ranging; former assistant professor at the University of Maryland, College Park.' },
+  { name: 'Nabil Khan', img: '/assets/team-nabil.jpg', role: 'CHIEF FINANCIAL OFFICER', cred: 'MBA · 20 yrs', bio: 'Strategy, M&A and corporate finance executive specializing in sustainable growth. 20+ years across space, technology, telecom and mobility; INSEAD-educated; advisor at Loyal Venture Capital, Toronto.' },
+  { name: 'Joe Burke', img: '/assets/team-joe.jpg', role: 'CHIEF SYSTEMS ENGINEER', cred: 'B. Engineering · 20 yrs', bio: '20+ years in technology development and implementation, leading systems engineering across Gunnar\'s ranging hardware and software toolset from design through field deployment.' },
+  { name: 'Fredrik "Chad" Moss', img: '/assets/team-chad.jpg', role: 'DIRECTOR, EMERGING TECHNOLOGY', cred: 'B. Business Admin. · 18 yrs', bio: '18 years across operations and technology development, with deep experience in MWD/LWD, survey management and relative wellbore placement. Former Halliburton, IPM Magnetics and Scientific Drilling.' },
+  { name: 'Georgy Rassadkin', img: '/assets/team-georgy.jpg', role: 'RANGING DOMAIN MANAGER', cred: 'M. Geophysics · 15 yrs', bio: '15 years in precision wellbore positioning, ranging operations and R&D. Advanced from field engineer to technical trainer and domain lead in wellbore surveying and ranging. Presented on ranging for CCUS at DEA(e), Stavanger.' },
 ];
 ---
 <Layout title="About — The Independent Specialist in Magnetic Ranging | Gunnar Energy Services" description="Founded 2019 in Bakersfield, California with operations in Texas and Australia. The most proven hands in wellbore positioning, relief wells and complex intervention.">
@@ -78,10 +79,11 @@ const team = [
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
         {team.map((m) => (
           <div style="border:1px solid #d9dfe9;background:#fff;display:flex;flex-direction:column;">
-            <div style="height:200px;background:#102444;position:relative;overflow:hidden;"><img src={url(m.img)} alt={m.name} style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" /></div>
+            <div style="height:320px;background:#102444;position:relative;overflow:hidden;"><img src={url(m.img)} alt={m.name} style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%;" /></div>
             <div style="padding:22px;flex:1;">
-              <h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:18px;margin:0 0 2px;color:#0f2240;">{m.name}</h3>
-              <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.06em;color:#1b355e;margin-bottom:12px;">{m.role}</div>
+              <h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:18px;margin:0 0 4px;color:#0f2240;">{m.name}</h3>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.06em;color:#1b355e;margin-bottom:4px;">{m.role}</div>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.04em;color:#8493ac;margin-bottom:12px;">{m.cred}</div>
               <p style="font-size:13.5px;color:#5f676e;line-height:1.55;margin:0;">{m.bio}</p>
             </div>
           </div>
