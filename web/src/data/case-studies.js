@@ -314,3 +314,12 @@ export const caseStudies = [
 ];
 
 export const getCase = (slug) => caseStudies.find((c) => c.slug === slug);
+
+// Resolve a hero image for any case: its own photo, else the engineering/
+// planning image for study/well-control work, else the generic cover rig.
+export function caseImage(c) {
+  if (c.img) return c.img;
+  const s = c.scope.join(' ').toLowerCase();
+  if (/planning|study|well control|surface/.test(s)) return '/assets/case-engineering.jpg';
+  return '/assets/hero.jpg';
+}

@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
 import SiteFooter from '../../components/SiteFooter.astro';
 import { url } from '../../lib/links.js';
-import { caseStudies } from '../../data/case-studies.js';
+import { caseStudies, caseImage } from '../../data/case-studies.js';
 
 export async function getStaticPaths() {
   return caseStudies.map((c) => ({ params: { slug: c.slug }, props: { c } }));
@@ -12,17 +12,16 @@ export async function getStaticPaths() {
 const { c } = Astro.props;
 const others = caseStudies.filter((x) => x.slug !== c.slug && x.featured).slice(0, 3);
 const detailed = !!c.challenge;
+const heroImg = caseImage(c);
 ---
 <Layout title={`${c.client} — ${c.location} | Case Study | Gunnar Energy Services`} description={c.title}>
   <SiteHeader />
 
   <!-- HERO -->
   <section class="dotgrid" style="position:relative;background:var(--ground-2);border-bottom:1px solid var(--line);overflow:hidden;min-height:62vh;display:flex;align-items:flex-end;">
-    {c.img && (
-      <div class="cine" style="position:absolute;inset:0;">
-        <img src={url(c.img)} alt={`${c.client} — ${c.location}`} />
-      </div>
-    )}
+    <div class="cine" style="position:absolute;inset:0;">
+      <img src={url(heroImg)} alt={`${c.client} — ${c.location}`} />
+    </div>
     <div class="wrap" style="position:relative;padding-top:clamp(48px,9vh,96px);padding-bottom:clamp(40px,6vh,72px);">
       <div style="font-family:var(--mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-faint);margin-bottom:26px;">
         <a href={url('/')} style="color:var(--text-faint);">Home</a> &nbsp;/&nbsp;
