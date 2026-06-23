@@ -70,17 +70,46 @@ const others = technology.filter((x) => x.slug !== t.slug);
     </div>
   </section>
 
-  <!-- WHERE IT'S USED -->
-  <section class="section" style="background:var(--ground-2);border-top:1px solid var(--line);">
-    <div class="wrap">
-      <div class="kicker-row" data-reveal style="margin-bottom:36px;"><span class="eyebrow">Where it's deployed</span></div>
-      <div class="hgrid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));" data-reveal>
-        {t.appliedTo.map((a) => (
-          <a href={url(a.href)} class="tile tile--link" style="padding:28px 26px;display:flex;align-items:center;justify-content:space-between;gap:16px;background:var(--ground);">
-            <span class="h-card" style="font-size:17px;color:var(--text);">{a.t}</span>
-            <span style="color:var(--accent);font-family:var(--mono);">→</span>
-          </a>
-        ))}
+  <!-- CAPABILITIES -->
+  {t.highlights && (
+    <section class="section" style="background:var(--ground-2);border-top:1px solid var(--line);">
+      <div class="wrap">
+        <div class="kicker-row" data-reveal style="margin-bottom:36px;"><span class="eyebrow">Capabilities</span></div>
+        <div class="hgrid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));" data-reveal>
+          {t.highlights.map((h) => (
+            <div style="padding:26px 24px;display:flex;gap:14px;align-items:flex-start;background:var(--ground);">
+              <span style="color:var(--accent);font-family:var(--mono);flex:none;">—</span>
+              <span style="font-size:14.5px;line-height:1.55;color:var(--text);">{h}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- APPLICATIONS + SERVICE LINKS -->
+  <section class="section">
+    <div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;">
+      {t.applications && (
+        <div data-reveal>
+          <div class="kicker-row" style="margin-bottom:28px;"><span class="eyebrow">Fit-for-purpose applications</span></div>
+          <ul style="margin:0;padding:0;list-style:none;">
+            {t.applications.map((a) => (
+              <li style="font-size:16px;color:var(--text-dim);padding:14px 0;border-top:1px solid var(--line);display:flex;gap:12px;"><span style="color:var(--accent);">·</span>{a}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+      <div data-reveal>
+        <div class="kicker-row" style="margin-bottom:28px;"><span class="eyebrow">Explore the service</span></div>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          {t.appliedTo.map((a) => (
+            <a href={url(a.href)} class="tile tile--link" style="padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;background:var(--surface);">
+              <span class="h-card" style="font-size:16px;color:var(--text);">{a.t}</span>
+              <span style="color:var(--accent);font-family:var(--mono);">→</span>
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   </section>

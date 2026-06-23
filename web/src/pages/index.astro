@@ -7,7 +7,7 @@ import { url } from '../lib/links.js';
 const stats = [
   { n: '100%', l: 'intercept success rate' },
   { n: '40+', l: 'projects · 6 countries' },
-  { n: '18×', l: 'ranging power vs. wireline' },
+  { n: '10×', l: 'current vs. wireline ranging' },
   { n: '1 call', l: 'engineering to abandonment' },
 ];
 const logos = ['ExxonMobil', 'Chevron', 'Occidental', 'Woodside', 'Expand Energy', 'SoCalGas', 'Cenovus', 'Devon'];
@@ -36,11 +36,11 @@ const rangingUses = [
 ];
 
 const methods = [
-  { type: 'Active · While Drilling', name: 'DeadAhead™', desc: 'Wired drillpipe for continuous ranging while drilling. 18× more power than wireline. World-first commercial deployment.', range: 'up to 450 ft', best: 'Relief wells, blowout intercepts' },
-  { type: 'Active · Wireline', name: 'DeadSet™', desc: 'All-in-one wireline system: AMR + PMR + gyro, rated to 175°C.', range: '100–300 ft', best: 'Relief wells, P&A' },
-  { type: 'While Drilling · Coiled Tubing', name: 'CTRWD™', desc: 'First-of-its-kind magnet source + sensor on a coiled-tubing BHA. Ideal where a rig won\'t fit.', range: '~150 ft', best: 'Shallow / urban P&A, ghost wells' },
-  { type: 'Magnetic Source', name: 'Torped™', desc: 'Downhole rotary magnet generates a strong active field for ranging.', range: '~300 ft', best: 'SAGD twinning, CSG intercept' },
-  { type: 'Passive', name: 'EverReady™ PMR', desc: 'Uses existing MWD/GWD data — no extra rig time, no new tools.', range: '~30 ft', best: 'Collision avoidance, SAGD' },
+  { type: 'Active · While Drilling', name: 'DeadAhead™', desc: 'Wired drillpipe for continuous ranging while drilling — ~10× the current of wireline. World-first commercial deployment.', range: 'up to 500 ft', best: 'Relief wells, blowout intercepts' },
+  { type: 'Active · Wireline', name: 'DeadSet™', desc: 'MEMS/solid-state wireline AMR with interchangeable sensors and optional gyro.', range: '200 ft', best: 'Relief wells, P&A' },
+  { type: 'While Drilling · Coiled Tubing', name: 'CT-RWD™', desc: 'Active ranging inside a pressure-contained coiled-tubing BHA — ranges a live well.', range: 'up to 200 ft', best: 'Live-well / under-pressure intercept' },
+  { type: 'Magnetic Source', name: 'Torped™', desc: 'At-bit magnetic source detected by a receiver in the offset well — vendor-neutral.', range: '275 ft', best: 'Twinning, intersection, avoidance' },
+  { type: 'Passive', name: 'EverReady™', desc: 'No-access ranging from existing MWD/steering data — processed remotely, no new tools.', range: '>30 ft', best: 'No-access ranging' },
 ];
 const software = [
   { tag: 'AI · Ranging & Interpretation', name: 'TopGun™', desc: 'Web-based suite for automated ranging analysis, 3D visualization and real-time decision support, with a GPT-driven interpretation layer.' },
@@ -51,7 +51,7 @@ const software = [
 const deadAhead = [
   { from: '~46 days', fromL: 'Wireline AMR', to: '~32 days', toL: 'AMR-While-Drilling' },
   { from: '20+ runs', fromL: 'Wireline AMR', to: '4 runs', toL: 'AMR-While-Drilling' },
-  { from: '~8 A', fromL: 'injection power', to: '18× stronger', toL: 'earlier locate, more margin' },
+  { from: '~8 A', fromL: 'injection power', to: '~10× stronger', toL: 'earlier locate, more margin' },
 ];
 
 const cases = [
@@ -61,7 +61,7 @@ const cases = [
 ];
 
 const diffs = [
-  { t: 'Proprietary technology', b: 'DeadAhead™ wired-pipe AMR-WD delivers ~18× the power of wireline ranging — backed by a multi-patent estate and in-house R&D.' },
+  { t: 'Proprietary technology', b: 'DeadAhead™ wired-pipe AMR-WD delivers ~10× the current injection of wireline ranging — backed by a multi-patent estate and in-house R&D.' },
   { t: 'Proven track record', b: '100% intercept success across 40+ projects, including world-record dual 29,500 ft intercepts. Documented and regulator-witnessed.' },
   { t: 'One integrated call', b: 'Engineering, ranging, directional, milling, kill, cement and abandonment by one accountable team — one contract, one timeline.' },
   { t: 'High barriers to entry', b: 'A proprietary fleet of ranging hardware supercharged by AI — and 140+ combined years of expertise on the highest-stakes wells.' },
@@ -239,7 +239,7 @@ const vidThumb = `https://i.ytimg.com/vi/${vid}/hqdefault.jpg`;
       <div data-reveal>
         <div class="kicker-row" style="margin-bottom:22px;"><span class="eyebrow">Our edge · DeadAhead™ AMR-WD</span></div>
         <h2 class="display d-m" style="margin-bottom:22px;">The world's first commercial wired-pipe ranging-while-drilling system.</h2>
-        <p style="font-size:16px;line-height:1.7;color:var(--text-dim);margin:0 0 20px;">Continuous ranging from the BHA — no wireline trips. 18× more power delivery than traditional wireline AMR means an earlier locate, a stronger signal and zero re-entry runs for a relief well intercept and kill.</p>
+        <p style="font-size:16px;line-height:1.7;color:var(--text-dim);margin:0 0 20px;">Continuous ranging from the BHA — no wireline trips. ~10× more current injection than traditional wireline AMR means an earlier locate, a stronger signal and zero re-entry runs for a relief well intercept and kill.</p>
         <p class="faint" style="font-size:12.5px;line-height:1.6;font-style:italic;margin:0;">U.S. Patent 11,781,421 B2 — reaffirmed by USPTO PTAB (2025). Co-presented at SPE/ISCWSA #62, Alaska, Sept 2025.</p>
       </div>
       <div class="tile" data-reveal style="padding:36px;background:var(--surface);">

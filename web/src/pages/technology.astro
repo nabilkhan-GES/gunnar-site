@@ -5,7 +5,6 @@ import SiteFooter from '../components/SiteFooter.astro';
 import { url } from '../lib/links.js';
 import { technology } from '../data/technology.js';
 
-const specOf = (t, k) => (t.specs.find((s) => s.k === k) || {}).v || '';
 const methods = technology.filter((t) => t.kind === 'hardware');
 // Software trio: the two pure-software tools plus EverReady's AI interpretation.
 const software = [
@@ -17,7 +16,7 @@ const software = [
 const compare = [
   { from: '~46 days', fromL: 'Wireline AMR', to: '~32 days', toL: 'AMR-while-drilling' },
   { from: '20+ runs', fromL: 'Wireline AMR', to: '4 runs', toL: 'AMR-while-drilling' },
-  { from: 'baseline', fromL: 'injection power', to: '18× stronger', toL: 'earlier, stronger locate' },
+  { from: 'baseline', fromL: 'injection power', to: '~10× stronger', toL: 'earlier, stronger locate' },
 ];
 ---
 <Layout title="Technology — Magnetic Ranging Hardware & Software | Gunnar Energy Services" description="DeadAhead™, DeadSet™, CTRWD™, Torped™ and EverReady™ ranging methods, driven by TopGun™ — the only commercial end-to-end ranging software in the industry.">
@@ -46,8 +45,8 @@ const compare = [
             <h3 class="h-card" style="font-size:24px;color:var(--accent);margin-bottom:12px;">{m.name}</h3>
             <p style="font-size:13.5px;line-height:1.6;color:var(--text-dim);margin:0 0 20px;flex:1;">{m.tagline}</p>
             <div style="border-top:1px solid var(--line);padding-top:14px;font-size:12px;">
-              <div style="display:flex;justify-content:space-between;margin-bottom:7px;"><span class="faint" style="font-family:var(--mono);letter-spacing:0.06em;">RANGE</span><span style="color:var(--text);font-weight:600;">{specOf(m, 'Range')}</span></div>
-              <div style="display:flex;justify-content:space-between;gap:10px;"><span class="faint" style="font-family:var(--mono);letter-spacing:0.06em;">BEST FOR</span><span style="color:var(--text-dim);text-align:right;">{specOf(m, 'Best for')}</span></div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:7px;"><span class="faint" style="font-family:var(--mono);letter-spacing:0.06em;">RANGE</span><span style="color:var(--text);font-weight:600;">{m.range}</span></div>
+              <div style="display:flex;justify-content:space-between;gap:10px;"><span class="faint" style="font-family:var(--mono);letter-spacing:0.06em;">BEST FOR</span><span style="color:var(--text-dim);text-align:right;">{m.best}</span></div>
             </div>
             <span style="margin-top:16px;font-family:var(--mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);">View tool →</span>
           </a>
@@ -83,7 +82,7 @@ const compare = [
       <div data-reveal>
         <div class="kicker-row" style="margin-bottom:22px;"><span class="eyebrow">Flagship innovation</span></div>
         <h2 class="display d-m" style="margin-bottom:22px;">DeadAhead™ — the world's first commercial wired-pipe ranging-while-drilling system.</h2>
-        <p style="font-size:16px;line-height:1.7;color:var(--text-dim);margin:0 0 20px;">Continuous ranging from the bottom-hole assembly with no wireline trips, delivering 18× the power of traditional wireline AMR — an earlier locate, stronger signal and zero re-entry runs.</p>
+        <p style="font-size:16px;line-height:1.7;color:var(--text-dim);margin:0 0 20px;">Continuous ranging from the bottom-hole assembly with no wireline trips, delivering ~10× the current injection of traditional wireline AMR — an earlier locate, stronger signal and zero re-entry runs.</p>
         <a href={url('/technology/deadahead/')} style="font-family:var(--mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);">Explore DeadAhead™ →</a>
       </div>
       <div class="tile" data-reveal style="padding:36px;background:var(--surface);">
