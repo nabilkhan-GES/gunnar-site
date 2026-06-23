@@ -23,9 +23,8 @@ const nav = [
   <!-- main nav -->
   <header style="background:rgba(10,12,15,0.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);">
     <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:18px;padding-bottom:18px;">
-      <a href={url('/')} style="display:flex;align-items:center;gap:12px;">
-        <span style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border:1.5px solid var(--accent);border-radius:50%;"><span style="width:8px;height:8px;background:var(--accent);border-radius:50%;"></span></span>
-        <span style="font-family:var(--display-n);font-weight:900;font-size:20px;letter-spacing:0.08em;color:var(--text);">GUNNAR</span>
+      <a href={url('/')} style="display:flex;align-items:center;">
+        <img src={url('/assets/logo.png')} alt="Gunnar Energy Services" style="height:34px;width:auto;display:block;" />
       </a>
       <nav style="display:flex;align-items:center;gap:30px;font-family:var(--mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;flex-wrap:wrap;">
         {nav.map((n) => (

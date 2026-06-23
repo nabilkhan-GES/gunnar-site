@@ -10,7 +10,7 @@ const stats = [
   { n: '10×', l: 'current vs. wireline ranging' },
   { n: '1 call', l: 'engineering to abandonment' },
 ];
-const logos = ['ExxonMobil', 'Chevron', 'Occidental', 'Woodside', 'Expand Energy', 'SoCalGas', 'Cenovus', 'Devon'];
+const logos = ['Supermajors', 'National oil companies', 'Independent E&Ps', 'Offshore operators', 'Mining majors', 'Gas utilities', 'Government agencies'];
 
 const pillars = [
   { k: '01', t: 'Engineering', tag: 'Plan it', items: ['Complex P&A & relief well planning', 'Wellbore intercept feasibility studies', 'Ranging signal modeling & survey integration', 'Regulatory & risk documentation'] },
@@ -55,9 +55,9 @@ const deadAhead = [
 ];
 
 const cases = [
-  { href: '/case-studies/exxonmobil-north-dakota/', img: '/assets/case-exxonmobil.jpg', scope: 'Intercept · Kill · P&A', client: 'ExxonMobil', loc: 'North Dakota · 2025', body: 'Tubing parted at ~1,000 ft with only a 10 ft window below a stuck packer. DeadAhead™ held 5–10 ft separation over 5,500 ft of continuous ranging — the world\'s first commercial wired-pipe AMR-WD deployment.', metric: '8,642 ft MD', metricL: 'intercepted at exact planned depth · ~$2M saved' },
-  { href: '/case-studies/expand-energy-louisiana/', img: '/assets/case-expand-energy.jpg', scope: 'Blowout · Well Kill · P&A', client: 'Expand Energy', loc: 'Louisiana · 2025', body: 'An unpermitted 1950s-era legacy well leaked 5,000 bbl/day for 116 days of failed surface intervention. CT-RWD™ coiled-tubing ranging located and intercepted the unknown geometry at 1,068 ft MD.', metric: '15 days', metricL: 'to well control vs. 116 days of surface attempts' },
-  { href: '/case-studies/socalgas-aliso-canyon/', img: '/assets/case-socalgas.jpg', scope: 'Relief Well P&A · Dual Intercept', client: 'SoCalGas — Aliso Canyon', loc: 'California · 2020–ongoing', body: 'Relief-well P&A of 1950s-era wells at the site of the largest gas blowout in U.S. history. DeadSet™ AMR and EverReady™ PMR overcame missing surveys and a parasite sidetrack.', metric: '8 intercepts', metricL: 'across a 4-well campaign · regulator-approved' },
+  { href: '/case-studies/north-dakota-relief-intercept/', img: '/assets/case-north-dakota.jpg', scope: 'Intercept · Kill · P&A', name: 'Relief-Well Intercept, Kill & P&A', loc: 'North Dakota, USA · 2025', body: 'Tubing parted at ~1,000 ft with only a 10 ft window below a stuck packer. DeadAhead™ held 5–10 ft separation over ~5,500 ft of continuous ranging — the world\'s first commercial wired-pipe AMR-WD deployment.', metric: '~8,640 ft MD', metricL: 'intercepted at exact planned depth · ~$2M saved' },
+  { href: '/case-studies/louisiana-legacy-blowout/', img: '/assets/case-louisiana.jpg', scope: 'Blowout · Well Kill · P&A', name: 'Legacy-Well Blowout Intercept', loc: 'Louisiana, USA · 2025', body: 'An unpermitted 1950s-era legacy well leaked ~5,000 bbl/day for 116 days of failed surface intervention. CT-RWD™ coiled-tubing ranging located and intercepted the unknown geometry at ~1,070 ft MD.', metric: '15 days', metricL: 'to well control vs. 116 days of surface attempts' },
+  { href: '/case-studies/california-relief-well-pa/', img: '/assets/case-california-gas.jpg', scope: 'Relief Well P&A · Dual Intercept', name: 'Relief-Well P&A — Legacy Gas Field', loc: 'California, USA · 2020–ongoing', body: 'Relief-well P&A of 1950s-era wells at a major legacy gas-storage field. DeadSet™ AMR and EverReady™ PMR overcame missing surveys and a parasite sidetrack.', metric: '8 intercepts', metricL: 'across a 4-well campaign · regulator-approved' },
 ];
 
 const diffs = [
@@ -243,7 +243,7 @@ const vidThumb = `https://i.ytimg.com/vi/${vid}/hqdefault.jpg`;
         <p class="faint" style="font-size:12.5px;line-height:1.6;font-style:italic;margin:0;">U.S. Patent 11,781,421 B2 — reaffirmed by USPTO PTAB (2025). Co-presented at SPE/ISCWSA #62, Alaska, Sept 2025.</p>
       </div>
       <div class="tile" data-reveal style="padding:36px;background:var(--surface);">
-        <div class="eyebrow eyebrow--dim" style="margin-bottom:24px;">Documented — ExxonMobil, North Dakota, 2025</div>
+        <div class="eyebrow eyebrow--dim" style="margin-bottom:24px;">Documented — North Dakota, 2025</div>
         {deadAhead.map((d) => (
           <div style="display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:center;padding:16px 0;border-top:1px solid var(--line);">
             <div><div class="display" style="font-size:22px;color:var(--text-faint);">{d.from}</div><div class="faint" style="font-size:11px;">{d.fromL}</div></div>
@@ -292,11 +292,11 @@ const vidThumb = `https://i.ytimg.com/vi/${vid}/hqdefault.jpg`;
         {cases.map((c) => (
           <a href={url(c.href)} class="tile tile--link" style="display:flex;flex-direction:column;">
             <div class="cine" style="height:170px;display:flex;align-items:flex-end;padding:16px;border-bottom:1px solid var(--line);">
-              <img src={url(c.img)} alt={c.client} />
+              <img src={url(c.img)} alt={c.name} />
               <span class="eyebrow" style="position:relative;font-size:10px;">{c.scope}</span>
             </div>
             <div style="padding:26px;flex:1;display:flex;flex-direction:column;">
-              <h3 class="h-card" style="font-size:19px;margin-bottom:4px;color:var(--text);">{c.client}</h3>
+              <h3 class="h-card" style="font-size:19px;margin-bottom:4px;color:var(--text);">{c.name}</h3>
               <div class="faint" style="font-size:12px;margin-bottom:16px;">{c.loc}</div>
               <p style="font-size:13.5px;color:var(--text-dim);line-height:1.55;margin:0 0 18px;flex:1;">{c.body}</p>
               <div style="border-top:1px solid var(--line);padding-top:16px;">

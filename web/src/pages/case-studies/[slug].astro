@@ -14,22 +14,22 @@ const others = caseStudies.filter((x) => x.slug !== c.slug && x.featured).slice(
 const detailed = !!c.challenge;
 const heroImg = caseImage(c);
 ---
-<Layout title={`${c.client} — ${c.location} | Case Study | Gunnar Energy Services`} description={c.title}>
+<Layout title={`${c.name} — ${c.location} | Case Study | Gunnar Energy Services`} description={c.title}>
   <SiteHeader />
 
   <!-- HERO -->
   <section class="dotgrid" style="position:relative;background:var(--ground-2);border-bottom:1px solid var(--line);overflow:hidden;min-height:62vh;display:flex;align-items:flex-end;">
     <div class="cine" style="position:absolute;inset:0;">
-      <img src={url(heroImg)} alt={`${c.client} — ${c.location}`} />
+      <img src={url(heroImg)} alt={`${c.name} — ${c.location}`} />
     </div>
     <div class="wrap" style="position:relative;padding-top:clamp(48px,9vh,96px);padding-bottom:clamp(40px,6vh,72px);">
       <div style="font-family:var(--mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-faint);margin-bottom:26px;">
         <a href={url('/')} style="color:var(--text-faint);">Home</a> &nbsp;/&nbsp;
         <a href={url('/case-studies/')} style="color:var(--text-faint);">Case Studies</a> &nbsp;/&nbsp;
-        <span style="color:var(--accent);">{c.client}</span>
+        <span style="color:var(--accent);">{c.name}</span>
       </div>
       <div class="kicker-row" style="margin-bottom:22px;"><span class="eyebrow">{c.scope.join(' · ')}</span></div>
-      <h1 class="display d-l" data-reveal style="max-width:24ch;">{c.client}</h1>
+      <h1 class="display d-l" data-reveal style="max-width:24ch;">{c.name}</h1>
       <div style="font-family:var(--mono);font-size:13px;letter-spacing:0.06em;color:var(--text-dim);margin-top:18px;">{c.location} &nbsp;·&nbsp; {c.year}</div>
       <p class="lede" data-reveal style="max-width:64ch;margin-top:20px;color:var(--text);">{c.title}</p>
     </div>
@@ -112,7 +112,7 @@ const heroImg = caseImage(c);
         {others.map((o) => (
           <a href={url('/case-studies/' + o.slug + '/')} class="tile tile--link" style="padding:28px 24px;background:var(--ground);">
             <div class="eyebrow eyebrow--dim" style="margin-bottom:12px;">{o.scope[0]}</div>
-            <div class="h-card" style="font-size:19px;color:var(--text);margin-bottom:6px;">{o.client}</div>
+            <div class="h-card" style="font-size:19px;color:var(--text);margin-bottom:6px;">{o.name}</div>
             <div class="faint" style="font-size:12px;margin-bottom:12px;">{o.location} · {o.year}</div>
             <span style="font-family:var(--mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);">Read →</span>
           </a>

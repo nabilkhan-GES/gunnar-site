@@ -14,7 +14,7 @@ const stats = [
   { n: '6', l: 'countries' },
 ];
 ---
-<Layout title="Case Studies — Documented Intercepts & Well-Control Projects | Gunnar Energy Services" description="A 100% intercept record across 40+ projects in 6 countries — ExxonMobil, Expand Energy, SoCalGas, Santos, Cenovus, Eavor and more. Documented and regulator-witnessed.">
+<Layout title="Case Studies — Documented Intercepts & Well-Control Projects | Gunnar Energy Services" description="A 100% intercept record across 40+ projects in 6 countries — relief wells, blowout intercepts, complex P&A, geothermal and solution mining. Documented and regulator-witnessed.">
   <SiteHeader />
 
   <!-- HERO -->
@@ -49,12 +49,12 @@ const stats = [
         {featured.map((c) => (
           <a href={url('/case-studies/' + c.slug + '/')} class="tile tile--link" data-reveal style="display:grid;grid-template-columns:1fr 1.25fr;gap:0;background:var(--surface);">
             <div class="cine" style="min-height:280px;border-right:1px solid var(--line);display:flex;align-items:flex-end;padding:24px;">
-              {c.img && <img src={url(c.img)} alt={c.client} />}
+              {c.img && <img src={url(c.img)} alt={c.name} />}
               <span class="eyebrow" style="position:relative;font-size:10px;">{c.scope.join(' · ')}</span>
             </div>
             <div style="padding:36px;display:flex;flex-direction:column;">
               <div class="faint" style="font-family:var(--mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;">{c.location} · {c.year}</div>
-              <h2 class="h-card" style="font-size:26px;color:var(--text);margin-bottom:10px;">{c.client}</h2>
+              <h2 class="h-card" style="font-size:26px;color:var(--text);margin-bottom:10px;">{c.name}</h2>
               <p style="font-size:15px;line-height:1.6;color:var(--text-dim);margin:0 0 22px;flex:1;">{c.title}</p>
               {c.result && (
                 <div style="display:flex;align-items:baseline;gap:14px;border-top:1px solid var(--line);padding-top:18px;">
@@ -80,7 +80,7 @@ const stats = [
         {all.map((c) => (
           <a href={url('/case-studies/' + c.slug + '/')} class="tile tile--link" style="padding:24px 22px;background:var(--ground);display:flex;flex-direction:column;gap:8px;">
             <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;">
-              <span class="h-card" style="font-size:17px;color:var(--text);">{c.client}</span>
+              <span class="h-card" style="font-size:17px;color:var(--text);">{c.name}</span>
               <span class="faint" style="font-family:var(--mono);font-size:11px;flex:none;">{c.year}</span>
             </div>
             <div class="faint" style="font-size:12.5px;">{c.location}</div>
