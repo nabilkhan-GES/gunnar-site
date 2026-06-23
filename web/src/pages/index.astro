@@ -10,7 +10,20 @@ const stats = [
   { n: '10×', l: 'current vs. wireline ranging' },
   { n: '1 call', l: 'engineering to abandonment' },
 ];
-const logos = ['Supermajors', 'National oil companies', 'Independent E&Ps', 'Offshore operators', 'Mining majors', 'Gas utilities', 'Government agencies'];
+const logos = [
+  { src: '/assets/logo-exxon.png', alt: 'ExxonMobil' },
+  { src: '/assets/logo-chevron.png', alt: 'Chevron' },
+  { src: '/assets/logo-oxy.png', alt: 'Occidental' },
+  { src: '/assets/logo-woodside.png', alt: 'Woodside' },
+  { src: '/assets/logo-cenovus.png', alt: 'Cenovus' },
+  { src: '/assets/logo-expand.png', alt: 'Expand Energy' },
+  { src: '/assets/logo-santos.png', alt: 'Santos' },
+  { src: '/assets/logo-mitsui.png', alt: 'Mitsui' },
+  { src: '/assets/logo-devon.png', alt: 'Devon Energy' },
+  { src: '/assets/logo-bp.png', alt: 'BP' },
+  { src: '/assets/logo-eni.png', alt: 'Eni' },
+  { src: '/assets/logo-socalgas.png', alt: 'SoCalGas' },
+];
 
 const pillars = [
   { k: '01', t: 'Engineering', tag: 'Plan it', items: ['Complex P&A & relief well planning', 'Wellbore intercept feasibility studies', 'Ranging signal modeling & survey integration', 'Regulatory & risk documentation'] },
@@ -115,13 +128,17 @@ const vidThumb = `https://i.ytimg.com/vi/${vid}/hqdefault.jpg`;
     </div>
   </section>
 
-  <!-- TRUST BAR -->
-  <section style="background:var(--ground);border-bottom:1px solid var(--line);">
-    <div class="wrap" style="display:flex;align-items:center;gap:36px;flex-wrap:wrap;justify-content:center;padding-top:24px;padding-bottom:24px;">
-      <span class="eyebrow eyebrow--dim">Trusted on the highest-stakes wells</span>
-      {logos.map((g) => (
-        <span style="font-family:var(--display-n);font-weight:700;font-size:15px;letter-spacing:0.02em;color:var(--text-faint);">{g}</span>
-      ))}
+  <!-- CUSTOMER LOGOS -->
+  <section class="logo-band">
+    <div class="wrap" style="text-align:center;padding-top:26px;padding-bottom:18px;">
+      <span class="eyebrow" style="color:#7a828c;">Trusted on the highest-stakes wells</span>
+    </div>
+    <div class="logo-marquee" aria-label="Customers Gunnar has served">
+      <div class="logo-track">
+        {[...logos, ...logos].map((l) => (
+          <img src={url(l.src)} alt={l.alt} loading="lazy" />
+        ))}
+      </div>
     </div>
   </section>
 

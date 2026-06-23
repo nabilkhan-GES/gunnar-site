@@ -233,3 +233,23 @@ textarea.gx-field { resize: vertical; line-height: 1.5; }
   section[style*="padding:80px 32px"], section[style*="padding:72px 32px"],
   section[style*="padding:64px 32px"] { padding-left: 20px !important; padding-right: 20px !important; }
 }
+
+/* ============================================================
+   Customer logo marquee (white band, original-colour logos)
+   ============================================================ */
+.logo-band { background: #ffffff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding-bottom: 30px; }
+.logo-marquee {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+          mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+}
+.logo-track {
+  display: flex; align-items: center; gap: clamp(44px, 6vw, 88px);
+  width: max-content; animation: logo-scroll 48s linear infinite;
+}
+.logo-track img { height: 32px; width: auto; display: block; flex: none; }
+.logo-band:hover .logo-track { animation-play-state: paused; }
+@keyframes logo-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .logo-track { animation: none; flex-wrap: wrap; justify-content: center; width: auto; gap: 36px 56px; padding: 0 var(--pad); }
+}
