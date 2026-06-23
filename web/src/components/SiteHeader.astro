@@ -12,26 +12,39 @@ const nav = [
 <div style="position:sticky;top:0;z-index:90;">
   <!-- emergency strip -->
   <div style="background:var(--ground-2);border-bottom:1px solid var(--line-2);">
-    <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:9px;padding-bottom:9px;">
-      <div style="display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-dim);">
-        <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(254,238,0,0.18);"></span>
-        24/7 Emergency Well Control &amp; Relief Well Response
+    <div class="wrap gx-emerg" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:9px;padding-bottom:9px;">
+      <div style="display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-dim);">
+        <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(254,238,0,0.18);flex:none;"></span>
+        <span class="gx-emerg-text">24/7 Emergency Well Control &amp; Relief Well Response</span>
       </div>
-      <a href="tel:+18325550100" style="font-family:var(--mono);font-size:11.5px;letter-spacing:0.08em;color:var(--text);font-weight:600;">CALL +1 832 555 0100 →</a>
+      <a href="tel:+18325550100" style="font-family:var(--mono);font-size:11.5px;letter-spacing:0.08em;color:var(--text);font-weight:600;white-space:nowrap;">CALL +1 832 555 0100 →</a>
     </div>
   </div>
   <!-- main nav -->
-  <header style="background:rgba(10,12,15,0.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);">
-    <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:18px;padding-bottom:18px;">
-      <a href={url('/')} style="display:flex;align-items:center;">
-        <img src={url('/assets/logo.png')} alt="Gunnar Energy Services" style="height:34px;width:auto;display:block;" />
+  <header class="gx-header" style="background:rgba(10,12,15,0.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);">
+    <div class="gx-header-inner">
+      <a href={url('/')} class="gx-brand" aria-label="Gunnar Energy Services — home">
+        <img src={url('/assets/logo.png')} alt="Gunnar Energy Services" />
       </a>
-      <nav style="display:flex;align-items:center;gap:30px;font-family:var(--mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;flex-wrap:wrap;">
+      <button class="gx-burger" aria-label="Toggle menu" aria-expanded="false" type="button">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="gx-nav">
         {nav.map((n) => (
-          <a href={url(n.href)} style="color:var(--text-dim);transition:color .15s ease;" onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--text-dim)'">{n.t}</a>
+          <a href={url(n.href)} class="navlink">{n.t}</a>
         ))}
+        <a href={url('/contact/')} class="gx-cta btn btn-primary">Talk to an Engineer</a>
       </nav>
-      <a href={url('/contact/')} class="btn btn-primary" style="padding:11px 18px;">Talk to an Engineer</a>
     </div>
   </header>
 </div>
+
+<script>
+  document.querySelectorAll('.gx-burger').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const h = btn.closest('.gx-header');
+      const open = h.classList.toggle('nav-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+</script>

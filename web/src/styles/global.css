@@ -184,3 +184,51 @@ textarea.gx-field { resize: vertical; line-height: 1.5; }
 [style*="solid #d9dfe9"], [style*="solid #e7ebf2"], [style*="solid #dde3ed"], [style*="solid #d2d9e4"] { border-color: var(--line) !important; }
 [style*="border-top:3px solid #1b355e"] { border-top-color: var(--accent) !important; }
 [style*="background:#d9dfe9"] { background: var(--line) !important; }
+
+/* ============================================================
+   Header (responsive) + mobile polish
+   ============================================================ */
+.gx-header-inner {
+  max-width: var(--maxw); margin: 0 auto;
+  padding: 15px var(--pad);
+  display: flex; align-items: center; justify-content: space-between; gap: 22px;
+}
+.gx-brand { display: flex; align-items: center; flex: none; }
+.gx-brand img { height: 42px; width: auto; display: block; }
+.gx-nav { display: flex; align-items: center; gap: 26px; flex-wrap: wrap;
+  font-family: var(--mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; }
+.gx-nav a.navlink { color: var(--text-dim); transition: color .15s ease; }
+.gx-nav a.navlink:hover { color: var(--text); }
+.gx-cta { padding: 11px 18px; }
+.gx-burger { display: none; flex-direction: column; gap: 5px; background: none;
+  border: 1px solid var(--line-strong); padding: 9px 10px; cursor: pointer; }
+.gx-burger span { display: block; width: 20px; height: 2px; background: var(--text); transition: .2s ease; }
+
+@media (max-width: 860px) {
+  .gx-brand img { height: 36px; }
+  .gx-burger { display: inline-flex; }
+  .gx-nav {
+    display: none; flex-basis: 100%; width: 100%;
+    flex-direction: column; align-items: stretch; gap: 0;
+    padding-bottom: 8px;
+  }
+  .gx-header.nav-open .gx-header-inner { flex-wrap: wrap; }
+  .gx-header.nav-open .gx-nav { display: flex; }
+  .gx-nav a.navlink { padding: 15px 2px; border-top: 1px solid var(--line); font-size: 13px; }
+  .gx-cta { margin-top: 12px; text-align: center; justify-content: center; }
+  .gx-emerg-text { display: none; }           /* keep the 24/7 strip tidy on phones */
+}
+
+/* General mobile polish */
+@media (max-width: 760px) {
+  :root { --section-y: clamp(48px, 9vh, 84px); }
+  .d-xl { font-size: clamp(38px, 12vw, 60px); }
+  /* tame oversized fixed inline display type on interior (legacy) pages */
+  [style*="font-size:54px"], [style*="font-size:52px"], [style*="font-size:50px"],
+  [style*="font-size:46px"], [style*="font-size:44px"] { font-size: 34px !important; }
+  [style*="font-size:40px"], [style*="font-size:38px"], [style*="font-size:36px"] { font-size: 27px !important; }
+  /* comfortable side padding on legacy inline sections */
+  section[style*="padding:88px 32px"], section[style*="padding:84px 32px"],
+  section[style*="padding:80px 32px"], section[style*="padding:72px 32px"],
+  section[style*="padding:64px 32px"] { padding-left: 20px !important; padding-right: 20px !important; }
+}
