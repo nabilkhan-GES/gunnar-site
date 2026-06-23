@@ -53,7 +53,7 @@ export const caseStudies = [
       'Surface intervention attempted for 116 days — the well leaked ~5,000 bbl/day and all surface methods failed.',
     ],
     solution:
-      'CT-RWD™ Coiled-Tubing Ranging-While-Drilling — live ranging from the BHA during drilling, with a ~25°/100 ft build to navigate a shallow intercept at ~1,050 ft. Two-phase mapping, then a planned sidetrack.',
+      'CTRWD™ Coiled-Tubing Ranging-While-Drilling — live ranging from the BHA during drilling, with a ~25°/100 ft build to navigate a shallow intercept at ~1,050 ft. Two-phase mapping, then a planned sidetrack.',
     outcome: '15 days vs. 116 days of surface attempts · ~$2M saved',
     result: {
       metric: '15 days',
@@ -65,7 +65,7 @@ export const caseStudies = [
         'Flow arrested; dyed-circulation confirmed communication; well killed, plugged and abandoned',
       ],
     },
-    meta: { ranging: 'CT-RWD', deployment: 'Coiled tubing (live well)', reentry: 'Yes' },
+    meta: { ranging: 'CTRWD', deployment: 'Coiled tubing (live well)', reentry: 'Yes' },
   },
   {
     slug: 'california-relief-well-pa',
@@ -254,14 +254,14 @@ export const caseStudies = [
     region: 'Germany',
     featured: true,
     title: 'Connecting six horizontal wells to a cased vertical at a closed-loop geothermal project',
-    scope: ['Closed-Loop Geothermal', 'RM-CT-RWD', 'Twin & Intercept'],
+    scope: ['Closed-Loop Geothermal', 'RM-CTRWD', 'Twin & Intercept'],
     challenge: [
       'Connect 6 horizontal drilling wells to an existing cased vertical well.',
       '16" vertical target casing; 4.75" horizontal hole — extended-reach geometry.',
       'Conventional wireline ranging too slow for a multi-well commercial program.',
     ],
     solution:
-      'RM-CT-RWD: rotating-magnet ranging-while-drilling on a coiled-tubing unit with a motorized BHA. Near-bit magnet sub in the drilling well, ranging sensor in the cased target, high-density surveys via wired coiled tubing transmitted to surface in real time.',
+      'RM-CTRWD: rotating-magnet ranging-while-drilling on a coiled-tubing unit with a motorized BHA. Near-bit magnet sub in the drilling well, ranging sensor in the cased target, high-density surveys via wired coiled tubing transmitted to surface in real time.',
     outcome: '>80% faster intersection vs. conventional wireline ranging',
     result: {
       metric: '>1,700 ft',

@@ -1,6 +1,6 @@
 // Technology detail content — Gunnar's proprietary ranging hardware + software.
 // Hardware specs/copy are taken from Gunnar's official Technical Data sheets
-// (DeadAhead v1, DeadSet v3, CT-RWD v1, Torped v4, EverReady v3). Software
+// (DeadAhead v1, DeadSet v3, CTRWD v1, Torped v4, EverReady v3). Software
 // entries (TopGun, ClearCut) retain prior copy; no datasheet was provided.
 
 export const technology = [
@@ -104,16 +104,16 @@ export const technology = [
   },
   {
     slug: 'ctrwd',
-    name: 'CT-RWD™',
+    name: 'CTRWD™',
     kind: 'hardware',
     type: 'Ranging While Drilling · Coiled Tubing',
     range: 'up to 200 ft',
     best: 'Live-well / under-pressure intercept',
     tagline: 'Real-time magnetic ranging inside a fully pressure-contained coiled-tubing drilling assembly.',
     summary:
-      'CT-RWD embeds active magnetic excitation in a coiled-tubing BHA, turning ranging from a discrete wireline intervention into an integrated drilling function — with full pressure-control integrity maintained throughout convergence and intercept.',
+      'CTRWD embeds active magnetic excitation in a coiled-tubing BHA, turning ranging from a discrete wireline intervention into an integrated drilling function — with full pressure-control integrity maintained throughout convergence and intercept.',
     overview: [
-      'Designed for proximity-dependent operations where positional uncertainty and consequence are elevated, CT-RWD delivers deterministic distance and directional updates to the target while the well stays fully pressure-contained.',
+      'Designed for proximity-dependent operations where positional uncertainty and consequence are elevated, CTRWD delivers deterministic distance and directional updates to the target while the well stays fully pressure-contained.',
       'Excitation, detection and telemetry are integrated within the coiled-tubing BHA, so ranging continues with no dedicated trips and no wireline entry into a live well — sustaining drilling momentum through convergence.',
       'Higher injected current (~2× wireline) and increased electrode surface area strengthen casing excitation and improve galvanic coupling, delivering a stable, high-fidelity magnetic response in oil-based, water-based and total-loss mud conditions.',
     ],
