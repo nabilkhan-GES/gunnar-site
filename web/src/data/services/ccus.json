@@ -1,0 +1,104 @@
+{
+  "crumb": "CCUS Well Integrity",
+  "tag": "ENERGY TRANSITION · CARBON STORAGE",
+  "title": "Well integrity for carbon storage you can verify.",
+  "intro": "Carbon capture, utilization and storage depends on absolute zonal isolation — every legacy and injection well in a storage complex must be sealed and verifiable. Gunnar applies relief-well-grade ranging and intercept technology to locate, seal and assure the integrity of wells across a CCUS project.",
+  "ctaLabel": "Discuss your CCUS project",
+  "heroStats": [
+    {
+      "n": "100%",
+      "l": "intercept success rate on the hardest wells"
+    },
+    {
+      "n": "±1 ft",
+      "l": "placement accuracy for permanent isolation"
+    },
+    {
+      "n": "MRV",
+      "l": "integrity evidence for monitoring & verification"
+    }
+  ],
+  "challengeTitle": "A storage site is only as secure as its leakiest well.",
+  "challenge": [
+    "CO₂ storage complexes are often co-located with depleted oil & gas fields riddled with legacy wells — many old, poorly documented, or with degraded integrity. Any one of them can become a leakage pathway that undermines the entire project and its regulatory standing.",
+    "Operators must demonstrate to regulators that every well is located, sealed and monitorable — a requirement conventional methods struggle to meet when wells are lost or inaccessible."
+  ],
+  "approachTitle": "Find every well. Seal it. Prove it.",
+  "approach": [
+    "Gunnar's magnetic ranging locates and intercepts legacy and injection wells with inch-level accuracy, enabling permanent zonal isolation through relief-well intervention even where surface access is gone.",
+    "The same precision supports placement of injection and monitoring wells and generates the integrity evidence that underpins a credible MRV (monitoring, reporting and verification) plan."
+  ],
+  "capTitle": "Ranging-grade integrity for the carbon economy.",
+  "capabilities": [
+    {
+      "n": "01",
+      "t": "Legacy well location",
+      "b": "Find and intercept undocumented or lost wells within a storage complex."
+    },
+    {
+      "n": "02",
+      "t": "Zonal isolation",
+      "b": "Relief-well intervention to permanently seal leakage pathways."
+    },
+    {
+      "n": "03",
+      "t": "Injection well placement",
+      "b": "Precise wellbore positioning for CO₂ injection targets."
+    },
+    {
+      "n": "04",
+      "t": "Integrity assurance",
+      "b": "Verification of seal placement to support regulatory approval."
+    },
+    {
+      "n": "05",
+      "t": "MRV support",
+      "b": "Integrity data feeding monitoring, reporting and verification plans."
+    },
+    {
+      "n": "06",
+      "t": "Regulatory documentation",
+      "b": "Evidence packages aligned to carbon-storage permitting requirements."
+    }
+  ],
+  "tech": [
+    {
+      "name": "DeadSet™",
+      "note": "No-access active ranging to locate and intercept legacy wells for permanent isolation."
+    },
+    {
+      "name": "CTRWD™",
+      "note": "Coiled-tubing ranging-while-drilling for deep, complex sealing in storage complexes."
+    },
+    {
+      "name": "EverReady™",
+      "note": "AI-driven passive ranging from existing survey data for non-intrusive well location."
+    }
+  ],
+  "caseImg": "CO₂ ISOLATION",
+  "caseScope": "ZONAL ISOLATION · LEGACY WELL SEALING",
+  "caseTitle": "Magnetic ranging for carbon storage integrity",
+  "caseLoc": "Presented at DEA(e), Stavanger, Norway",
+  "caseBody": "Gunnar's Product Champion presented how magnetic ranging and well-intercept technology has become a pivotal solution for sealing even the most challenging wells — accessing previously unreachable wellbores to securely place permanent plugs, seal depleted reservoirs and enable efficient CO₂ injection and sequestration.",
+  "caseMetric": "Depleted-field",
+  "caseMetricL": "reservoirs sealed for safe CO₂ sequestration",
+  "faqs": [
+    {
+      "q": "Why does CCUS need magnetic ranging?",
+      "a": "Carbon storage requires verified zonal isolation of every well in the storage complex. Many legacy wells are lost or inaccessible; magnetic ranging locates and intercepts them so they can be permanently sealed — something conventional methods often cannot achieve."
+    },
+    {
+      "q": "How does this support MRV?",
+      "a": "Precise, verifiable seal placement produces the integrity evidence regulators require for monitoring, reporting and verification. Knowing exactly where each well is and that it is sealed underpins a credible storage permit."
+    },
+    {
+      "q": "Can you seal wells that aren't on record?",
+      "a": "Yes. Passive and active ranging can locate undocumented or 'ghost' wells, and intercept drilling allows them to be sealed even without usable surface access."
+    },
+    {
+      "q": "Do you also place injection and monitoring wells?",
+      "a": "Yes. The same precision wellbore-positioning capability used for intercepts supports accurate placement of CO₂ injection and monitoring wells."
+    }
+  ],
+  "slug": "ccus"
+}

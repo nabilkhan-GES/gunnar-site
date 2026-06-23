@@ -1,0 +1,85 @@
+---
+import { url } from '../lib/links.js';
+const columns = [
+  {
+    h: 'SERVICES',
+    links: [
+      { t: 'Relief Well & Blowout Intercept', href: '/services/relief-wells/' },
+      { t: 'Plug & Abandonment', href: '/services/plug-and-abandonment/' },
+      { t: 'CCUS Well Integrity', href: '/services/ccus/' },
+      { t: 'Geothermal Well Placement', href: '/services/geothermal/' },
+      { t: 'Solution Mining', href: '/services/solution-mining/' },
+      { t: 'Well Re-Entry & Milling', href: '/services/well-re-entry/' },
+    ],
+  },
+  {
+    h: 'TECHNOLOGY',
+    links: [
+      { t: 'DeadAhead™ AMR-WD', href: '/technology/' },
+      { t: 'DeadSet™ Wireline AMR', href: '/technology/' },
+      { t: 'CTRWD™ Coiled Tubing', href: '/technology/' },
+      { t: 'EverReady™ PMR', href: '/technology/' },
+      { t: 'TopGun™ Software', href: '/technology/' },
+    ],
+  },
+  {
+    h: 'COMPANY',
+    links: [
+      { t: 'About Gunnar', href: '/about/' },
+      { t: 'Leadership Team', href: '/about/' },
+      { t: 'Case Studies', href: '/case-studies/' },
+      { t: 'Insights & Blog', href: '/insights/' },
+      { t: 'Video Library', href: '/videos/' },
+      { t: 'YouTube Channel ↗', href: 'https://www.youtube.com/@GunnarEnergyServices', ext: true },
+      { t: 'Contact', href: '/contact/' },
+    ],
+  },
+];
+---
+<div style="font-family:'Libre Franklin',-apple-system,sans-serif;">
+  <!-- FINAL CTA -->
+  <section style="padding:80px 32px;background:#0f2240;color:#eef1f6;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:-160px;right:-120px;width:460px;height:460px;border-radius:50%;border:1px solid rgba(254,238,0,0.16);"></div>
+    <div style="max-width:1240px;margin:0 auto;position:relative;display:flex;justify-content:space-between;align-items:center;gap:40px;flex-wrap:wrap;">
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.18em;color:#feee00;margin-bottom:14px;">LET'S TALK</div>
+        <h2 style="font-family:'Archivo',sans-serif;font-weight:900;font-size:40px;letter-spacing:-0.025em;line-height:1.05;margin:0;max-width:18ch;">Have a well that has to be hit?</h2>
+      </div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;">
+        <a href="tel:+18325550100" style="background:#feee00;color:#0a1626;font-weight:700;font-size:15px;padding:15px 26px;border-radius:3px;text-decoration:none;">24/7 Emergency: +1 832 555 0100</a>
+        <a href={url('/contact/')} style="border:1px solid rgba(255,255,255,0.28);color:#eef1f6;font-weight:600;font-size:15px;padding:15px 26px;border-radius:3px;text-decoration:none;">Request a feasibility review →</a>
+      </div>
+    </div>
+  </section>
+  <footer style="background:#0a1626;color:#8493ac;padding:56px 32px 36px;border-top:1px solid rgba(255,255,255,0.07);">
+    <div style="max-width:1240px;margin:0 auto;">
+      <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,0.08);">
+        <div>
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
+            <span style="display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border:2px solid #feee00;border-radius:50%;"><span style="width:8px;height:8px;background:#feee00;border-radius:50%;"></span></span>
+            <span style="font-family:'Archivo',sans-serif;font-weight:900;font-size:18px;color:#eef1f6;letter-spacing:0.04em;">GUNNAR</span>
+          </div>
+          <p style="font-size:13.5px;line-height:1.6;max-width:34ch;margin:0 0 14px;">The independent specialist in active magnetic ranging and wellbore intercept. Founded 2019 · California, Texas &amp; Australia.</p>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#c3cee0;">info@gunnarenergyservices.com</div>
+        </div>
+        {columns.map((col) => (
+          <div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.14em;color:#5b6a85;margin-bottom:14px;">{col.h}</div>
+            {col.links.map((ln) => (
+              <a
+                href={ln.ext ? ln.href : url(ln.href)}
+                target={ln.ext ? '_blank' : undefined}
+                rel={ln.ext ? 'noopener' : undefined}
+                style="display:block;font-size:13.5px;color:#8493ac;margin-bottom:9px;text-decoration:none;"
+              >{ln.t}</a>
+            ))}
+          </div>
+        ))}
+      </div>
+      <div style="padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px;color:#5b6a85;font-family:'IBM Plex Mono',monospace;letter-spacing:0.04em;">
+        <span>© 2026 GUNNAR ENERGY SERVICES — ALL RIGHTS RESERVED</span>
+        <span>RELIEF WELLS · MAGNETIC RANGING · P&amp;A · CCUS · GEOTHERMAL</span>
+      </div>
+    </div>
+  </footer>
+</div>

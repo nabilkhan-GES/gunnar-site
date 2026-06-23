@@ -1,0 +1,82 @@
+{
+  "banner": "assets/banner-relief.png",
+  "crumb": "Relief Wells",
+  "tagline": "RELIEF WELLS · ECONOMICS",
+  "read": "5 min read",
+  "title": "The True Cost of a Failed Intercept (and How to Avoid It)",
+  "lede": "When operators price a relief well or intercept, they tend to anchor on the rig day-rate. That is the smallest number on the page. The real cost of a missed intercept is everything that happens while you try again — and the way to control it is first-time success.",
+  "blocks": [
+    [
+      "H",
+      "The rig day is a rounding error"
+    ],
+    [
+      "P",
+      "A failed intercept doesn't just cost another few days of rig time. On an active blowout, every day the well stays uncontrolled means continued environmental release, mounting regulatory exposure, reputational damage and, in the worst cases, ongoing risk to people and assets."
+    ],
+    [
+      "P",
+      "On a planned P&A or CCUS intercept, a miss means rework, schedule slip, and the cascading cost of a delayed development or a stalled permit. The day-rate is the visible tip of a much larger iceberg."
+    ],
+    [
+      "Q",
+      "First-time success isn't a luxury on an intercept. It's the entire value proposition."
+    ],
+    [
+      "H",
+      "Why misses happen"
+    ],
+    [
+      "P",
+      "Intercepts fail for predictable reasons: an under-powered ranging signal that loses the target, a method mismatched to the well, fragmented accountability across multiple vendors, or simply too few reps on jobs this hard."
+    ]
+  ],
+  "blocks2": [
+    [
+      "H",
+      "Engineering out the risk"
+    ],
+    [
+      "P",
+      "Gunnar's 100% intercept success rate across more than 40 projects is not luck — it is the product of strong active signal (DeadAhead™ delivers roughly 18× the power of wireline), the right method chosen for each well, and a single accountable team owning the chain from planning through kill."
+    ],
+    [
+      "P",
+      "When the same organization plans the trajectory, runs the ranging, steers the bit and executes the kill, there is no seam for a miss to hide in. That integration is the quiet reason the record holds."
+    ],
+    [
+      "H",
+      "The math of getting it right once"
+    ],
+    [
+      "P",
+      "Frame the decision honestly and it inverts: a modest premium for a specialist with a perfect record is trivial against the cost of a single failed attempt. On an intercept, the cheapest provider is the one that hits the target the first time."
+    ]
+  ],
+  "takeaways": [
+    "The rig day-rate is the smallest component of a failed intercept's true cost.",
+    "Misses come from weak signal, wrong method, split accountability and too little experience.",
+    "Strong active ranging, correct method selection and one accountable team prevent them.",
+    "On an intercept, first-time success is the only economics that matter."
+  ],
+  "ctaTitle": "Pricing a relief well or intercept?",
+  "ctaBody": "Let's talk about what first-time success is worth on your specific well.",
+  "related": [
+    {
+      "href": "insights-relief-wells-101.dc.html",
+      "cat": "RELIEF WELLS",
+      "title": "Relief Wells 101: How Magnetic Ranging Stops a Blowout"
+    },
+    {
+      "href": "insights-ranging-while-drilling.dc.html",
+      "cat": "MAGNETIC RANGING",
+      "title": "Ranging-While-Drilling: Eliminating the Wireline Round-Trip"
+    },
+    {
+      "href": "insights-choosing-a-ranging-provider.dc.html",
+      "cat": "MAGNETIC RANGING",
+      "title": "Selecting a Ranging Provider: 10 Questions to Ask"
+    }
+  ],
+  "slug": "failed-intercept-cost"
+}

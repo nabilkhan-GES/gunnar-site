@@ -1,0 +1,104 @@
+{
+  "crumb": "Geothermal Well Placement",
+  "tag": "ENERGY TRANSITION · GEOTHERMAL",
+  "title": "Closed-loop geothermal starts with hitting the target.",
+  "intro": "Next-generation geothermal depends on intentionally connecting wellbores thousands of feet underground — the hardest part of the well design. Gunnar brings the magnetic ranging discipline that made relief wells and SAGD possible to the geothermal drilling engineer's toolbox.",
+  "ctaLabel": "Plan your geothermal connection",
+  "heroStats": [
+    {
+      "n": "GPS-grade",
+      "l": "precision for deep wellbore intersection"
+    },
+    {
+      "n": "Closed-loop",
+      "l": "well-to-well connection enabled by ranging"
+    },
+    {
+      "n": "Multi-zone",
+      "l": "precise spacing to access heat reservoirs"
+    }
+  ],
+  "challengeTitle": "Heat isn't the bottleneck. Hitting the target is.",
+  "challenge": [
+    "Closed-loop and enhanced geothermal systems require two wells to intersect precisely — or multiple wellbores to be spaced exactly to access specific zones of a heat reservoir. At depth, conventional surveys simply aren't accurate enough to guarantee a connection.",
+    "Without precise placement, a closed-loop design fails and the economics of the project collapse."
+  ],
+  "approachTitle": "The proven physics of well intersection.",
+  "approach": [
+    "Magnetic ranging deterministically guides one wellbore to intersect another — the same technique that made relief well drilling, SAGD and coal-bed-methane intersect drilling possible in oil & gas.",
+    "Gunnar deploys active and passive ranging to form closed loops and to space multiple wellbores accurately across a reservoir, unlocking geothermal designs that were previously impossible."
+  ],
+  "capTitle": "Precision placement for the geothermal era.",
+  "capabilities": [
+    {
+      "n": "01",
+      "t": "Closed-loop intersection",
+      "b": "Intentionally connect two wellbores to form a deep closed-loop system."
+    },
+    {
+      "n": "02",
+      "t": "Reservoir spacing",
+      "b": "Precise placement of multiple wells to access specific heat zones."
+    },
+    {
+      "n": "03",
+      "t": "Well twinning",
+      "b": "Parallel placement at controlled separation for paired-well designs."
+    },
+    {
+      "n": "04",
+      "t": "Ranging engineering",
+      "b": "Intercept geometry and trajectory design for connection confidence."
+    },
+    {
+      "n": "05",
+      "t": "Directional integration",
+      "b": "Real-time steering integrated with the ranging solution."
+    },
+    {
+      "n": "06",
+      "t": "Risk mitigation",
+      "b": "Proximity and collision management across the well field."
+    }
+  ],
+  "tech": [
+    {
+      "name": "Torped™",
+      "note": "Downhole rotary magnet generates a strong active field — ideal for intersection and twinning at range."
+    },
+    {
+      "name": "DeadSet™",
+      "note": "No-access active ranging for precise well-to-well connection with ±1 ft accuracy."
+    },
+    {
+      "name": "EverReady™",
+      "note": "AI-driven passive ranging for spacing and proximity control using existing survey data."
+    }
+  ],
+  "caseImg": "CLOSED-LOOP GEOTHERMAL",
+  "caseScope": "WELL INTERSECTION · CLOSED-LOOP",
+  "caseTitle": "Bringing magnetic ranging to geothermal",
+  "caseLoc": "Featured by ThinkGeoEnergy & Geothermal Resources Council",
+  "caseBody": "Gunnar's President detailed how magnetic ranging — the technology behind relief wells and SAGD — is now enabling closed-loop geothermal by purposely intersecting two wells and precisely spacing wellbores to access particular zones of a heat reservoir, unlocking designs not previously available to industry.",
+  "caseMetric": "Industry-first",
+  "caseMetricL": "ranging toolset for the geothermal drilling engineer",
+  "faqs": [
+    {
+      "q": "Why is magnetic ranging essential for geothermal?",
+      "a": "Closed-loop geothermal requires two wellbores to intersect precisely at depth, and multi-zone designs require exact spacing. Conventional surveys aren't accurate enough to guarantee connection; magnetic ranging provides the deterministic precision needed."
+    },
+    {
+      "q": "What is a closed-loop geothermal system?",
+      "a": "It's a deep, sealed loop — like a heat pump far underground — formed by drilling two wells that intersect. Fluid circulates through the loop to extract heat without producing reservoir fluids. Ranging makes the connection possible."
+    },
+    {
+      "q": "Can ranging space multiple wells accurately?",
+      "a": "Yes. The same technology used to intersect wells is used to hold precise separation between wellbores, allowing operators to target specific zones of a heat reservoir."
+    },
+    {
+      "q": "Is this proven technology?",
+      "a": "Yes. Magnetic ranging made relief well, SAGD and coal-bed-methane intersect drilling possible in oil & gas. Gunnar is applying that same proven physics to geothermal."
+    }
+  ],
+  "slug": "geothermal"
+}

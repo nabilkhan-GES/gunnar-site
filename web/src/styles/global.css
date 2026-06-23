@@ -1,0 +1,88 @@
+/* ============================================================
+   Gunnar Energy Services — global styles
+   Design tokens mirror the Claude Design prototypes:
+   navy #0f2240 / #0a1626, electric yellow #feee00, page #eef1f6
+   Fonts: Archivo (display), Libre Franklin (body), IBM Plex Mono (labels)
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Libre+Franklin:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --navy: #0f2240;
+  --navy-deep: #0a1626;
+  --navy-mid: #14294a;
+  --navy-ink: #1b355e;
+  --yellow: #feee00;
+  --page: #eef1f6;
+  --line: #d9dfe9;
+  --text: #272d33;
+  --muted: #5f676e;
+  --muted-cool: #8493ac;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+a { text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+/* Hover effects ported from the prototype's `style-hover` attribute */
+.hov-border-navy { transition: border-color .15s ease; }
+.hov-border-navy:hover { border-color: var(--navy) !important; }
+.hov-bg-soft { transition: background .15s ease; }
+.hov-bg-soft:hover { background: #f5f7fb !important; }
+.hov-bg-navy { transition: background .15s ease; }
+.hov-bg-navy:hover { background: var(--navy-mid) !important; }
+nav a.navlink { transition: color .15s ease; }
+nav a.navlink:hover { color: #fff !important; }
+
+/* Real form fields styled to match the prototype's dark input look */
+.gx-field {
+  width: 100%;
+  background: var(--navy-deep);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 13px 15px;
+  font-size: 13.5px;
+  color: #eef1f6;
+  border-radius: 2px;
+  font-family: 'Libre Franklin', sans-serif;
+  outline: none;
+  transition: border-color .15s ease;
+}
+.gx-field::placeholder { color: #5b6a85; }
+.gx-field:focus { border-color: var(--yellow); }
+textarea.gx-field { resize: vertical; line-height: 1.5; }
+.gx-submit {
+  background: var(--yellow);
+  color: var(--navy-deep);
+  font-weight: 700;
+  font-size: 15px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+  font-family: 'Libre Franklin', sans-serif;
+  width: 100%;
+  transition: filter .15s ease;
+}
+.gx-submit:hover { filter: brightness(0.95); }
+.gx-chip-radio { cursor: pointer; }
+.gx-chip-radio input { position: absolute; opacity: 0; pointer-events: none; }
+.gx-chip-radio input:checked + span {
+  background: var(--yellow) !important;
+  color: var(--navy-deep) !important;
+  border-color: var(--yellow) !important;
+}
+
+/* Lightweight responsive layer — the prototypes were designed desktop-first.
+   This collapses multi-column grids and scales display type on small screens
+   without touching the faithful inline styles on each element. */
+@media (max-width: 880px) {
+  [style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
+  [style*="font-size:60px"] { font-size: 36px !important; }
+  [style*="font-size:54px"], [style*="font-size:52px"], [style*="font-size:50px"] { font-size: 32px !important; }
+  [style*="font-size:46px"], [style*="font-size:44px"], [style*="font-size:40px"] { font-size: 28px !important; }
+  [style*="font-size:38px"], [style*="font-size:36px"], [style*="font-size:34px"] { font-size: 25px !important; }
+  section[style*="padding:88px"], section[style*="padding:84px"], section[style*="padding:80px"] { padding-left: 20px !important; padding-right: 20px !important; }
+}

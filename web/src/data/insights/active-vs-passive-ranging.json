@@ -1,0 +1,86 @@
+{
+  "banner": "assets/banner-ranging.png",
+  "crumb": "Magnetic Ranging",
+  "tagline": "MAGNETIC RANGING",
+  "read": "6 min read",
+  "title": "Active vs. Passive Magnetic Ranging: Which Method for Which Job",
+  "lede": "Not every well needs the same ranging method. Choosing between active and passive ranging — and among the tools within each — comes down to four variables: range, signal control, rig time and risk. Here is the decision framework we use before a single foot is drilled.",
+  "blocks": [
+    [
+      "H",
+      "Passive ranging: read what's already there"
+    ],
+    [
+      "P",
+      "Passive magnetic ranging uses the residual magnetism that already exists in a target well's steel casing. Because nothing has to be energized, it requires no additional downhole tools and adds no rig time — Gunnar's EverReady™ system can even interpret existing MWD/GWD survey data remotely, with no new hardware in the hole at all."
+    ],
+    [
+      "P",
+      "The trade-off is range and predictability. Residual magnetism is weak and variable, so passive ranging is best at short separation — typically up to roughly 30 feet — and is ideal for collision avoidance, well spacing and SAGD twinning where the target is close and the goal is to stay a known distance away."
+    ],
+    [
+      "H",
+      "Active ranging: make your own signal"
+    ],
+    [
+      "P",
+      "Active magnetic ranging injects an electrical current that magnetizes the target casing on demand. Because you control the source, the signal is strong, predictable and measurable at far greater distances — the foundation of relief wells and intentional intercepts."
+    ],
+    [
+      "P",
+      "Gunnar's DeadSet™ delivers no-access active ranging on wireline to roughly ±1 ft accuracy, while DeadAhead™ delivers active ranging continuously while drilling through wired pipe. Where a rig won't fit, CTRWD™ carries an active source on coiled tubing."
+    ]
+  ],
+  "blocks2": [
+    [
+      "H",
+      "A simple selection logic"
+    ],
+    [
+      "P",
+      "Start with separation and objective. If the target is close and you simply need to avoid or parallel it, passive ranging is fastest and cheapest. If you must intercept, or the target is far, uncertain or its magnetism is unreliable, active ranging is required."
+    ],
+    [
+      "P",
+      "Then weigh access and rig time. No rig access or a need to range while drilling points to DeadAhead™ or CTRWD™; a planned wireline window points to DeadSet™. The right answer is often a combination — passive for the approach, active for the intercept."
+    ],
+    [
+      "Q",
+      "The method should fit the well. A specialist that offers every method has no incentive to force the wrong one."
+    ],
+    [
+      "H",
+      "Why method-agnostic matters"
+    ],
+    [
+      "P",
+      "A provider that sells only one tool will fit every job to that tool. Because Gunnar builds and operates the full portfolio — active, passive, wireline, wired-pipe and coiled-tubing — the recommendation follows the well's geometry and risk profile, not a product catalog."
+    ]
+  ],
+  "takeaways": [
+    "Passive ranging is tool-free and fast but short-range; best for avoidance, spacing and twinning.",
+    "Active ranging makes its own strong signal; required for intercepts and long-range location.",
+    "Choose by separation, objective, access and rig time — often a passive approach plus an active intercept.",
+    "A method-agnostic specialist recommends the right tool because it owns them all."
+  ],
+  "ctaTitle": "Not sure which method your well needs?",
+  "ctaBody": "Send us the geometry and we'll recommend the right ranging approach — no obligation.",
+  "related": [
+    {
+      "href": "insights-relief-wells-101.dc.html",
+      "cat": "RELIEF WELLS",
+      "title": "Relief Wells 101: How Magnetic Ranging Stops a Blowout"
+    },
+    {
+      "href": "insights-ranging-while-drilling.dc.html",
+      "cat": "MAGNETIC RANGING",
+      "title": "Ranging-While-Drilling: Eliminating the Wireline Round-Trip"
+    },
+    {
+      "href": "insights-choosing-a-ranging-provider.dc.html",
+      "cat": "MAGNETIC RANGING",
+      "title": "Selecting a Ranging Provider: 10 Questions to Ask"
+    }
+  ],
+  "slug": "active-vs-passive-ranging"
+}

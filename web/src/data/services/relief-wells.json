@@ -1,0 +1,104 @@
+{
+  "crumb": "Relief Wells",
+  "tag": "WELL CONTROL · BLOWOUT INTERCEPT",
+  "title": "Relief wells, engineered to hit the target.",
+  "intro": "When surface intervention has failed, a relief well is the last line of defense — a separate well drilled to deterministically intercept and kill an out-of-control well from below. Gunnar plans, ranges, drills and kills as one accountable team, with the only commercial wired-pipe ranging-while-drilling system in the world.",
+  "ctaLabel": "Talk to a relief-well engineer",
+  "heroStats": [
+    {
+      "n": "100%",
+      "l": "intercept success rate across 40+ projects"
+    },
+    {
+      "n": "29,500 ft",
+      "l": "world-record dual intercept depth"
+    },
+    {
+      "n": "1 call",
+      "l": "engineering through kill & abandonment"
+    }
+  ],
+  "challengeTitle": "By the time you need a relief well, every day costs millions.",
+  "challenge": [
+    "Once a well is blowing out, surface control may be impossible. The only remaining option is to drill a new well that physically intersects the blowing wellbore thousands of feet underground — then pump kill fluid to regain control.",
+    "The problem: after drilling, a target well's exact position is only known approximately. By 10,000 ft, conventional surveys can be off by hundreds of feet. Missing the intercept means lost time, escalating environmental damage and runaway cost."
+  ],
+  "approachTitle": "Deterministic ranging, not guesswork.",
+  "approach": [
+    "Gunnar injects current that magnetizes the target's steel casing, then measures that field to compute exact distance and direction — steering the relief well to inch-level accuracy at intercept.",
+    "Our DeadAhead™ wired-pipe system ranges continuously while drilling, eliminating wireline round-trips, locating the target earlier and shortening the critical path to kill."
+  ],
+  "capTitle": "Everything a relief well demands — under one roof.",
+  "capabilities": [
+    {
+      "n": "01",
+      "t": "Relief well planning",
+      "b": "Trajectory design, anti-collision and intercept geometry from spud to kill point."
+    },
+    {
+      "n": "02",
+      "t": "Active magnetic ranging",
+      "b": "DeadSet™ and DeadAhead™ AMR for long-range, high-confidence target location."
+    },
+    {
+      "n": "03",
+      "t": "Directional drilling",
+      "b": "Precision steering to the intercept, integrated with the ranging solution in real time."
+    },
+    {
+      "n": "04",
+      "t": "Well kill & control",
+      "b": "40+ years of well-control expertise — dynamic and bullhead kill execution."
+    },
+    {
+      "n": "05",
+      "t": "Milling & re-entry",
+      "b": "Outside-in milling to establish communication with the target wellbore."
+    },
+    {
+      "n": "06",
+      "t": "Permanent abandonment",
+      "b": "Cement placement and regulator-witnessed permanent P&A after kill."
+    }
+  ],
+  "tech": [
+    {
+      "name": "DeadAhead™",
+      "note": "World-first wired-pipe AMR-while-drilling — 18× the power of wireline ranging, continuous locate from the BHA."
+    },
+    {
+      "name": "DeadSet™",
+      "note": "No-access wireline active ranging with ±1 ft accuracy, deployable on short notice and remotely."
+    },
+    {
+      "name": "TopGun™",
+      "note": "AI-assisted ranging interpretation and 3D visualization for real-time intercept decisions."
+    }
+  ],
+  "caseImg": "INTERCEPT OPERATIONS",
+  "caseScope": "INTERCEPT · KILL · P&A · REGULATOR-WITNESSED",
+  "caseTitle": "ExxonMobil — North Dakota",
+  "caseLoc": "2025 · World-first commercial wired-pipe AMR-WD deployment",
+  "caseBody": "Tubing parted at ~1,000 ft with only a 10 ft window below a stuck packer. DeadAhead™ held 5–10 ft separation across 5,500 ft of continuous ranging and intercepted at the exact planned depth — saving roughly two weeks of rig time and ~$2M.",
+  "caseMetric": "8,642 ft MD",
+  "caseMetricL": "intercepted at exact planned depth",
+  "faqs": [
+    {
+      "q": "What is a relief well?",
+      "a": "A relief well is a separate well drilled to intentionally intersect a blowing or uncontrolled well so it can be killed from below by pumping heavy fluid into the original wellbore. Modern relief wells use active magnetic ranging to steer to the target with inch-level accuracy."
+    },
+    {
+      "q": "How accurate is the intercept?",
+      "a": "With active magnetic ranging, accuracy improves as the relief well approaches the target, reaching inch-level precision at the point of intercept — even at depths where conventional surveys are off by hundreds of feet."
+    },
+    {
+      "q": "How fast can Gunnar mobilize?",
+      "a": "DeadSet™ ranging can be deployed on short notice and operated remotely. As an integrated team, Gunnar can engage on planning, ranging and well-control execution in parallel to compress the critical path."
+    },
+    {
+      "q": "Do you handle both emergency and planned intercepts?",
+      "a": "Yes. Beyond emergency blowout response, the same ranging and intercept capability is used for planned operations — accessing lost or unrecorded wells for permanent abandonment and well integrity."
+    }
+  ],
+  "slug": "relief-wells"
+}

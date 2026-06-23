@@ -1,0 +1,82 @@
+{
+  "banner": "assets/banner-intervention.png",
+  "crumb": "Well Intervention",
+  "tagline": "WELL INTERVENTION · RE-ENTRY",
+  "read": "7 min read",
+  "title": "Outside-In Re-Entry: Reaching Wells Everyone Else Gave Up On",
+  "lede": "Damaged casing, stuck packers, lost tools and no surface access don't have to mean a lost well. By ranging to the target and milling in from outside, Gunnar restores a path into wellbores that conventional intervention has written off.",
+  "blocks": [
+    [
+      "H",
+      "When the front door is blocked"
+    ],
+    [
+      "P",
+      "Some wells simply won't let you back in. Collapsed casing, a stuck packer, a fish left in the hole, or an unrecorded sidetrack can make conventional re-entry impossible. High-inclination geometry pushes standard rig and wireline operations past their limits."
+    ],
+    [
+      "P",
+      "The instinct is to keep fighting from surface, down the original path. Often that path is exactly the problem."
+    ],
+    [
+      "Q",
+      "If you can't go through the obstruction, range past it and come in from the side."
+    ],
+    [
+      "H",
+      "Range, then mill in"
+    ],
+    [
+      "P",
+      "Gunnar drills a new path alongside the target, uses active ranging to contact the target casing precisely, then mills in from outside to re-establish communication — bypassing whatever blocks the original bore. It is the relief-well technique applied to intervention."
+    ]
+  ],
+  "blocks2": [
+    [
+      "H",
+      "Built for tight, deep and live wells"
+    ],
+    [
+      "P",
+      "The 3.5-inch CTRWD™ system carries a ranging source, sensor and milling capability on coiled tubing, reaching the smaller tubulars found in deep, complex wells. Because coiled tubing can work under pressure with continuous well-control barriers, operations that would be unsafe on a conventional rig become routine."
+    ],
+    [
+      "P",
+      "That combination — range, exit, steer, mill and re-enter — handles motherbore exit-and-re-entry, below-fish access and high-inclination scenarios that defeat standard tools."
+    ],
+    [
+      "H",
+      "Restored for any purpose"
+    ],
+    [
+      "P",
+      "Once access is re-established, the well can be returned to production, brought back into integrity compliance, or permanently abandoned. The point is optionality: a well that was a write-off becomes a decision again."
+    ]
+  ],
+  "takeaways": [
+    "Collapsed casing, stuck packers, fish and high inclination can block conventional re-entry.",
+    "Ranging-guided outside-in milling reaches the target by bypassing the obstruction.",
+    "Compact coiled-tubing tools work deep, tight and under pressure with full well control.",
+    "A recovered well can be produced, restored to integrity, or permanently abandoned."
+  ],
+  "ctaTitle": "Have a well that won't let you back in?",
+  "ctaBody": "Tell us about the obstruction — we'll scope a ranging-guided re-entry.",
+  "related": [
+    {
+      "href": "insights-pna-cost-reduction.dc.html",
+      "cat": "PLUG & ABANDONMENT",
+      "title": "How to Cut P&A Costs by 50% with No-Access Ranging"
+    },
+    {
+      "href": "insights-relief-wells-101.dc.html",
+      "cat": "RELIEF WELLS",
+      "title": "Relief Wells 101: How Magnetic Ranging Stops a Blowout"
+    },
+    {
+      "href": "insights-offshore-pna.dc.html",
+      "cat": "PLUG & ABANDONMENT",
+      "title": "Offshore P&A: Managing Risk on Aging Infrastructure"
+    }
+  ],
+  "slug": "outside-in-reentry"
+}

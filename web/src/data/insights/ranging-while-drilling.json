@@ -1,0 +1,84 @@
+{
+  "banner": "assets/banner-ranging.png",
+  "crumb": "Magnetic Ranging",
+  "tagline": "MAGNETIC RANGING · TECHNOLOGY",
+  "read": "5 min read",
+  "title": "Ranging-While-Drilling: Eliminating the Wireline Round-Trip",
+  "lede": "For decades, active magnetic ranging meant a stop-start rhythm: drill ahead, pull out, run wireline to take a ranging measurement, pull out again, run back in to drill. Ranging-while-drilling collapses that cycle — and on a relief well, the time it saves is measured in days.",
+  "blocks": [
+    [
+      "H",
+      "The tyranny of the round-trip"
+    ],
+    [
+      "P",
+      "Traditional wireline ranging is accurate but slow. Every measurement requires tripping the drillstring, rigging up wireline, taking the survey, and tripping back in. On a deep intercept that sequence repeats many times, and each cycle is hours of rig time during which no progress is made toward the target."
+    ],
+    [
+      "P",
+      "On a relief well, where every hour of an active blowout carries environmental and financial cost, that delay is the most expensive thing on the program."
+    ],
+    [
+      "H",
+      "Ranging from the bit forward"
+    ],
+    [
+      "P",
+      "Ranging-while-drilling moves the measurement into the bottom-hole assembly itself. Gunnar's DeadAhead™ uses wired drillpipe to range continuously as the well advances — no tripping, no wireline, no waiting."
+    ],
+    [
+      "Q",
+      "World-first wired-pipe AMR-while-drilling: continuous ranging from the BHA at roughly 18× the power of wireline."
+    ]
+  ],
+  "video": "iLe8lQrgoWg",
+  "videoCaption": "Watch: a breakthrough intercept combining directional drilling and ranging-while-drilling.",
+  "blocks2": [
+    [
+      "H",
+      "More power, earlier locate"
+    ],
+    [
+      "P",
+      "Wired pipe delivers far more electrical power downhole than wireline can — roughly eighteen times more in DeadAhead™. More power means a stronger injected signal, which means the target is detected earlier and tracked more confidently all the way to intercept."
+    ],
+    [
+      "P",
+      "On an ExxonMobil well in North Dakota, DeadAhead™ held five to ten feet of separation across 5,500 feet of continuous ranging and intercepted at the exact planned depth — the world's first commercial wired-pipe AMR-while-drilling deployment, saving roughly two weeks of rig time and about two million dollars."
+    ],
+    [
+      "H",
+      "Why it compounds offshore"
+    ],
+    [
+      "P",
+      "Onshore the savings are real; offshore they are transformative. With rig day-rates an order of magnitude higher, eliminating round-trips and shortening the critical path can save tens of millions on a single intercept."
+    ]
+  ],
+  "takeaways": [
+    "Wireline ranging forces repeated, time-consuming drillstring round-trips.",
+    "Ranging-while-drilling measures from the BHA continuously — no tripping, no waiting.",
+    "Wired pipe delivers ~18× the power, for an earlier locate and confident tracking.",
+    "Proven on ExxonMobil's North Dakota well; savings compound dramatically offshore."
+  ],
+  "ctaTitle": "Want ranging that keeps the bit turning?",
+  "ctaBody": "Ask how DeadAhead™ ranging-while-drilling could shorten your intercept program.",
+  "related": [
+    {
+      "href": "insights-relief-wells-101.dc.html",
+      "cat": "RELIEF WELLS",
+      "title": "Relief Wells 101: How Magnetic Ranging Stops a Blowout"
+    },
+    {
+      "href": "insights-active-vs-passive-ranging.dc.html",
+      "cat": "MAGNETIC RANGING",
+      "title": "Active vs. Passive Magnetic Ranging: Which Method for Which Job"
+    },
+    {
+      "href": "insights-failed-intercept-cost.dc.html",
+      "cat": "RELIEF WELLS",
+      "title": "The True Cost of a Failed Intercept (and How to Avoid It)"
+    }
+  ],
+  "slug": "ranging-while-drilling"
+}

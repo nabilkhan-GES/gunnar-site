@@ -1,0 +1,82 @@
+{
+  "banner": "assets/banner-ranging.png",
+  "crumb": "Magnetic Ranging",
+  "tagline": "MAGNETIC RANGING · BUYER GUIDE",
+  "read": "4 min read",
+  "title": "Selecting a Ranging Provider: 10 Questions to Ask",
+  "lede": "Magnetic ranging is a specialty within a specialty, and the gap between providers is wide. Before you award an intercept, P&A or CCUS job, these are the questions that separate a true specialist from a side-service.",
+  "blocks": [
+    [
+      "H",
+      "Start with the record"
+    ],
+    [
+      "P",
+      "Three numbers tell you most of what you need to know. Ask for the provider's intercept success rate, the number of intercept projects they have actually delivered, and the range of conditions — depth, geometry, formation — those projects covered. A specialist will answer immediately and specifically."
+    ],
+    [
+      "P",
+      "Be wary of capability described in the abstract. On an intercept, demonstrated success is the only credential that matters."
+    ],
+    [
+      "Q",
+      "If ranging is one of fifty things a vendor does, it's probably not the thing they do best."
+    ],
+    [
+      "H",
+      "Probe the toolbox"
+    ],
+    [
+      "P",
+      "Ask which ranging methods they own and operate themselves — active and passive, wireline, wired-pipe and coiled-tubing. A provider with only one tool will fit your well to that tool. A provider with the full portfolio can choose the method your well actually needs."
+    ]
+  ],
+  "blocks2": [
+    [
+      "H",
+      "Test for integration and independence"
+    ],
+    [
+      "P",
+      "Ask who owns the chain. If engineering, ranging, directional drilling, milling and kill are split across multiple vendors, accountability fractures at exactly the moments it matters most. A single accountable team removes the seams where misses hide."
+    ],
+    [
+      "P",
+      "Ask, too, whether they are independent. A provider with competing service lines has incentives beyond your well. A pure-play specialist's only incentive is to hit the target — because that is the whole business."
+    ],
+    [
+      "H",
+      "The ten, in short"
+    ],
+    [
+      "P",
+      "1) What is your intercept success rate? 2) How many intercepts have you delivered? 3) Under what conditions? 4) Which methods do you own? 5) Active and passive both? 6) Can you range while drilling? 7) Who owns the full chain on my job? 8) Are you independent of competing service lines? 9) What is your HSE record? 10) Can you show me a comparable case study?"
+    ]
+  ],
+  "takeaways": [
+    "Demand three numbers: success rate, project count, and range of conditions.",
+    "Prefer a provider that owns every ranging method, not a single tool.",
+    "Single-team accountability across the chain prevents misses at critical moments.",
+    "Independence aligns the provider's incentives with hitting your target."
+  ],
+  "ctaTitle": "Putting an intercept or P&A job out to bid?",
+  "ctaBody": "Ask us all ten — we'll answer with specifics, including comparable case studies.",
+  "related": [
+    {
+      "href": "insights-failed-intercept-cost.dc.html",
+      "cat": "RELIEF WELLS",
+      "title": "The True Cost of a Failed Intercept (and How to Avoid It)"
+    },
+    {
+      "href": "insights-active-vs-passive-ranging.dc.html",
+      "cat": "MAGNETIC RANGING",
+      "title": "Active vs. Passive Magnetic Ranging: Which Method for Which Job"
+    },
+    {
+      "href": "insights-relief-wells-101.dc.html",
+      "cat": "RELIEF WELLS",
+      "title": "Relief Wells 101: How Magnetic Ranging Stops a Blowout"
+    }
+  ],
+  "slug": "choosing-a-ranging-provider"
+}

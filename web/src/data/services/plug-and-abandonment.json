@@ -1,0 +1,104 @@
+{
+  "crumb": "Plug & Abandonment",
+  "tag": "P&A · WELL DECOMMISSIONING",
+  "title": "Plug & abandonment, at half the rig time.",
+  "intro": "Complex and legacy wells with damaged casing, stuck packers or lost surface access can't be sealed conventionally. Gunnar drills a precise new path that intercepts the target wellbore — placing a permanent, regulator-witnessed plug where it counts. No-access ranging-while-drilling can cut typical P&A rig time by 50% or more.",
+  "ctaLabel": "Get a P&A cost estimate",
+  "heroStats": [
+    {
+      "n": "50%+",
+      "l": "rig-time reduction vs. conventional wireline P&A"
+    },
+    {
+      "n": "±1 ft",
+      "l": "typical ranging accuracy at intercept"
+    },
+    {
+      "n": "3.5\"",
+      "l": "CTRWD™ tool size for tight, deep tubulars"
+    }
+  ],
+  "challengeTitle": "The hardest wells to abandon are the ones that matter most.",
+  "challenge": [
+    "Many wells slated for abandonment have compromised integrity — collapsed casing, stuck tubing, or no usable surface access. Conventional methods rely on open-hole wireline runs that are slow, costly and carry well-control risk.",
+    "Old and unrecorded wells may have uncertain positions, and urban or offshore settings add access, environmental and regulatory pressure to every decision."
+  ],
+  "approachTitle": "Intercept the well, seal it from the inside.",
+  "approach": [
+    "Gunnar uses active magnetic ranging to drill a relief-style path that intercepts the target casing precisely, then mills in and places a deep cement plug on the inside — guaranteeing a permanent, durable abandonment.",
+    "No-access ranging-while-drilling eliminates wireline round-trips and open-hole exposure, removing kick and blowout risk while dramatically cutting rig time and cost."
+  ],
+  "capTitle": "End-to-end abandonment, engineered and executed.",
+  "capabilities": [
+    {
+      "n": "01",
+      "t": "P&A planning & permitting",
+      "b": "Intercept design, integrity assessment and regulatory documentation."
+    },
+    {
+      "n": "02",
+      "t": "No-access active ranging",
+      "b": "DeadSet™ and CTRWD™ locate the target without wireline exposure."
+    },
+    {
+      "n": "03",
+      "t": "Mill, exit & re-entry",
+      "b": "Outside-in milling to establish communication with the target casing."
+    },
+    {
+      "n": "04",
+      "t": "Deep cement placement",
+      "b": "Permanent plugs set inside the target wellbore with confidence."
+    },
+    {
+      "n": "05",
+      "t": "Urban & offshore P&A",
+      "b": "Compact systems for rig-constrained, urban and offshore environments."
+    },
+    {
+      "n": "06",
+      "t": "Regulator-witnessed sign-off",
+      "b": "Documented, compliant abandonment — including CalGEM-certified projects."
+    }
+  ],
+  "tech": [
+    {
+      "name": "CTRWD™",
+      "note": "Coiled-tubing ranging-while-drilling — 3.5\" tool deploys under pressure for deep, tight abandonment where rigs struggle."
+    },
+    {
+      "name": "DeadSet™",
+      "note": "No-access wireline active ranging with ±1 ft accuracy — removes wireline kick and blowout risk."
+    },
+    {
+      "name": "ClearCut™",
+      "note": "Precision milling simulation that converts intercept geometry into real-world milling parameters."
+    }
+  ],
+  "caseImg": "URBAN ABANDONMENT",
+  "caseScope": "URBAN P&A · CALGEM-CERTIFIED · LAND REUSE",
+  "caseTitle": "Urban Oil Well Abandonment — Boyle Heights, Los Angeles",
+  "caseLoc": "2021 · with Di Drill Survey Services",
+  "caseBody": "An old oil well in the heart of LA posed health and environmental hazards and blocked redevelopment. Gunnar's ranging and intercept technology permanently plugged the well and secured CalGEM certification — unlocking previously unusable land now slated for affordable housing.",
+  "caseMetric": "CalGEM-certified",
+  "caseMetricL": "land cleared for affordable-housing development",
+  "faqs": [
+    {
+      "q": "How does ranging reduce P&A cost?",
+      "a": "No-access ranging-while-drilling eliminates time-consuming open-hole wireline round-trips and the associated well-control risk. On complex P&A this can save roughly half the rig time and millions of dollars versus conventional methods."
+    },
+    {
+      "q": "Can you abandon wells with no surface access?",
+      "a": "Yes. That is the core advantage of ranging-based P&A: by drilling a new path that intercepts the target wellbore underground, Gunnar can seal wells that are inaccessible, collapsed or unrecorded from surface."
+    },
+    {
+      "q": "Do you handle offshore and urban P&A?",
+      "a": "Yes. Compact systems like the 3.5\" CTRWD™ are suited to rig-constrained, urban and offshore settings, and Gunnar manages the environmental and regulatory requirements that come with them."
+    },
+    {
+      "q": "Is the abandonment permanent and compliant?",
+      "a": "Plugs are placed inside the target casing and the work is regulator-witnessed. Gunnar has delivered CalGEM-certified abandonments approved for site redevelopment."
+    }
+  ],
+  "slug": "plug-and-abandonment"
+}

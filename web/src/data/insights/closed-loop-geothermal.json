@@ -1,0 +1,82 @@
+{
+  "banner": "assets/banner-geo.png",
+  "crumb": "Geothermal",
+  "tagline": "GEOTHERMAL · WELL PLACEMENT",
+  "read": "6 min read",
+  "title": "Closed-Loop Geothermal: Why Well Intersection Is the Hard Part",
+  "lede": "Next-generation geothermal has a reputation problem: people assume the challenge is heat. It isn't. The heat is there. The hard part is hitting the target — connecting two wellbores precisely, thousands of feet underground. That is a ranging problem, and it is already solved.",
+  "blocks": [
+    [
+      "H",
+      "What closed-loop actually requires"
+    ],
+    [
+      "P",
+      "A closed-loop geothermal system circulates fluid through a sealed underground loop to harvest heat without producing reservoir fluids. To form that loop, two wells must intersect — or be connected — at depth with high precision. Enhanced systems add a further demand: multiple wellbores spaced exactly to access specific zones of a heat reservoir."
+    ],
+    [
+      "P",
+      "At the depths involved, conventional directional surveys are not accurate enough to guarantee that connection. Miss it, and the loop doesn't close — and the project's economics collapse with it."
+    ],
+    [
+      "Q",
+      "Heat isn't the bottleneck. Hitting the target is — and magnetic ranging is built for exactly that."
+    ],
+    [
+      "H",
+      "Borrowed from the hardest wells in oil & gas"
+    ],
+    [
+      "P",
+      "Intentionally intersecting one wellbore with another is not new. It is the same physics that makes relief wells, SAGD well pairs and coal-bed-methane intersect drilling possible. Magnetic ranging has guided those connections for decades."
+    ]
+  ],
+  "blocks2": [
+    [
+      "H",
+      "Active and passive, working together"
+    ],
+    [
+      "P",
+      "Gunnar applies active ranging — including the Torped™ rotating-magnet source and DeadSet™ — to drive one wellbore into precise connection with another, and passive ranging to hold exact separation between parallel wells. The result is a deterministic connection where conventional steering offers only probability."
+    ],
+    [
+      "P",
+      "That precision unlocks designs that were previously impractical: tighter loops, multi-lateral collectors, and reservoir spacing tuned to the resource."
+    ],
+    [
+      "H",
+      "A toolset for the geothermal engineer"
+    ],
+    [
+      "P",
+      "Gunnar's leadership has detailed this crossover at venues including the Geothermal Resources Council and in coverage by ThinkGeoEnergy, positioning magnetic ranging as a core capability the geothermal drilling engineer can now design around — not a workaround, but a foundation."
+    ]
+  ],
+  "takeaways": [
+    "Closed-loop geothermal depends on connecting wellbores precisely at depth.",
+    "Conventional surveys can't guarantee that connection; ranging can.",
+    "The physics is proven — it's how relief wells and SAGD pairs are drilled.",
+    "Active ranging makes the connection; passive ranging holds precise spacing."
+  ],
+  "ctaTitle": "Designing a closed-loop or EGS project?",
+  "ctaBody": "Talk to us about engineering the intersection your geothermal design depends on.",
+  "related": [
+    {
+      "href": "insights-relief-wells-101.dc.html",
+      "cat": "RELIEF WELLS",
+      "title": "Relief Wells 101: How Magnetic Ranging Stops a Blowout"
+    },
+    {
+      "href": "insights-active-vs-passive-ranging.dc.html",
+      "cat": "MAGNETIC RANGING",
+      "title": "Active vs. Passive Magnetic Ranging: Which Method for Which Job"
+    },
+    {
+      "href": "insights-ccus-well-integrity.dc.html",
+      "cat": "CCUS",
+      "title": "CCUS Well Integrity: Why Ranging Belongs in Your MRV Plan"
+    }
+  ],
+  "slug": "closed-loop-geothermal"
+}

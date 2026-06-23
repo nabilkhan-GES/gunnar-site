@@ -1,0 +1,82 @@
+{
+  "banner": "assets/banner-pna.png",
+  "crumb": "Plug & Abandonment",
+  "tagline": "PLUG & ABANDONMENT · OFFSHORE",
+  "read": "6 min read",
+  "title": "Offshore P&A: Managing Risk on Aging Infrastructure",
+  "lede": "A wave of offshore decommissioning is coming as mature fields reach end of life. Offshore P&A magnifies every onshore challenge — cost, access, environmental exposure — and rewards the operators who plan around precision rather than brute force.",
+  "blocks": [
+    [
+      "H",
+      "The decommissioning wave"
+    ],
+    [
+      "P",
+      "Thousands of offshore wells worldwide are approaching the end of their productive lives. Regulators increasingly require permanent, verifiable abandonment, and the liability for getting it wrong sits squarely with the operator. The scale of the obligation is enormous — and the clock is running."
+    ],
+    [
+      "P",
+      "Offshore, every variable that makes P&A expensive onshore is amplified. Rig day-rates are an order of magnitude higher, weather windows are unforgiving, and the environmental cost of a mistake is severe."
+    ],
+    [
+      "Q",
+      "Offshore, precision isn't a nicety. It's the difference between a routine job and a crisis."
+    ],
+    [
+      "H",
+      "Why brute force fails offshore"
+    ],
+    [
+      "P",
+      "Conventional abandonment of compromised offshore wells leans on slow, sequential wireline work and, often, full rig intervention. When access is degraded or the well geometry is uncertain, that approach is both the most expensive and the riskiest available."
+    ]
+  ],
+  "blocks2": [
+    [
+      "H",
+      "Rigless and ranging-led"
+    ],
+    [
+      "P",
+      "Ranging-based, no-access P&A changes the calculus offshore even more than onshore. By drilling a precise intercept to seal a well from the inside — and by deploying compact systems like CTRWD™ on coiled tubing under pressure — operators can reduce or eliminate the most expensive rig time and the open-hole risk that comes with it."
+    ],
+    [
+      "P",
+      "Fewer round-trips, controlled barriers and first-time intercept success translate directly into shorter weather-window exposure and lower total cost on assets where every hour is at a premium."
+    ],
+    [
+      "H",
+      "Plan before you mobilize"
+    ],
+    [
+      "P",
+      "The biggest offshore savings are designed in, not discovered offshore. Engaging ranging engineering during decommissioning planning — to assess well integrity, locate uncertain or unrecorded wells, and choose the right method — turns an open-ended liability into a costed, de-risked program."
+    ]
+  ],
+  "takeaways": [
+    "A large offshore decommissioning wave is approaching, with strict, verifiable requirements.",
+    "Offshore amplifies every onshore P&A cost and risk — rig rates, weather, environment.",
+    "Ranging-led, rigless P&A cuts the most expensive rig time and open-hole exposure.",
+    "The biggest savings come from involving ranging engineering at the planning stage."
+  ],
+  "ctaTitle": "Scoping an offshore decommissioning program?",
+  "ctaBody": "Bring ranging engineering into your P&A planning before you mobilize a rig.",
+  "related": [
+    {
+      "href": "insights-pna-cost-reduction.dc.html",
+      "cat": "PLUG & ABANDONMENT",
+      "title": "How to Cut P&A Costs by 50% with No-Access Ranging"
+    },
+    {
+      "href": "insights-outside-in-reentry.dc.html",
+      "cat": "WELL INTERVENTION",
+      "title": "Outside-In Re-Entry: Reaching Wells Everyone Else Gave Up On"
+    },
+    {
+      "href": "insights-ccus-well-integrity.dc.html",
+      "cat": "CCUS",
+      "title": "CCUS Well Integrity: Why Ranging Belongs in Your MRV Plan"
+    }
+  ],
+  "slug": "offshore-pna"
+}

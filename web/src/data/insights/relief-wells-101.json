@@ -1,0 +1,92 @@
+{
+  "banner": "assets/banner-relief.png",
+  "crumb": "Relief Wells",
+  "tagline": "RELIEF WELLS · MAGNETIC RANGING",
+  "read": "8 min read",
+  "title": "Relief Wells 101: How Magnetic Ranging Stops a Blowout",
+  "lede": "A relief well is the oil and gas industry's last line of defense. When a well blows out and surface intervention has failed, the only remaining option is to drill a second well that physically intersects the first — thousands of feet underground — and kill it from below. The catch: you have to hit a target whose exact position no one actually knows.",
+  "blocks": [
+    [
+      "H",
+      "Why a well's position is a moving target"
+    ],
+    [
+      "P",
+      "It is a counterintuitive fact of drilling: once a well is in the ground, nobody knows precisely where it is. Directional surveys accumulate error with depth, and by 10,000 feet a wellbore's true position can differ from its plotted position by hundreds of feet — an ellipse of uncertainty far larger than the well itself."
+    ],
+    [
+      "P",
+      "For everyday drilling that uncertainty is tolerable. For a relief well it is the entire problem. You cannot intersect something the size of a dinner plate if your best estimate of where it sits is off by the length of a football field. Conventional surveying simply cannot close that gap."
+    ],
+    [
+      "Q",
+      "Magnetic ranging is the only proven way to deterministically locate and intercept a target wellbore."
+    ],
+    [
+      "H",
+      "How magnetic ranging works"
+    ],
+    [
+      "P",
+      "Magnetic ranging measures the magnetic field associated with the steel casing of the target well to compute the distance and direction from the drilling well to that target. There are two families of technique."
+    ],
+    [
+      "P",
+      "Passive ranging reads the residual magnetism already present in the target's casing. It requires no extra tools downhole and adds no rig time, but works only at short range. Active ranging injects an electrical current that magnetizes the target casing on demand, producing a strong, controllable signal that can be measured at much greater distances — the approach relief wells depend on."
+    ],
+    [
+      "P",
+      "As the drilling well closes in, the measurement sharpens. What began as a search across an ellipse of uncertainty becomes a precise vector, and the relief well is steered to the target with inch-level accuracy at the point of intercept."
+    ]
+  ],
+  "video": "u0VyeG-lT9c",
+  "videoCaption": "Watch: founder Clinton Moss explains magnetic ranging in plain language.",
+  "blocks2": [
+    [
+      "H",
+      "From locate to kill"
+    ],
+    [
+      "P",
+      "Hitting the target is necessary but not sufficient. Once the relief well establishes communication with the blowing well — often through outside-in milling — heavy kill fluid is pumped to overcome the formation pressure and regain control. Cement then permanently seals the well."
+    ],
+    [
+      "P",
+      "The faster you locate, the faster you kill, and the less environmental and financial damage accrues. This is why ranging-while-drilling matters: by ranging continuously from the bottom-hole assembly instead of stopping to run wireline, the critical path to kill is dramatically shortened. Gunnar's DeadAhead™ wired-pipe system delivers roughly 18 times the power of traditional wireline ranging."
+    ],
+    [
+      "H",
+      "Planned intercepts, not just emergencies"
+    ],
+    [
+      "P",
+      "The same capability that kills a blowout is increasingly used by design. Operators use ranging-based intercept to access lost or unrecorded wells for permanent plug and abandonment, to seal legacy wells in carbon-storage complexes, and to intentionally connect wellbores for closed-loop geothermal."
+    ]
+  ],
+  "takeaways": [
+    "A well's true position is uncertain by hundreds of feet at depth — conventional surveys can't guarantee an intercept.",
+    "Magnetic ranging measures the target casing's magnetic field to compute exact distance and direction.",
+    "Active ranging works at long range and is what relief wells rely on; passive ranging is short-range and tool-free.",
+    "Ranging-while-drilling shortens the critical path to kill — and the same technique now serves P&A, CCUS and geothermal."
+  ],
+  "ctaTitle": "Facing a relief well or complex intercept?",
+  "ctaBody": "Talk to a ranging engineer about a deterministic intercept plan for your well.",
+  "related": [
+    {
+      "href": "insights-active-vs-passive-ranging.dc.html",
+      "cat": "MAGNETIC RANGING",
+      "title": "Active vs. Passive Magnetic Ranging: Which Method for Which Job"
+    },
+    {
+      "href": "insights-pna-cost-reduction.dc.html",
+      "cat": "PLUG & ABANDONMENT",
+      "title": "How to Cut P&A Costs by 50% with No-Access Ranging"
+    },
+    {
+      "href": "insights-ranging-while-drilling.dc.html",
+      "cat": "MAGNETIC RANGING",
+      "title": "Ranging-While-Drilling: Eliminating the Wireline Round-Trip"
+    }
+  ],
+  "slug": "relief-wells-101"
+}

@@ -1,0 +1,104 @@
+{
+  "crumb": "Solution Mining",
+  "tag": "MINING · WELLBORE CONNECTION",
+  "title": "Precise wellbore connections for solution mining.",
+  "intro": "Solution mining of potash, lithium, uranium and other minerals depends on connecting injection and recovery wells underground. Gunnar's magnetic ranging delivers the precise intersection and spacing these operations require — safely and repeatably.",
+  "ctaLabel": "Scope a mining connection",
+  "heroStats": [
+    {
+      "n": "±1 ft",
+      "l": "intersection accuracy for well connections"
+    },
+    {
+      "n": "Multi-mineral",
+      "l": "potash, lithium, uranium & more"
+    },
+    {
+      "n": "Repeatable",
+      "l": "predictable performance across a well field"
+    }
+  ],
+  "challengeTitle": "Recovery economics hinge on the connection.",
+  "challenge": [
+    "In-situ solution mining requires injection and recovery wells to be hydraulically connected in the target formation. If the wells don't connect where intended, recovery rates suffer and project economics fail.",
+    "Achieving and verifying that connection at depth is beyond the accuracy of conventional directional surveys, especially across a large well field."
+  ],
+  "approachTitle": "Connect wells with deterministic accuracy.",
+  "approach": [
+    "Gunnar uses active magnetic ranging to intersect or precisely space wellbores for solution-mining cavern and well-field designs, ensuring the connections recovery depends on.",
+    "Our integrated ranging and directional capability holds tight tolerances repeatably across many wells — bringing predictable performance to mineral recovery."
+  ],
+  "capTitle": "Ranging for the critical-minerals economy.",
+  "capabilities": [
+    {
+      "n": "01",
+      "t": "Well intersection",
+      "b": "Connect injection and recovery wells in the target formation."
+    },
+    {
+      "n": "02",
+      "t": "Well-field spacing",
+      "b": "Precise, repeatable separation across many wellbores."
+    },
+    {
+      "n": "03",
+      "t": "Cavern development",
+      "b": "Controlled geometry for solution-mining cavern designs."
+    },
+    {
+      "n": "04",
+      "t": "Trajectory engineering",
+      "b": "Intercept and spacing design for connection confidence."
+    },
+    {
+      "n": "05",
+      "t": "Proximity control",
+      "b": "Collision avoidance across a dense well field."
+    },
+    {
+      "n": "06",
+      "t": "Verification",
+      "b": "Confirmation of connection geometry for production planning."
+    }
+  ],
+  "tech": [
+    {
+      "name": "Torped™",
+      "note": "Strong downhole active magnetic field source for intersection and twinning at range."
+    },
+    {
+      "name": "DeadSet™",
+      "note": "No-access active ranging for precise well-to-well connection with ±1 ft accuracy."
+    },
+    {
+      "name": "EverReady™",
+      "note": "Passive ranging for spacing and proximity control using existing survey data."
+    }
+  ],
+  "caseImg": "WELL-FIELD CONNECTION",
+  "caseScope": "INTERSECTION · WELL-FIELD SPACING",
+  "caseTitle": "Wellbore connection for mineral recovery",
+  "caseLoc": "Solution mining application",
+  "caseBody": "Gunnar applies the same magnetic ranging that enables relief wells and closed-loop geothermal to solution mining — intersecting and precisely spacing wellbores so injection and recovery wells connect where intended, bringing predictable recovery performance to potash, lithium and uranium operations.",
+  "caseMetric": "Predictable",
+  "caseMetricL": "connection geometry across the well field",
+  "faqs": [
+    {
+      "q": "How does ranging help solution mining?",
+      "a": "Solution mining requires injection and recovery wells to connect underground. Magnetic ranging deterministically intersects or precisely spaces wellbores so those connections form where intended — beyond the accuracy of conventional surveys."
+    },
+    {
+      "q": "Which minerals does this apply to?",
+      "a": "Any in-situ solution-mining operation that depends on connected or precisely spaced wells — including potash, lithium and uranium recovery."
+    },
+    {
+      "q": "Can you control spacing across a large well field?",
+      "a": "Yes. The same technology used to intersect wells holds precise, repeatable separation across many wellbores, enabling predictable well-field performance."
+    },
+    {
+      "q": "Is the connection verifiable?",
+      "a": "Yes. Ranging produces distance-and-direction data that confirms the achieved geometry, supporting production and recovery planning."
+    }
+  ],
+  "slug": "solution-mining"
+}

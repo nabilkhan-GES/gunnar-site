@@ -1,0 +1,82 @@
+{
+  "banner": "assets/banner-pna.png",
+  "crumb": "Plug & Abandonment",
+  "tagline": "PLUG & ABANDONMENT",
+  "read": "7 min read",
+  "title": "How to Cut P&A Costs by 50% with No-Access Ranging",
+  "lede": "Plug and abandonment is rarely the glamorous part of a well's life, but it is increasingly the expensive one. On complex and legacy wells, no-access ranging-while-drilling can cut rig time by half or more. Here is where the savings actually come from.",
+  "blocks": [
+    [
+      "H",
+      "The hidden cost of conventional P&A"
+    ],
+    [
+      "P",
+      "Conventional abandonment of a compromised well leans heavily on open-hole wireline runs — slow, sequential, and exposed to well-control risk every time the hole is open. On wells with collapsed casing, stuck packers or no surface access, those runs multiply, and so does the rig time."
+    ],
+    [
+      "P",
+      "Each round-trip is hours of rig clock at full day-rate, plus the risk premium of an open hole. Multiply that across a multi-well campaign and the economics balloon."
+    ],
+    [
+      "Q",
+      "The savings aren't a discount — they come from doing fundamentally less work, more safely."
+    ],
+    [
+      "H",
+      "What ranging changes"
+    ],
+    [
+      "P",
+      "Ranging-based P&A reframes the problem. Instead of fighting back into a damaged wellbore from surface, Gunnar drills a precise new path that intercepts the target casing underground, then places a permanent cement plug on the inside."
+    ]
+  ],
+  "blocks2": [
+    [
+      "H",
+      "Where the 50% comes from"
+    ],
+    [
+      "P",
+      "Three things drive the reduction. First, eliminating wireline round-trips removes the single largest block of sequential rig time. Second, ranging-while-drilling keeps the hole cased and under control, removing the open-hole risk premium and the contingency time that comes with it. Third, hitting the target first time avoids the rework that quietly doubles budgets."
+    ],
+    [
+      "P",
+      "Compact systems extend the advantage. Gunnar's 3.5-inch CTRWD™ deploys on coiled tubing under pressure, reaching deep, tight and urban wells where a conventional rig is impractical — turning jobs that were bespoke and slow into repeatable ones."
+    ],
+    [
+      "H",
+      "Proof in the field"
+    ],
+    [
+      "P",
+      "In Boyle Heights, Los Angeles, Gunnar permanently plugged an urban oil well that conventional access couldn't reach, securing CalGEM certification and unlocking land now slated for affordable housing. The same approach scales to offshore decommissioning, where rig time is far more expensive and the savings compound."
+    ]
+  ],
+  "takeaways": [
+    "Conventional P&A on complex wells is dominated by slow, risky open-hole wireline runs.",
+    "No-access ranging drills a new path that intercepts and seals the target from the inside.",
+    "Savings come from eliminating round-trips, removing open-hole risk, and first-time success.",
+    "Compact coiled-tubing tools extend the method to deep, tight, urban and offshore wells."
+  ],
+  "ctaTitle": "Have a complex or legacy well to abandon?",
+  "ctaBody": "Get a P&A cost estimate built around no-access ranging for your specific well.",
+  "related": [
+    {
+      "href": "insights-offshore-pna.dc.html",
+      "cat": "PLUG & ABANDONMENT",
+      "title": "Offshore P&A: Managing Risk on Aging Infrastructure"
+    },
+    {
+      "href": "insights-outside-in-reentry.dc.html",
+      "cat": "WELL INTERVENTION",
+      "title": "Outside-In Re-Entry: Reaching Wells Everyone Else Gave Up On"
+    },
+    {
+      "href": "insights-ranging-while-drilling.dc.html",
+      "cat": "MAGNETIC RANGING",
+      "title": "Ranging-While-Drilling: Eliminating the Wireline Round-Trip"
+    }
+  ],
+  "slug": "pna-cost-reduction"
+}

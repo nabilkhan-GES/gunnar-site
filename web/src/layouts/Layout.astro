@@ -1,0 +1,33 @@
+---
+import '../styles/global.css';
+import { url } from '../lib/links.js';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+const {
+  title = 'Gunnar Energy Services',
+  description = 'The independent specialist in active magnetic ranging and wellbore intercept — relief wells, blowout kills, plug & abandonment, CCUS and geothermal placement.',
+} = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href={url('/favicon.svg')} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <div style="background:#eef1f6;color:#272d33;font-family:'Libre Franklin',-apple-system,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.5;">
+      <slot />
+    </div>
+  </body>
+</html>

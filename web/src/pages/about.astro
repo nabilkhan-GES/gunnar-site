@@ -1,0 +1,105 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { url } from '../lib/links.js';
+
+const stats = [
+  { n: '2019', l: 'founded · Bakersfield, CA + Texas & Australia' },
+  { n: '100%', l: 'intercept success rate across 40+ projects' },
+  { n: '140+ yrs', l: 'combined ranging & well-control expertise' },
+  { n: '6', l: 'countries of project experience' },
+];
+const diffs = [
+  { t: 'Proprietary technology', b: 'A full fleet of patented ranging hardware — DeadAhead™, DeadSet™, CTRWD™, Torped™, EverReady™ — supercharged by AI software.' },
+  { t: 'Proven track record', b: '100% intercept success across 40+ projects, including world-record dual intercepts and a world-first wired-pipe deployment.' },
+  { t: 'One integrated call', b: 'Engineering, ranging, directional, milling, kill, cement and abandonment by one accountable team — one contract, one timeline.' },
+  { t: 'Independent & unbiased', b: 'We range only. No competing service lines, no vendor agenda — we act purely in the customer\'s best interest.' },
+];
+const team = [
+  { name: 'Clinton Moss', img: '/assets/team-cm.png', role: 'FOUNDER & PRESIDENT', bio: '20+ years leading magnetic ranging, relief well and P&A operations worldwide. Former Global Product Line Champion for Magnetic Ranging at Halliburton–Sperry; founded Marksman Ranging Technologies (acquired by Scientific Drilling). Also worked with Wild Well Control.' },
+  { name: 'Well Control Principal', img: '/assets/team-pe.png', role: 'PROFESSIONAL ENGINEER', bio: 'A PE with 40+ years in drilling, well control and well intervention. Experience with Wild Well, Cudd Well Control and Blowout Engineers before co-founding Gunnar Energy Services.' },
+  { name: 'Arthur', img: '/assets/team-arthur.png', role: 'TECHNOLOGY / R&D', bio: 'Technology expert with 10+ years developing oil & gas tools, specializing in active magnetic ranging. Previously with Scientific Drilling and Marksman Ranging; former assistant professor at the University of Maryland, College Park.' },
+  { name: 'Chad', img: '/assets/team-chad.png', role: 'RANGING R&D', bio: '15+ years in MWD/LWD, survey management and relative wellbore placement. Former Halliburton, IPM Magnetics and Scientific Drilling; has developed, qualified and deployed multiple magnetic ranging tool suites.' },
+  { name: 'Georgy Rassadkin', img: '/assets/team-georgy.png', role: 'PRODUCT CHAMPION', bio: '10+ years in precision wellbore positioning. Began as a field engineer and advanced to technical trainer and product champion in wellbore surveying and ranging. Presented on ranging for CCUS at DEA(e), Stavanger.' },
+  { name: 'Nabil Khan', img: '/assets/team-nabil.png', role: 'CHIEF FINANCIAL OFFICER', bio: 'Executive specializing in sustainable growth through corporate finance and strategy. 15+ years across space, technology, telecom and mobility; INSEAD-educated; advisor at Loyal Venture Capital, Toronto.' },
+];
+---
+<Layout title="About — The Independent Specialist in Magnetic Ranging | Gunnar Energy Services" description="Founded 2019 in Bakersfield, California with operations in Texas and Australia. The most proven hands in wellbore positioning, relief wells and complex intervention.">
+  <SiteHeader />
+
+  <section style="background:#0f2240;color:#eef1f6;position:relative;overflow:hidden;padding:64px 32px 70px;">
+    <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,0.045) 1px,transparent 1px);background-size:28px 28px;opacity:0.6;"></div>
+    <div style="position:absolute;top:-180px;right:-140px;width:520px;height:520px;border-radius:50%;border:1px solid rgba(254,238,0,0.14);"></div>
+    <div style="max-width:1240px;margin:0 auto;position:relative;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.08em;color:#8493ac;margin-bottom:24px;"><a href={url('/')} style="color:#8493ac;">Home</a> &nbsp;/&nbsp; <span style="color:#feee00;">About</span></div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:0.18em;color:#feee00;margin-bottom:18px;">INDEPENDENTLY OWNED · TRUSTED SERVICE PROVIDER</div>
+      <h1 style="font-family:'Archivo',sans-serif;font-weight:900;font-size:54px;line-height:1.02;letter-spacing:-0.025em;margin:0 0 22px;max-width:20ch;">A new name. The most proven hands in ranging.</h1>
+      <p style="font-size:19px;line-height:1.55;color:#c3cee0;max-width:64ch;margin:0;">Gunnar Energy Services is an independent specialist in active magnetic ranging, relief wells and complex well intervention. Founded in 2019 and headquartered in Bakersfield, California — with operations in Texas and Australia — our people pioneered this discipline at the companies that defined it.</p>
+    </div>
+  </section>
+
+  <section style="padding:80px 32px;background:#fff;border-bottom:1px solid #d9dfe9;">
+    <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr;gap:56px;align-items:start;">
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#1b355e;margin-bottom:14px;">WHO WE ARE</div>
+        <h2 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:32px;letter-spacing:-0.02em;line-height:1.12;margin:0 0 18px;">We range only — and that's exactly why we're better at it.</h2>
+        <p style="font-size:16px;line-height:1.65;color:#454c52;margin:0 0 16px;">Through the most accurate and reliable suite of magnetic ranging technology available — proprietary to Gunnar — we've assembled the best and most proven hands and minds in wellbore positioning. Our team has decades of experience in every magnetic ranging application, relief well planning, well intervention, engineering, pressure control and environmental services.</p>
+        <p style="font-size:16px;line-height:1.65;color:#454c52;margin:0 0 16px;">As an independent operator, we've worked alongside most of the major and independent service providers. That gives us an unbiased perspective on operational execution — and the freedom to act purely in the customer's best interest.</p>
+        <p style="font-size:16px;line-height:1.65;color:#454c52;margin:0;">You can trust that we're all on the same team — yours.</p>
+      </div>
+      <div style="display:grid;gap:1px;background:#d9dfe9;border:1px solid #d9dfe9;">
+        {stats.map((s) => (
+          <div style="background:#f5f7fb;padding:24px 26px;"><div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:30px;color:#1b355e;line-height:1;">{s.n}</div><div style="font-size:13.5px;color:#5f676e;margin-top:7px;line-height:1.4;">{s.l}</div></div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:80px 32px;background:#eef1f6;">
+    <div style="max-width:1240px;margin:0 auto;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#1b355e;margin-bottom:14px;">WHY GUNNAR</div>
+      <h2 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:34px;letter-spacing:-0.02em;margin:0 0 36px;max-width:24ch;">A defensible moat across technology, execution and integration.</h2>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;">
+        {diffs.map((d) => (
+          <div style="border-top:3px solid #feee00;padding-top:18px;">
+            <h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:18px;margin:0 0 10px;color:#0f2240;">{d.t}</h3>
+            <p style="font-size:13.5px;color:#5f676e;line-height:1.55;margin:0;">{d.b}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:80px 32px;background:#fff;border-top:1px solid #d9dfe9;border-bottom:1px solid #d9dfe9;">
+    <div style="max-width:1240px;margin:0 auto;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#1b355e;margin-bottom:14px;">LEADERSHIP &amp; TEAM</div>
+      <h2 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:34px;letter-spacing:-0.02em;margin:0 0 36px;">The people who pioneered the discipline.</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+        {team.map((m) => (
+          <div style="border:1px solid #d9dfe9;background:#fff;display:flex;flex-direction:column;">
+            <div style="height:200px;background:#102444;position:relative;overflow:hidden;"><img src={url(m.img)} alt={m.name} style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" /></div>
+            <div style="padding:22px;flex:1;">
+              <h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:18px;margin:0 0 2px;color:#0f2240;">{m.name}</h3>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.06em;color:#1b355e;margin-bottom:12px;">{m.role}</div>
+              <p style="font-size:13.5px;color:#5f676e;line-height:1.55;margin:0;">{m.bio}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:64px 32px;background:#eef1f6;">
+    <div style="max-width:1240px;margin:0 auto;display:flex;gap:30px;flex-wrap:wrap;align-items:center;border:1px solid #d9dfe9;background:#fff;padding:26px 32px;">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#8493ac;">CERTIFIED &amp; COMPLIANT</span>
+      <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:16px;color:#454c52;">ISO 9001</span>
+      <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:16px;color:#454c52;">API Q1 / Q2</span>
+      <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:16px;color:#454c52;">ISNetworld</span>
+      <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:16px;color:#454c52;">CalGEM-certified projects</span>
+      <span style="font-size:11.5px;color:#9097a0;font-style:italic;">— confirm/replace with current certifications</span>
+    </div>
+  </section>
+
+  <SiteFooter />
+</Layout>

@@ -1,0 +1,104 @@
+{
+  "crumb": "Well Re-Entry & Milling",
+  "tag": "WELL INTERVENTION · RE-ENTRY",
+  "title": "Re-enter the wells others have written off.",
+  "intro": "Damaged casing, stuck packers, fish and lost surface access don't have to mean a lost well. Gunnar combines magnetic ranging, outside-in milling and directional drilling to re-establish access to complex wellbores — for production, integrity or abandonment.",
+  "ctaLabel": "Discuss a re-entry challenge",
+  "heroStats": [
+    {
+      "n": "±1 ft",
+      "l": "ranging accuracy to contact the target"
+    },
+    {
+      "n": "3.5\"",
+      "l": "CTRWD™ tool for tight, deep tubulars"
+    },
+    {
+      "n": "Bypass",
+      "l": "fish and obstructions via outside-in re-entry"
+    }
+  ],
+  "challengeTitle": "When the wellbore won't let you back in.",
+  "challenge": [
+    "Obstructions, collapsed casing, stuck tubing and unrecorded sidetracks can make a wellbore impossible to re-enter by conventional means — stranding production, integrity work or abandonment.",
+    "High-inclination and motherbore exit/re-entry scenarios push standard rig and wireline operations past their limits."
+  ],
+  "approachTitle": "Range to the target, then mill back in.",
+  "approach": [
+    "Gunnar uses active ranging to locate the target wellbore precisely, then mills in from outside to re-establish communication — bypassing fish and obstructions that block a conventional path.",
+    "Compact, under-pressure coiled-tubing systems handle high-inclination and deep, small-tubular re-entries where standard operations struggle, with continuous well-control barriers in place."
+  ],
+  "capTitle": "Access restored, integrity intact.",
+  "capabilities": [
+    {
+      "n": "01",
+      "t": "Target location",
+      "b": "Active and passive ranging to find the wellbore to re-enter."
+    },
+    {
+      "n": "02",
+      "t": "Outside-in milling",
+      "b": "Mill into the target casing to bypass fish and obstructions."
+    },
+    {
+      "n": "03",
+      "t": "Motherbore exit & re-entry",
+      "b": "High-inclination exit and re-entry beyond standard rig limits."
+    },
+    {
+      "n": "04",
+      "t": "Below-fish access",
+      "b": "Re-establish a path past stuck tools and lost equipment."
+    },
+    {
+      "n": "05",
+      "t": "Under-pressure operations",
+      "b": "Coiled-tubing deployment with continuous well-control barriers."
+    },
+    {
+      "n": "06",
+      "t": "Integrity or abandonment",
+      "b": "Restore the well for production, integrity work or permanent P&A."
+    }
+  ],
+  "tech": [
+    {
+      "name": "CTRWD™",
+      "note": "3.5\" coiled-tubing ranging-while-drilling — mills, exits, ranges, steers and re-enters under pressure."
+    },
+    {
+      "name": "DeadSet™",
+      "note": "No-access active ranging with ±1 ft accuracy to contact and re-enter the target."
+    },
+    {
+      "name": "ClearCut™",
+      "note": "Milling simulation that turns intercept geometry into real-world milling parameters."
+    }
+  ],
+  "caseImg": "RE-ENTRY OPERATIONS",
+  "caseScope": "MILLING · EXIT · RE-ENTRY",
+  "caseTitle": "Outside-in re-entry of a complex wellbore",
+  "caseLoc": "Deep complex abandonment application",
+  "caseBody": "Where standard rig operations struggle, Gunnar's compact CTRWD™ system mills, exits, ranges, steers and re-enters to reach smaller tubulars found in deep, complex wells — eliminating wireline runs and re-establishing access for permanent sealing.",
+  "caseMetric": "High-inclination",
+  "caseMetricL": "exit and re-entry beyond standard limits",
+  "faqs": [
+    {
+      "q": "What makes a well hard to re-enter?",
+      "a": "Collapsed casing, stuck packers, fish (lost tools), unrecorded sidetracks and high inclination can all block conventional re-entry. Ranging-guided outside-in milling provides a path back in when standard methods fail."
+    },
+    {
+      "q": "How does outside-in re-entry work?",
+      "a": "Gunnar drills a new path, uses active ranging to contact the target casing precisely, then mills in from outside to re-establish communication — bypassing whatever is blocking the original bore."
+    },
+    {
+      "q": "Can you work in high-inclination wells?",
+      "a": "Yes. Compact coiled-tubing systems like CTRWD™ are designed for high-inclination and motherbore exit/re-entry where standard rig and wireline operations struggle."
+    },
+    {
+      "q": "Is re-entry done under pressure?",
+      "a": "Coiled-tubing deployment allows operations 'under pressure' with continuously present well-control barriers that aren't possible during conventional rig or wireline work."
+    }
+  ],
+  "slug": "well-re-entry"
+}
