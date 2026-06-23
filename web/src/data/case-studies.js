@@ -8,6 +8,7 @@ export const caseStudies = [
   // ── Featured / fully-written ───────────────────────────────────────────
   {
     slug: 'exxonmobil-north-dakota',
+    img: '/assets/case-exxonmobil.jpg',
     client: 'ExxonMobil',
     location: 'North Dakota, USA',
     year: 'Aug 2025',
@@ -38,6 +39,7 @@ export const caseStudies = [
   },
   {
     slug: 'expand-energy-louisiana',
+    img: '/assets/case-expand-energy.jpg',
     client: 'Expand Energy',
     location: 'Louisiana, USA',
     year: 'Dec 2025',
@@ -68,6 +70,7 @@ export const caseStudies = [
   },
   {
     slug: 'socalgas-aliso-canyon',
+    img: '/assets/case-socalgas.jpg',
     client: 'SoCalGas — Aliso Canyon',
     location: 'California, USA',
     year: '2020 – ongoing',
@@ -98,6 +101,7 @@ export const caseStudies = [
   },
   {
     slug: 'guardian-mc20-gulf',
+    img: '/assets/case-guardian.jpg',
     client: 'Guardian Decommissioning (MC20 / Taylor Energy)',
     location: 'Gulf of Mexico',
     year: '2025 – ongoing',
@@ -127,6 +131,7 @@ export const caseStudies = [
   },
   {
     slug: 'occidental-chemical-kansas',
+    img: '/assets/case-occidental-kansas.jpg',
     client: 'Occidental Chemical',
     location: 'Kansas, USA',
     year: '2026',
@@ -156,6 +161,7 @@ export const caseStudies = [
   },
   {
     slug: 'santos-surat-basin',
+    img: '/assets/case-santos.jpg',
     client: 'Santos',
     location: 'Surat Basin, Australia',
     year: '2025 – ongoing',
@@ -185,6 +191,7 @@ export const caseStudies = [
   },
   {
     slug: 'cenovus-alberta',
+    img: '/assets/case-cenovus.jpg',
     client: 'Cenovus',
     location: 'Alberta, Canada',
     year: 'Sept 2025',
@@ -213,6 +220,7 @@ export const caseStudies = [
   },
   {
     slug: 'natural-soda-colorado',
+    img: '/assets/case-natural-soda.jpg',
     client: 'Natural Soda',
     location: 'Piceance Basin, Colorado, USA',
     year: '2025',
@@ -242,6 +250,7 @@ export const caseStudies = [
   },
   {
     slug: 'eavor-bavaria',
+    img: '/assets/case-eavor.jpg',
     client: 'Eavor GmbH',
     location: 'Geretsried, Bavaria, Germany',
     year: '2024 – ongoing',

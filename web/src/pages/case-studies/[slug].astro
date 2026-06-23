@@ -17,8 +17,13 @@ const detailed = !!c.challenge;
   <SiteHeader />
 
   <!-- HERO -->
-  <section class="cine dotgrid" style="position:relative;background:var(--ground-2);border-bottom:1px solid var(--line);">
-    <div class="wrap" style="position:relative;padding-top:clamp(48px,9vh,96px);padding-bottom:clamp(48px,9vh,96px);">
+  <section class="dotgrid" style="position:relative;background:var(--ground-2);border-bottom:1px solid var(--line);overflow:hidden;min-height:62vh;display:flex;align-items:flex-end;">
+    {c.img && (
+      <div class="cine" style="position:absolute;inset:0;">
+        <img src={url(c.img)} alt={`${c.client} — ${c.location}`} />
+      </div>
+    )}
+    <div class="wrap" style="position:relative;padding-top:clamp(48px,9vh,96px);padding-bottom:clamp(40px,6vh,72px);">
       <div style="font-family:var(--mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-faint);margin-bottom:26px;">
         <a href={url('/')} style="color:var(--text-faint);">Home</a> &nbsp;/&nbsp;
         <a href={url('/case-studies/')} style="color:var(--text-faint);">Case Studies</a> &nbsp;/&nbsp;

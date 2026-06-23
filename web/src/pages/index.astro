@@ -55,9 +55,9 @@ const deadAhead = [
 ];
 
 const cases = [
-  { imgLabel: 'Intercept Ops', scope: 'Intercept · Kill · P&A', client: 'ExxonMobil', loc: 'North Dakota · 2025', body: 'Tubing parted at ~1,000 ft with only a 10 ft window below a stuck packer. DeadAhead™ held 5–10 ft separation over 5,500 ft of continuous ranging — the world\'s first commercial wired-pipe AMR-WD deployment.', metric: '8,642 ft MD', metricL: 'intercepted at exact planned depth · ~$2M saved' },
-  { imgLabel: 'Blowout Intervention', scope: 'Blowout · Well Kill · P&A', client: 'Expand Energy', loc: 'Louisiana · 2025', body: 'An unpermitted 1950s-era legacy well leaked 5,000 bbl/day for 116 days of failed surface intervention. CTRWD™ coiled-tubing ranging located and intercepted the unknown geometry at 1,068 ft MD.', metric: '15 days', metricL: 'to well control vs. 116 days of surface attempts' },
-  { imgLabel: 'Relief Well P&A', scope: 'Relief Well P&A · Dual Intercept', client: 'SoCalGas — Aliso Canyon', loc: 'California · 2020–ongoing', body: 'Relief-well P&A of 1950s-era wells at the site of the largest gas blowout in U.S. history. DeadSet™ AMR and EverReady™ PMR overcame missing surveys and a parasite sidetrack.', metric: '8 intercepts', metricL: 'across a 4-well campaign · regulator-approved' },
+  { href: '/case-studies/exxonmobil-north-dakota/', img: '/assets/case-exxonmobil.jpg', scope: 'Intercept · Kill · P&A', client: 'ExxonMobil', loc: 'North Dakota · 2025', body: 'Tubing parted at ~1,000 ft with only a 10 ft window below a stuck packer. DeadAhead™ held 5–10 ft separation over 5,500 ft of continuous ranging — the world\'s first commercial wired-pipe AMR-WD deployment.', metric: '8,642 ft MD', metricL: 'intercepted at exact planned depth · ~$2M saved' },
+  { href: '/case-studies/expand-energy-louisiana/', img: '/assets/case-expand-energy.jpg', scope: 'Blowout · Well Kill · P&A', client: 'Expand Energy', loc: 'Louisiana · 2025', body: 'An unpermitted 1950s-era legacy well leaked 5,000 bbl/day for 116 days of failed surface intervention. CT-RWD™ coiled-tubing ranging located and intercepted the unknown geometry at 1,068 ft MD.', metric: '15 days', metricL: 'to well control vs. 116 days of surface attempts' },
+  { href: '/case-studies/socalgas-aliso-canyon/', img: '/assets/case-socalgas.jpg', scope: 'Relief Well P&A · Dual Intercept', client: 'SoCalGas — Aliso Canyon', loc: 'California · 2020–ongoing', body: 'Relief-well P&A of 1950s-era wells at the site of the largest gas blowout in U.S. history. DeadSet™ AMR and EverReady™ PMR overcame missing surveys and a parasite sidetrack.', metric: '8 intercepts', metricL: 'across a 4-well campaign · regulator-approved' },
 ];
 
 const diffs = [
@@ -86,7 +86,7 @@ const vidThumb = `https://i.ytimg.com/vi/${vid}/hqdefault.jpg`;
   <!-- HERO -->
   <section class="dotgrid" style="position:relative;background:var(--ground-2);overflow:hidden;min-height:90vh;display:flex;align-items:flex-end;">
     <div class="cine" style="position:absolute;inset:0;">
-      <img src={url('/assets/hero.png')} alt="Magnetic ranging intercept — a drilling well steering to a target wellbore" />
+      <img src={url('/assets/hero.jpg')} alt="Gunnar wired-pipe land drilling rig at blue hour" />
     </div>
     <div class="wrap" style="position:relative;padding-top:clamp(80px,16vh,180px);padding-bottom:56px;">
       <div data-reveal>
@@ -290,10 +290,10 @@ const vidThumb = `https://i.ytimg.com/vi/${vid}/hqdefault.jpg`;
       </div>
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;" class="cols-3" data-reveal>
         {cases.map((c) => (
-          <div class="tile" style="display:flex;flex-direction:column;">
-            <div style="height:150px;background:var(--surface-2);background-image:repeating-linear-gradient(135deg,rgba(255,255,255,0.04) 0 10px,transparent 10px 20px);display:flex;align-items:flex-end;padding:16px;position:relative;border-bottom:1px solid var(--line);">
-              <span class="faint" style="position:absolute;top:14px;left:16px;font-family:var(--mono);font-size:10px;letter-spacing:0.06em;">[ {c.imgLabel} ]</span>
-              <span class="eyebrow" style="font-size:10px;">{c.scope}</span>
+          <a href={url(c.href)} class="tile tile--link" style="display:flex;flex-direction:column;">
+            <div class="cine" style="height:170px;display:flex;align-items:flex-end;padding:16px;border-bottom:1px solid var(--line);">
+              <img src={url(c.img)} alt={c.client} />
+              <span class="eyebrow" style="position:relative;font-size:10px;">{c.scope}</span>
             </div>
             <div style="padding:26px;flex:1;display:flex;flex-direction:column;">
               <h3 class="h-card" style="font-size:19px;margin-bottom:4px;color:var(--text);">{c.client}</h3>
@@ -304,7 +304,7 @@ const vidThumb = `https://i.ytimg.com/vi/${vid}/hqdefault.jpg`;
                 <div style="font-size:12.5px;color:var(--text-dim);margin-top:5px;">{c.metricL}</div>
               </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
       <div style="margin-top:36px;"><a href={url('/case-studies/')} style="font-family:var(--mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);">See all case studies →</a></div>

@@ -48,8 +48,8 @@ const stats = [
       <div style="display:flex;flex-direction:column;gap:24px;">
         {featured.map((c) => (
           <a href={url('/case-studies/' + c.slug + '/')} class="tile tile--link" data-reveal style="display:grid;grid-template-columns:1fr 1.25fr;gap:0;background:var(--surface);">
-            <div class="cine" style="min-height:280px;border-right:1px solid var(--line);display:flex;align-items:flex-end;padding:24px;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,0.035) 0 11px,transparent 11px 22px);">
-              <span class="faint" style="position:absolute;top:20px;left:24px;font-family:var(--mono);font-size:10px;letter-spacing:0.06em;">[ field image — {c.client} ]</span>
+            <div class="cine" style="min-height:280px;border-right:1px solid var(--line);display:flex;align-items:flex-end;padding:24px;">
+              {c.img && <img src={url(c.img)} alt={c.client} />}
               <span class="eyebrow" style="position:relative;font-size:10px;">{c.scope.join(' · ')}</span>
             </div>
             <div style="padding:36px;display:flex;flex-direction:column;">
