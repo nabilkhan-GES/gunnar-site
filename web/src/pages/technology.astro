@@ -3,19 +3,17 @@ import Layout from '../layouts/Layout.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import { url } from '../lib/links.js';
+import { technology } from '../data/technology.js';
 
-const methods = [
-  { type: 'ACTIVE · WHILE DRILLING', name: 'DeadAhead™', sub: 'Wired-pipe AMR-WD', desc: 'Wired drillpipe delivers continuous ranging while drilling — no wireline trips. 18× the power of wireline AMR for an earlier, stronger locate. The world\'s first commercial wired-pipe deployment.', tags: ['Relief wells', 'Blowout intercept', 'Continuous locate'], specs: [{ k: 'RANGE', v: 'up to 450 ft' }, { k: 'BEST FOR', v: 'Relief wells' }, { k: 'STATUS', v: 'Patented (US 11,781,421 B2)' }] },
-  { type: 'ACTIVE · WIRELINE', name: 'DeadSet™', sub: 'No-access wireline AMR', desc: 'All-in-one no-access active ranging system combining AMR, PMR and gyro. Injects current to magnetize the target casing, locating it to ±1 ft. Deployable on short notice and remotely.', tags: ['P&A', 'Relief wells', '±1 ft accuracy'], specs: [{ k: 'RANGE', v: '100–300 ft' }, { k: 'RATING', v: '175°C' }, { k: 'BEST FOR', v: 'P&A, relief wells' }] },
-  { type: 'WHILE DRILLING · COILED TUBING', name: 'CTRWD™', sub: 'Coiled-tubing RWD', desc: 'First-of-its-kind magnet source and sensor on a 3.5" coiled-tubing BHA. Deploys under pressure with continuous well-control barriers, ideal for high-inclination and deep, complex abandonment where rigs struggle.', tags: ['Urban P&A', 'Under pressure', 'High-inclination'], specs: [{ k: 'RANGE', v: '~150 ft' }, { k: 'TOOL OD', v: '3.5 in' }, { k: 'BEST FOR', v: 'Deep/urban P&A' }] },
-  { type: 'ACTIVE · MAGNETIC SOURCE', name: 'Torped™', sub: 'Rotating magnet source', desc: 'Downhole rotary magnet generates a strong active magnetic field for ranging — well-suited to intersection and twinning applications at range, including SAGD and geothermal.', tags: ['SAGD twinning', 'Geothermal', 'Intersection'], specs: [{ k: 'RANGE', v: '~300 ft' }, { k: 'TYPE', v: 'Active source' }, { k: 'BEST FOR', v: 'Twinning/intersect' }] },
-  { type: 'PASSIVE', name: 'EverReady™', sub: 'AI-driven passive ranging', desc: 'Non-intrusive passive ranging from existing MWD/GWD survey data — no extra rig time or new tools. Fully remote, AI-driven interpretation with proprietary interference processing.', tags: ['Collision avoidance', 'SAGD', 'No extra rig time'], specs: [{ k: 'RANGE', v: '~30 ft' }, { k: 'TYPE', v: 'Passive / remote' }, { k: 'BEST FOR', v: 'Avoidance, spacing' }] },
-];
+const specOf = (t, k) => (t.specs.find((s) => s.k === k) || {}).v || '';
+const methods = technology.filter((t) => t.kind === 'hardware');
+// Software trio: the two pure-software tools plus EverReady's AI interpretation.
 const software = [
-  { tag: 'AI · RANGING & INTERPRETATION', name: 'TopGun™', desc: 'Web-based suite for automated ranging analysis, 3D visualization and real-time decision support — with a GPT-driven interpretation layer. The only commercial end-to-end ranging software in the industry.' },
-  { tag: 'INTERCEPT & MILLING', name: 'ClearCut™', desc: 'Precision milling simulation that turns intercept geometry into real-world milling parameters — reducing rig time and operational risk at the point of contact.' },
-  { tag: 'AI-DRIVEN PASSIVE RANGING', name: 'EverReady™ Software', desc: 'Non-intrusive ranging interpretation from existing survey data — fully remote, AI-driven, with proprietary interference processing for collision avoidance and spacing.' },
+  technology.find((t) => t.slug === 'topgun'),
+  technology.find((t) => t.slug === 'clearcut'),
+  { ...technology.find((t) => t.slug === 'everready'), softwareLabel: 'AI-Driven Passive Ranging', softwareDesc: 'Non-intrusive ranging interpretation from existing survey data — fully remote, AI-driven, with proprietary interference processing.' },
 ];
+
 const compare = [
   { from: '~46 days', fromL: 'Wireline AMR', to: '~32 days', toL: 'AMR-while-drilling' },
   { from: '20+ runs', fromL: 'Wireline AMR', to: '4 runs', toL: 'AMR-while-drilling' },
@@ -25,78 +23,79 @@ const compare = [
 <Layout title="Technology — Magnetic Ranging Hardware & Software | Gunnar Energy Services" description="DeadAhead™, DeadSet™, CTRWD™, Torped™ and EverReady™ ranging methods, driven by TopGun™ — the only commercial end-to-end ranging software in the industry.">
   <SiteHeader />
 
-  <section style="background:#0f2240;color:#eef1f6;position:relative;overflow:hidden;padding:64px 32px 70px;">
-    <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,0.045) 1px,transparent 1px);background-size:28px 28px;opacity:0.6;"></div>
-    <div style="position:absolute;top:-180px;right:-140px;width:520px;height:520px;border-radius:50%;border:1px solid rgba(254,238,0,0.14);"></div>
-    <div style="max-width:1240px;margin:0 auto;position:relative;">
-      <div style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:0.08em;color:#8493ac;margin-bottom:24px;"><a href={url('/')} style="color:#8493ac;">Home</a> &nbsp;/&nbsp; <span style="color:#feee00;">Technology</span></div>
-      <div style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:0.18em;color:#feee00;margin-bottom:18px;">PROPRIETARY · PATENTED · IN-HOUSE R&amp;D</div>
-      <h1 style="font-family:'Archivo',sans-serif;font-weight:900;font-size:54px;line-height:1.02;letter-spacing:-0.025em;margin:0 0 22px;max-width:20ch;">A complete ranging arsenal. One software brain.</h1>
-      <p style="font-size:19px;line-height:1.55;color:#c3cee0;max-width:64ch;margin:0 0 8px;">Gunnar builds, owns and operates its entire ranging toolset — hardware and software. Each method is matched to a well's specific geometry, access and risk profile, then driven by the only commercial end-to-end ranging software in the industry.</p>
+  <!-- HERO -->
+  <section class="dotgrid" style="background:var(--ground-2);border-bottom:1px solid var(--line);">
+    <div class="wrap" style="padding-top:clamp(56px,10vh,110px);padding-bottom:clamp(56px,10vh,110px);">
+      <div style="font-family:var(--mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-faint);margin-bottom:26px;">
+        <a href={url('/')} style="color:var(--text-faint);">Home</a> &nbsp;/&nbsp; <span style="color:var(--accent);">Technology</span>
+      </div>
+      <div class="kicker-row" style="margin-bottom:24px;"><span class="eyebrow">Proprietary · Patented · In-house R&amp;D</span></div>
+      <h1 class="display d-xl" data-reveal style="max-width:18ch;">A complete ranging arsenal. One software brain.</h1>
+      <p class="lede" data-reveal style="max-width:64ch;margin-top:24px;">Gunnar builds, owns and operates its entire ranging toolset — hardware and software. Each method is matched to a well's specific geometry, access and risk profile, then driven by the only commercial end-to-end ranging software in the industry.</p>
     </div>
   </section>
 
-  <section style="padding:72px 32px;background:#eef1f6;">
-    <div style="max-width:1240px;margin:0 auto;">
-      <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#1b355e;margin-bottom:14px;">RANGING METHODS</div>
-      <h2 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:34px;letter-spacing:-0.02em;margin:0 0 32px;">Hardware, matched to the well.</h2>
-      {methods.map((m) => (
-        <div style="background:#fff;border:1px solid #d9dfe9;padding:30px;margin-bottom:16px;display:grid;grid-template-columns:0.85fr 1.6fr 0.9fr;gap:32px;align-items:start;">
-          <div>
-            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;color:#1b355e;margin-bottom:8px;">{m.type}</div>
-            <h3 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:26px;margin:0 0 6px;color:#0f2240;">{m.name}</h3>
-            <div style="font-size:13px;color:#8493ac;">{m.sub}</div>
-          </div>
-          <div>
-            <p style="font-size:15px;line-height:1.6;color:#454c52;margin:0 0 12px;">{m.desc}</p>
-            <div style="display:flex;flex-wrap:wrap;gap:8px;">
-              {m.tags.map((t) => <span style="font-size:11.5px;font-family:'IBM Plex Mono',monospace;color:#1b355e;background:#eef1f6;border:1px solid #d9dfe9;padding:4px 9px;border-radius:2px;">{t}</span>)}
+  <!-- RANGING METHODS -->
+  <section class="section">
+    <div class="wrap">
+      <div class="kicker-row" data-reveal style="margin-bottom:40px;"><span class="eyebrow">Ranging methods · Hardware</span></div>
+      <div class="hgrid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));" data-reveal>
+        {methods.map((m) => (
+          <a href={url('/technology/' + m.slug + '/')} class="tile tile--link" style="padding:30px 26px;background:var(--ground);display:flex;flex-direction:column;">
+            <div class="eyebrow eyebrow--dim" style="margin-bottom:14px;">{m.type}</div>
+            <h3 class="h-card" style="font-size:24px;color:var(--accent);margin-bottom:12px;">{m.name}</h3>
+            <p style="font-size:13.5px;line-height:1.6;color:var(--text-dim);margin:0 0 20px;flex:1;">{m.tagline}</p>
+            <div style="border-top:1px solid var(--line);padding-top:14px;font-size:12px;">
+              <div style="display:flex;justify-content:space-between;margin-bottom:7px;"><span class="faint" style="font-family:var(--mono);letter-spacing:0.06em;">RANGE</span><span style="color:var(--text);font-weight:600;">{specOf(m, 'Range')}</span></div>
+              <div style="display:flex;justify-content:space-between;gap:10px;"><span class="faint" style="font-family:var(--mono);letter-spacing:0.06em;">BEST FOR</span><span style="color:var(--text-dim);text-align:right;">{specOf(m, 'Best for')}</span></div>
             </div>
-          </div>
-          <div style="border-left:1px solid #e7ebf2;padding-left:24px;">
-            {m.specs.map((sp) => (
-              <div style="margin-bottom:12px;"><div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.1em;color:#8493ac;margin-bottom:3px;">{sp.k}</div><div style="font-size:14px;font-weight:600;color:#0f2240;">{sp.v}</div></div>
-            ))}
-          </div>
-        </div>
-      ))}
+            <span style="margin-top:16px;font-family:var(--mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);">View tool →</span>
+          </a>
+        ))}
+      </div>
     </div>
   </section>
 
-  <section style="padding:80px 32px;background:#0f2240;color:#eef1f6;">
-    <div style="max-width:1240px;margin:0 auto;">
-      <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#feee00;margin-bottom:14px;">SOFTWARE &amp; AI</div>
-      <h2 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:34px;letter-spacing:-0.02em;margin:0 0 12px;color:#eef1f6;">The brain behind every intercept.</h2>
-      <p style="font-size:17px;color:#c3cee0;max-width:62ch;margin:0 0 36px;">TopGun™ is the only commercial end-to-end ranging software in the industry — turning raw magnetic data into real-time intercept decisions.</p>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.12);">
+  <!-- SOFTWARE -->
+  <section class="section" style="background:var(--ground-2);border-top:1px solid var(--line);">
+    <div class="wrap">
+      <div data-reveal style="max-width:62ch;margin-bottom:44px;">
+        <div class="kicker-row" style="margin-bottom:24px;"><span class="eyebrow">Software &amp; AI</span></div>
+        <h2 class="display d-l">The brain behind every intercept.</h2>
+        <p class="lede" style="margin-top:20px;">TopGun™ turns raw magnetic data into real-time intercept decisions — the connective tissue that lets one team run engineering, ranging and steering as a single loop.</p>
+      </div>
+      <div class="hgrid" style="grid-template-columns:repeat(3,1fr);" data-reveal>
         {software.map((sw) => (
-          <div style="background:#0f2240;padding:30px 26px;">
-            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.12em;color:#feee00;margin-bottom:10px;">{sw.tag}</div>
-            <h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:22px;margin:0 0 12px;color:#eef1f6;">{sw.name}</h3>
-            <p style="font-size:14px;color:#c3cee0;line-height:1.6;margin:0;">{sw.desc}</p>
-          </div>
+          <a href={url('/technology/' + sw.slug + '/')} class="tile tile--link" style="padding:30px 26px;background:var(--ground);">
+            <div class="eyebrow" style="margin-bottom:12px;">{sw.softwareLabel || sw.type.replace('Software · ', '')}</div>
+            <h3 class="h-card" style="font-size:22px;color:var(--text);margin-bottom:12px;">{sw.name}</h3>
+            <p style="font-size:13.5px;line-height:1.6;color:var(--text-dim);margin:0 0 18px;">{sw.softwareDesc || sw.summary}</p>
+            <span style="font-family:var(--mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);">Learn more →</span>
+          </a>
         ))}
       </div>
     </div>
   </section>
 
-  <section style="padding:80px 32px;background:#fff;border-bottom:1px solid #d9dfe9;">
-    <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;">
-      <div>
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.18em;color:#1b355e;margin-bottom:14px;">FLAGSHIP INNOVATION</div>
-        <h2 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:32px;letter-spacing:-0.02em;line-height:1.1;margin:0 0 18px;">DeadAhead™ — the world's first commercial wired-pipe ranging-while-drilling system.</h2>
-        <p style="font-size:16px;line-height:1.65;color:#454c52;margin:0 0 16px;">Continuous ranging from the bottom-hole assembly with no wireline trips, delivering 18× the power of traditional wireline AMR — an earlier locate, stronger signal and zero re-entry runs.</p>
-        <p style="font-size:13px;color:#8493ac;line-height:1.55;margin:0;font-style:italic;">U.S. Patent 11,781,421 B2 — reaffirmed by USPTO PTAB (2025). Co-presented at SPE/ISCWSA #62, Alaska, Sept 2025.</p>
+  <!-- DEADAHEAD FLAGSHIP -->
+  <section class="section">
+    <div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
+      <div data-reveal>
+        <div class="kicker-row" style="margin-bottom:22px;"><span class="eyebrow">Flagship innovation</span></div>
+        <h2 class="display d-m" style="margin-bottom:22px;">DeadAhead™ — the world's first commercial wired-pipe ranging-while-drilling system.</h2>
+        <p style="font-size:16px;line-height:1.7;color:var(--text-dim);margin:0 0 20px;">Continuous ranging from the bottom-hole assembly with no wireline trips, delivering 18× the power of traditional wireline AMR — an earlier locate, stronger signal and zero re-entry runs.</p>
+        <a href={url('/technology/deadahead/')} style="font-family:var(--mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);">Explore DeadAhead™ →</a>
       </div>
-      <div style="background:#f5f7fb;border:1px solid #d9dfe9;padding:34px;">
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;color:#0f2240;font-weight:600;margin-bottom:22px;">WIRELINE AMR vs. AMR-WHILE-DRILLING</div>
+      <div class="tile" data-reveal style="padding:36px;background:var(--surface);">
+        <div class="eyebrow eyebrow--dim" style="margin-bottom:24px;">Wireline AMR vs. AMR-while-drilling</div>
         {compare.map((c) => (
-          <div style="display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center;padding:15px 0;border-top:1px solid #e7ebf2;">
-            <div><div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:21px;color:#8493ac;">{c.from}</div><div style="font-size:11px;color:#8493ac;">{c.fromL}</div></div>
-            <div style="font-family:'IBM Plex Mono',monospace;color:#1b355e;font-size:18px;">→</div>
-            <div><div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:21px;color:#0f2240;">{c.to}</div><div style="font-size:11px;color:#5f676e;">{c.toL}</div></div>
+          <div style="display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:center;padding:15px 0;border-top:1px solid var(--line);">
+            <div><div class="display" style="font-size:21px;color:var(--text-faint);">{c.from}</div><div class="faint" style="font-size:11px;">{c.fromL}</div></div>
+            <div style="font-family:var(--mono);color:var(--accent);font-size:16px;">→</div>
+            <div><div class="display" style="font-size:21px;color:var(--text);">{c.to}</div><div style="font-size:11px;color:var(--text-dim);">{c.toL}</div></div>
           </div>
         ))}
+        <p class="faint" style="font-size:11.5px;line-height:1.6;font-style:italic;margin:20px 0 0;">U.S. Patent 11,781,421 B2 — reaffirmed by USPTO PTAB (2025). Co-presented at SPE/ISCWSA #62, Alaska, Sept 2025.</p>
       </div>
     </div>
   </section>

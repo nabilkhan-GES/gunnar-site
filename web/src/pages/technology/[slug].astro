@@ -1,0 +1,105 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SiteHeader from '../../components/SiteHeader.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
+import { url } from '../../lib/links.js';
+import { technology } from '../../data/technology.js';
+
+export async function getStaticPaths() {
+  return technology.map((t) => ({ params: { slug: t.slug }, props: { t } }));
+}
+
+const { t } = Astro.props;
+// "Up next" — the other tools, for cross-navigation.
+const others = technology.filter((x) => x.slug !== t.slug);
+---
+<Layout title={`${t.name} — ${t.type} | Gunnar Energy Services`} description={t.summary}>
+  <SiteHeader />
+
+  <!-- HERO -->
+  <section class="dotgrid" style="background:var(--ground-2);border-bottom:1px solid var(--line);">
+    <div class="wrap" style="padding-top:clamp(48px,9vh,96px);padding-bottom:clamp(48px,9vh,96px);">
+      <div style="font-family:var(--mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-faint);margin-bottom:26px;">
+        <a href={url('/')} style="color:var(--text-faint);">Home</a> &nbsp;/&nbsp;
+        <a href={url('/technology/')} style="color:var(--text-faint);">Technology</a> &nbsp;/&nbsp;
+        <span style="color:var(--accent);">{t.name}</span>
+      </div>
+      <div class="kicker-row" style="margin-bottom:24px;"><span class="eyebrow">{t.type}</span></div>
+      <h1 class="display d-xl" data-reveal style="font-size:clamp(40px,7vw,92px);">{t.name}</h1>
+      <p class="lede" data-reveal style="max-width:60ch;margin-top:24px;color:var(--text);">{t.tagline}</p>
+      <div style="margin-top:36px;display:flex;gap:14px;flex-wrap:wrap;">
+        <a href={url('/contact/')} class="btn btn-primary">Talk to a ranging engineer</a>
+        <a href={url('/technology/')} class="btn btn-ghost">All technology →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW + SPECS -->
+  <section class="section">
+    <div class="wrap" style="display:grid;grid-template-columns:1.4fr 1fr;gap:64px;align-items:start;">
+      <div data-reveal>
+        <div class="kicker-row" style="margin-bottom:24px;"><span class="eyebrow">How it works</span></div>
+        <p class="lede" style="color:var(--text);margin:0 0 26px;">{t.summary}</p>
+        {t.overview.map((p) => (
+          <p style="font-size:16px;line-height:1.75;color:var(--text-dim);margin:0 0 20px;">{p}</p>
+        ))}
+        {t.footnote && (
+          <p class="faint" style="font-size:12.5px;line-height:1.6;font-style:italic;margin:8px 0 0;">{t.footnote}</p>
+        )}
+      </div>
+      <aside data-reveal>
+        <div class="tile" style="background:var(--surface);padding:30px;">
+          <div class="eyebrow eyebrow--dim" style="margin-bottom:18px;">Specifications</div>
+          {t.specs.map((s) => (
+            <div style="display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-top:1px solid var(--line);">
+              <span class="faint" style="font-family:var(--mono);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;">{s.k}</span>
+              <span style="font-size:14px;font-weight:600;color:var(--text);text-align:right;">{s.v}</span>
+            </div>
+          ))}
+        </div>
+        <div style="border:1px solid rgba(254,238,0,0.32);background:rgba(254,238,0,0.04);padding:22px 24px;margin-top:18px;">
+          <div class="eyebrow" style="margin-bottom:10px;">{t.kind === 'software' ? 'Part of the stack' : 'Driven by software'}</div>
+          <p style="font-size:13.5px;line-height:1.6;color:var(--text-dim);margin:0;">
+            {t.kind === 'software'
+              ? 'Works across every Gunnar ranging method as one connected loop.'
+              : 'Interpreted in real time by TopGun™ — automated analysis, 3D visualization and decision support.'}
+          </p>
+          <a href={url('/technology/topgun/')} style="display:inline-block;margin-top:12px;font-family:var(--mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);">Explore TopGun™ →</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- WHERE IT'S USED -->
+  <section class="section" style="background:var(--ground-2);border-top:1px solid var(--line);">
+    <div class="wrap">
+      <div class="kicker-row" data-reveal style="margin-bottom:36px;"><span class="eyebrow">Where it's deployed</span></div>
+      <div class="hgrid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));" data-reveal>
+        {t.appliedTo.map((a) => (
+          <a href={url(a.href)} class="tile tile--link" style="padding:28px 26px;display:flex;align-items:center;justify-content:space-between;gap:16px;background:var(--ground);">
+            <span class="h-card" style="font-size:17px;color:var(--text);">{a.t}</span>
+            <span style="color:var(--accent);font-family:var(--mono);">→</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- UP NEXT -->
+  <section class="section">
+    <div class="wrap">
+      <div class="kicker-row" data-reveal style="margin-bottom:36px;"><span class="eyebrow">The rest of the arsenal</span></div>
+      <div class="hgrid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));" data-reveal>
+        {others.map((o) => (
+          <a href={url('/technology/' + o.slug + '/')} class="tile tile--link" style="padding:26px 24px;background:var(--ground);">
+            <div class="eyebrow eyebrow--dim" style="margin-bottom:10px;">{o.type}</div>
+            <div class="h-card" style="font-size:20px;color:var(--accent);margin-bottom:8px;">{o.name}</div>
+            <p style="font-size:13px;line-height:1.55;color:var(--text-dim);margin:0;">{o.tagline}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <SiteFooter />
+</Layout>
