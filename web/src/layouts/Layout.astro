@@ -22,12 +22,26 @@ const {
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0A0C0F" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
-    <div style="background:#eef1f6;color:#272d33;font-family:'Libre Franklin',-apple-system,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.5;">
-      <slot />
-    </div>
+    <slot />
+    <script>
+      // One quiet orchestrated moment: sections rise in as they enter view.
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const els = document.querySelectorAll('[data-reveal]');
+      if (reduce || !('IntersectionObserver' in window)) {
+        els.forEach((el) => el.classList.add('in'));
+      } else {
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+        els.forEach((el) => io.observe(el));
+      }
+    </script>
   </body>
 </html>

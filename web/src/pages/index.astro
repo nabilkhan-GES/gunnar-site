@@ -6,27 +6,27 @@ import { url } from '../lib/links.js';
 
 const stats = [
   { n: '100%', l: 'intercept success rate' },
-  { n: '40+', l: 'projects, 6 countries' },
+  { n: '40+', l: 'projects · 6 countries' },
   { n: '18×', l: 'ranging power vs. wireline' },
   { n: '1 call', l: 'engineering to abandonment' },
 ];
 const logos = ['ExxonMobil', 'Chevron', 'Occidental', 'Woodside', 'Expand Energy', 'SoCalGas', 'Cenovus', 'Devon'];
 
 const pillars = [
-  { k: 'PLAN IT', t: 'Engineering', items: ['Complex P&A & relief well planning', 'Wellbore intercept feasibility studies', 'Ranging signal modeling & survey integration', 'Regulatory & risk documentation'] },
-  { k: 'BUILD IT', t: 'Technology', items: ['DeadAhead™ wired-pipe AMR-While-Drilling', 'DeadSet™ wireline active ranging', 'CTRWD™ coiled-tubing ranging', 'TopGun™ AI interpretation software'] },
-  { k: 'EXECUTE IT', t: 'Field Operations', items: ['Relief well drilling & blowout intercept', 'Well kill & well control', 'Outside-in milling & re-entry', 'Regulator-witnessed permanent P&A'] },
+  { k: '01', t: 'Engineering', tag: 'Plan it', items: ['Complex P&A & relief well planning', 'Wellbore intercept feasibility studies', 'Ranging signal modeling & survey integration', 'Regulatory & risk documentation'] },
+  { k: '02', t: 'Technology', tag: 'Build it', items: ['DeadAhead™ wired-pipe AMR-While-Drilling', 'DeadSet™ wireline active ranging', 'CTRWD™ coiled-tubing ranging', 'TopGun™ AI interpretation software'] },
+  { k: '03', t: 'Field Operations', tag: 'Execute it', items: ['Relief well drilling & blowout intercept', 'Well kill & well control', 'Outside-in milling & re-entry', 'Regulator-witnessed permanent P&A'] },
 ];
 
 const services = [
-  { tag: 'WELL CONTROL', kw: 'Relief Well & Blowout Intercept', desc: 'Deterministic intercept and kill when surface control has failed.', cta: 'Emergency response', href: '/services/relief-wells/' },
+  { tag: 'Well Control', kw: 'Relief Well & Blowout Intercept', desc: 'Deterministic intercept and kill when surface control has failed.', cta: 'Emergency response', href: '/services/relief-wells/' },
   { tag: 'P&A', kw: 'Plug & Abandonment', desc: 'No-access ranging that seals complex and legacy wells — cutting rig time up to 50%.', cta: 'Reduce P&A cost', href: '/services/plug-and-abandonment/' },
-  { tag: 'RANGING', kw: 'Active Magnetic Ranging', desc: 'The only proven way to deterministically locate and intercept a target wellbore.', cta: 'See methods', href: '/technology/' },
-  { tag: 'INTERVENTION', kw: 'Well Re-Entry & Milling', desc: 'Outside-in milling and re-entry of damaged casing, stuck packers and lost-access wells.', cta: 'Learn more', href: '/services/well-re-entry/' },
-  { tag: 'ENERGY TRANSITION', kw: 'Geothermal Well Placement', desc: 'Precise intersection and closed-loop connection for next-generation geothermal.', cta: 'Explore', href: '/services/geothermal/' },
-  { tag: 'ENERGY TRANSITION', kw: 'CCUS Well Integrity', desc: 'Wellbore placement and integrity assurance for carbon capture and storage.', cta: 'Explore', href: '/services/ccus/' },
-  { tag: 'MINING', kw: 'Solution Mining Connections', desc: 'Wellbore intercept for potash, lithium and uranium recovery.', cta: 'Learn more', href: '/services/solution-mining/' },
-  { tag: 'UNCONVENTIONAL', kw: 'SAGD & CSG Twinning', desc: 'Precise well twinning, spacing and intercept for enhanced unconventional production.', cta: 'Learn more', href: '/services/' },
+  { tag: 'Ranging', kw: 'Active Magnetic Ranging', desc: 'The only proven way to deterministically locate and intercept a target wellbore.', cta: 'See methods', href: '/technology/' },
+  { tag: 'Intervention', kw: 'Well Re-Entry & Milling', desc: 'Outside-in milling and re-entry of damaged casing, stuck packers and lost-access wells.', cta: 'Learn more', href: '/services/well-re-entry/' },
+  { tag: 'Energy Transition', kw: 'Geothermal Well Placement', desc: 'Precise intersection and closed-loop connection for next-generation geothermal.', cta: 'Explore', href: '/services/geothermal/' },
+  { tag: 'Energy Transition', kw: 'CCUS Well Integrity', desc: 'Wellbore placement and integrity assurance for carbon capture and storage.', cta: 'Explore', href: '/services/ccus/' },
+  { tag: 'Mining', kw: 'Solution Mining Connections', desc: 'Wellbore intercept for potash, lithium and uranium recovery.', cta: 'Learn more', href: '/services/solution-mining/' },
+  { tag: 'Unconventional', kw: 'SAGD & CSG Twinning', desc: 'Precise well twinning, spacing and intercept for enhanced unconventional production.', cta: 'Learn more', href: '/services/' },
 ];
 
 const rangingUses = [
@@ -36,16 +36,16 @@ const rangingUses = [
 ];
 
 const methods = [
-  { type: 'ACTIVE · WHILE DRILLING', name: 'DeadAhead™', desc: 'Wired drillpipe for continuous ranging while drilling. 18× more power than wireline. World-first commercial deployment.', range: 'up to 450 ft', best: 'Relief wells, blowout intercepts' },
-  { type: 'ACTIVE · WIRELINE', name: 'DeadSet™', desc: 'All-in-one wireline system: AMR + PMR + gyro, rated to 175°C.', range: '100–300 ft', best: 'Relief wells, P&A' },
-  { type: 'WHILE DRILLING · COILED TUBING', name: 'CTRWD™', desc: 'First-of-its-kind magnet source + sensor on a coiled-tubing BHA. Ideal where a rig won\'t fit.', range: '~150 ft', best: 'Shallow / urban P&A, ghost wells' },
-  { type: 'MAGNETIC SOURCE', name: 'Torped™', desc: 'Downhole rotary magnet generates a strong active field for ranging.', range: '~300 ft', best: 'SAGD twinning, CSG intercept' },
-  { type: 'PASSIVE', name: 'EverReady™ PMR', desc: 'Uses existing MWD/GWD data — no extra rig time, no new tools.', range: '~30 ft', best: 'Collision avoidance, SAGD' },
+  { type: 'Active · While Drilling', name: 'DeadAhead™', desc: 'Wired drillpipe for continuous ranging while drilling. 18× more power than wireline. World-first commercial deployment.', range: 'up to 450 ft', best: 'Relief wells, blowout intercepts' },
+  { type: 'Active · Wireline', name: 'DeadSet™', desc: 'All-in-one wireline system: AMR + PMR + gyro, rated to 175°C.', range: '100–300 ft', best: 'Relief wells, P&A' },
+  { type: 'While Drilling · Coiled Tubing', name: 'CTRWD™', desc: 'First-of-its-kind magnet source + sensor on a coiled-tubing BHA. Ideal where a rig won\'t fit.', range: '~150 ft', best: 'Shallow / urban P&A, ghost wells' },
+  { type: 'Magnetic Source', name: 'Torped™', desc: 'Downhole rotary magnet generates a strong active field for ranging.', range: '~300 ft', best: 'SAGD twinning, CSG intercept' },
+  { type: 'Passive', name: 'EverReady™ PMR', desc: 'Uses existing MWD/GWD data — no extra rig time, no new tools.', range: '~30 ft', best: 'Collision avoidance, SAGD' },
 ];
 const software = [
-  { tag: 'AI · RANGING & INTERPRETATION', name: 'TopGun™', desc: 'Web-based suite for automated ranging analysis, 3D visualization and real-time decision support, with a GPT-driven interpretation layer.' },
-  { tag: 'INTERCEPT & MILLING', name: 'ClearCut™', desc: 'Precision milling simulation that turns intercept geometry into real-world milling parameters — reducing rig time and operational risk.' },
-  { tag: 'AI-DRIVEN PASSIVE RANGING', name: 'EverReady™ Software', desc: 'Non-intrusive ranging from existing MWD/GWD data — fully remote, AI-driven interpretation with proprietary interference processing.' },
+  { tag: 'AI · Ranging & Interpretation', name: 'TopGun™', desc: 'Web-based suite for automated ranging analysis, 3D visualization and real-time decision support, with a GPT-driven interpretation layer.' },
+  { tag: 'Intercept & Milling', name: 'ClearCut™', desc: 'Precision milling simulation that turns intercept geometry into real-world milling parameters — reducing rig time and operational risk.' },
+  { tag: 'AI-Driven Passive Ranging', name: 'EverReady™ Software', desc: 'Non-intrusive ranging from existing MWD/GWD data — fully remote, AI-driven interpretation with proprietary interference processing.' },
 ];
 
 const deadAhead = [
@@ -55,9 +55,9 @@ const deadAhead = [
 ];
 
 const cases = [
-  { imgLabel: 'INTERCEPT OPS', scope: 'INTERCEPT · KILL · P&A · REGULATOR-WITNESSED', client: 'ExxonMobil', loc: 'North Dakota · 2025', body: 'Tubing parted at ~1,000 ft with only a 10 ft window below a stuck packer. DeadAhead™ held 5–10 ft separation over 5,500 ft of continuous ranging — the world\'s first commercial wired-pipe AMR-WD deployment.', metric: '8,642 ft MD', metricL: 'intercepted at exact planned depth · ~$2M saved' },
-  { imgLabel: 'BLOWOUT INTERVENTION', scope: 'BLOWOUT · WELL KILL · P&A', client: 'Expand Energy', loc: 'Louisiana · 2025', body: 'An unpermitted 1950s-era legacy well leaked 5,000 bbl/day for 116 days of failed surface intervention. CTRWD™ coiled-tubing ranging located and intercepted the unknown geometry at 1,068 ft MD.', metric: '15 days', metricL: 'to well control vs. 116 days of surface attempts' },
-  { imgLabel: 'RELIEF WELL P&A', scope: 'RELIEF WELL P&A · DUAL INTERCEPT', client: 'SoCalGas — Aliso Canyon', loc: 'California · 2020–ongoing', body: 'Relief-well P&A of 1950s-era wells at the site of the largest gas blowout in U.S. history. DeadSet™ AMR and EverReady™ PMR overcame missing surveys and a parasite sidetrack.', metric: '8 intercepts', metricL: 'across a 4-well campaign · regulator-approved' },
+  { imgLabel: 'Intercept Ops', scope: 'Intercept · Kill · P&A', client: 'ExxonMobil', loc: 'North Dakota · 2025', body: 'Tubing parted at ~1,000 ft with only a 10 ft window below a stuck packer. DeadAhead™ held 5–10 ft separation over 5,500 ft of continuous ranging — the world\'s first commercial wired-pipe AMR-WD deployment.', metric: '8,642 ft MD', metricL: 'intercepted at exact planned depth · ~$2M saved' },
+  { imgLabel: 'Blowout Intervention', scope: 'Blowout · Well Kill · P&A', client: 'Expand Energy', loc: 'Louisiana · 2025', body: 'An unpermitted 1950s-era legacy well leaked 5,000 bbl/day for 116 days of failed surface intervention. CTRWD™ coiled-tubing ranging located and intercepted the unknown geometry at 1,068 ft MD.', metric: '15 days', metricL: 'to well control vs. 116 days of surface attempts' },
+  { imgLabel: 'Relief Well P&A', scope: 'Relief Well P&A · Dual Intercept', client: 'SoCalGas — Aliso Canyon', loc: 'California · 2020–ongoing', body: 'Relief-well P&A of 1950s-era wells at the site of the largest gas blowout in U.S. history. DeadSet™ AMR and EverReady™ PMR overcame missing surveys and a parasite sidetrack.', metric: '8 intercepts', metricL: 'across a 4-well campaign · regulator-approved' },
 ];
 
 const diffs = [
@@ -84,58 +84,67 @@ const vidThumb = `https://i.ytimg.com/vi/${vid}/hqdefault.jpg`;
   <SiteHeader />
 
   <!-- HERO -->
-  <section id="top" style="background:#0f2240;color:#eef1f6;position:relative;overflow:hidden;">
-    <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,0.045) 1px,transparent 1px);background-size:28px 28px;opacity:0.7;"></div>
-    <div style="position:absolute;top:-220px;right:-180px;width:620px;height:620px;border-radius:50%;border:1px solid rgba(254,238,0,0.16);"></div>
-    <div style="position:absolute;top:-140px;right:-100px;width:440px;height:440px;border-radius:50%;border:1px solid rgba(254,238,0,0.12);"></div>
-    <div style="max-width:1240px;margin:0 auto;padding:72px 32px 0;position:relative;display:grid;grid-template-columns:1.15fr 0.85fr;gap:56px;align-items:center;">
-      <div style="padding-bottom:64px;">
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:0.18em;color:#feee00;margin-bottom:22px;">RELIEF WELLS · MAGNETIC RANGING · WELLBORE INTERCEPT</div>
-        <h1 style="font-family:'Archivo',sans-serif;font-weight:900;font-size:60px;line-height:1.0;letter-spacing:-0.025em;margin:0 0 24px;">Built for the wells<br>no one else can save.</h1>
-        <p style="font-size:19px;line-height:1.55;color:#c3cee0;max-width:54ch;margin:0 0 34px;">Gunnar is the independent specialist in active magnetic ranging and wellbore intercept — delivering relief wells, blowout kills, complex plug &amp; abandonment, and energy-transition placement. Engineering, ranging, drilling, milling, kill and cement: <strong style="color:#eef1f6;">one accountable team, one call.</strong></p>
-        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-bottom:42px;">
-          <a href="#contact" style="background:#feee00;color:#0a1626;font-weight:700;font-size:15px;padding:15px 26px;border-radius:3px;">Request a feasibility review</a>
-          <a href="#cases" style="border:1px solid rgba(255,255,255,0.28);color:#eef1f6;font-weight:600;font-size:15px;padding:15px 26px;border-radius:3px;">See the case studies →</a>
+  <section class="dotgrid" style="position:relative;background:var(--ground-2);overflow:hidden;min-height:90vh;display:flex;align-items:flex-end;">
+    <div class="cine" style="position:absolute;inset:0;">
+      <img src={url('/assets/hero.png')} alt="Magnetic ranging intercept — a drilling well steering to a target wellbore" />
+    </div>
+    <div class="wrap" style="position:relative;padding-top:clamp(80px,16vh,180px);padding-bottom:56px;">
+      <div data-reveal>
+        <div class="kicker-row" style="margin-bottom:28px;"><span class="eyebrow">Relief Wells · Magnetic Ranging · Wellbore Intercept</span></div>
+        <h1 class="display d-xl" style="max-width:16ch;">Built for the wells no one else can save.</h1>
+        <p class="lede" style="max-width:58ch;margin:28px 0 36px;color:var(--text);">
+          The independent specialist in active magnetic ranging and wellbore intercept — relief wells, blowout kills, complex plug &amp; abandonment, and energy-transition placement. Engineering, ranging, drilling, milling, kill and cement: <strong style="color:#fff;font-weight:600;">one accountable team, one call.</strong>
+        </p>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;">
+          <a href={url('/contact/')} class="btn btn-primary">Request a feasibility review</a>
+          <a href="#cases" class="btn btn-ghost">See the case studies →</a>
         </div>
-        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.12);">
-          {stats.map((s) => (
-            <div style="background:#0f2240;padding:16px 14px;">
-              <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:24px;color:#feee00;line-height:1;">{s.n}</div>
-              <div style="font-size:11.5px;color:#8493ac;margin-top:6px;line-height:1.3;">{s.l}</div>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div style="align-self:stretch;min-height:520px;background:#0a1626;border-left:1px solid rgba(255,255,255,0.08);position:relative;overflow:hidden;">
-        <img src={url('/assets/hero.png')} alt="Magnetic ranging intercept — drilling well steering to a target wellbore" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" />
-        <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,34,64,0.55),rgba(10,22,38,0.15));"></div>
       </div>
     </div>
   </section>
 
-  <!-- LOGO TRUST BAR -->
-  <section style="background:#0a1626;border-bottom:1px solid rgba(255,255,255,0.07);">
-    <div style="max-width:1240px;margin:0 auto;padding:26px 32px;display:flex;align-items:center;gap:40px;flex-wrap:wrap;justify-content:center;">
-      <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#5b6a85;">TRUSTED ON THE HIGHEST-STAKES WELLS</span>
+  <!-- STAT STRIP -->
+  <section style="background:var(--ground-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap" style="display:grid;grid-template-columns:repeat(4,1fr);">
+      {stats.map((s, i) => (
+        <div style={`padding:26px 8px;${i ? 'border-left:1px solid var(--line);' : ''}padding-left:${i ? '28px' : '0'};`}>
+          <div class="display" style="font-size:clamp(28px,3.4vw,44px);color:var(--accent);line-height:1;">{s.n}</div>
+          <div class="faint" style="font-family:var(--mono);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;margin-top:10px;">{s.l}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section style="background:var(--ground);border-bottom:1px solid var(--line);">
+    <div class="wrap" style="display:flex;align-items:center;gap:36px;flex-wrap:wrap;justify-content:center;padding-top:24px;padding-bottom:24px;">
+      <span class="eyebrow eyebrow--dim">Trusted on the highest-stakes wells</span>
       {logos.map((g) => (
-        <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:16px;letter-spacing:0.02em;color:#6c7b96;">{g}</span>
+        <span style="font-family:var(--display-n);font-weight:700;font-size:15px;letter-spacing:0.02em;color:var(--text-faint);">{g}</span>
       ))}
     </div>
   </section>
 
   <!-- ONE CALL DOES IT ALL -->
-  <section style="padding:84px 32px;background:#eef1f6;">
-    <div style="max-width:1240px;margin:0 auto;">
-      <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#1b355e;margin-bottom:14px;">ONE CALL DOES IT ALL</div>
-      <h2 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:40px;letter-spacing:-0.02em;margin:0 0 14px;max-width:20ch;">A fully integrated solution for problematic and complex wells.</h2>
-      <p style="font-size:18px;color:#5f676e;max-width:64ch;margin:0 0 44px;">From engineering through ranging, intercept, kill and abandonment — delivered end-to-end by one accountable team. No multi-vendor handoffs, no gaps in the chain.</p>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+  <section class="section" style="background:var(--ground);">
+    <div class="wrap">
+      <div data-reveal style="max-width:60ch;margin-bottom:56px;">
+        <div class="kicker-row" style="margin-bottom:22px;"><span class="eyebrow">One call does it all</span></div>
+        <h2 class="display d-l">A fully integrated solution for problematic and complex wells.</h2>
+        <p class="lede" style="margin-top:20px;">From engineering through ranging, intercept, kill and abandonment — delivered end-to-end by one accountable team. No multi-vendor handoffs, no gaps in the chain.</p>
+      </div>
+      <div class="hgrid cols-3" style="grid-template-columns:repeat(3,1fr);" data-reveal>
         {pillars.map((p) => (
-          <div style="background:#fff;border:1px solid #d9dfe9;padding:30px;">
-            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#feee00;margin-bottom:8px;">{p.k}</div>
-            <h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:22px;margin:0 0 16px;color:#0f2240;">{p.t}</h3>
-            <ul style="margin:0;padding-left:18px;font-size:14px;line-height:1.7;color:#454c52;">
-              {p.items.map((it) => <li>{it}</li>)}
+          <div style="padding:34px 30px;">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:20px;">
+              <span class="eyebrow">{p.tag}</span>
+              <span class="display" style="font-size:24px;color:var(--line-strong);">{p.k}</span>
+            </div>
+            <h3 class="h-card" style="font-size:23px;margin-bottom:18px;">{p.t}</h3>
+            <ul style="margin:0;padding:0;list-style:none;">
+              {p.items.map((it) => (
+                <li style="font-size:14px;line-height:1.5;color:var(--text-dim);padding:9px 0;border-top:1px solid var(--line-2);display:flex;gap:10px;"><span style="color:var(--accent);">—</span>{it}</li>
+              ))}
             </ul>
           </div>
         ))}
@@ -144,22 +153,22 @@ const vidThumb = `https://i.ytimg.com/vi/${vid}/hqdefault.jpg`;
   </section>
 
   <!-- SERVICES -->
-  <section id="services" style="padding:84px 32px;background:#fff;border-top:1px solid #d9dfe9;border-bottom:1px solid #d9dfe9;">
-    <div style="max-width:1240px;margin:0 auto;">
-      <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;margin-bottom:40px;">
+  <section class="section" style="background:var(--ground-2);border-top:1px solid var(--line);" id="services">
+    <div class="wrap">
+      <div data-reveal style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;margin-bottom:48px;">
         <div>
-          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#1b355e;margin-bottom:14px;">SERVICES</div>
-          <h2 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:40px;letter-spacing:-0.02em;margin:0;">What we solve.</h2>
+          <div class="kicker-row" style="margin-bottom:22px;"><span class="eyebrow">Services</span></div>
+          <h2 class="display d-l">What we solve.</h2>
         </div>
-        <p style="font-size:15px;color:#5f676e;max-width:42ch;margin:0;">Each service is a dedicated solution — engineered, ranged and executed under one roof.</p>
+        <p class="muted" style="max-width:42ch;font-size:15px;">Each service is a dedicated solution — engineered, ranged and executed under one roof.</p>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#d9dfe9;border:1px solid #d9dfe9;">
+      <div class="hgrid cols-4" style="grid-template-columns:repeat(4,1fr);" data-reveal>
         {services.map((s) => (
-          <a href={url(s.href)} class="hov-bg-soft" style="background:#fff;padding:28px 24px;display:flex;flex-direction:column;min-height:200px;">
-            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.12em;color:#1b355e;margin-bottom:14px;">{s.tag}</div>
-            <h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:18px;line-height:1.2;margin:0 0 10px;color:#0f2240;">{s.kw}</h3>
-            <p style="font-size:13px;color:#5f676e;line-height:1.5;margin:0 0 16px;flex:1;">{s.desc}</p>
-            <span style="font-size:13px;font-weight:600;color:#1b355e;">{s.cta} →</span>
+          <a href={url(s.href)} class="tile tile--link" style="padding:30px 26px;display:flex;flex-direction:column;min-height:230px;background:var(--ground);">
+            <div class="eyebrow eyebrow--dim" style="margin-bottom:18px;">{s.tag}</div>
+            <h3 class="h-card" style="font-size:18px;margin-bottom:12px;color:var(--text);">{s.kw}</h3>
+            <p style="font-size:13px;color:var(--text-dim);line-height:1.5;margin:0 0 18px;flex:1;">{s.desc}</p>
+            <span style="font-family:var(--mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);">{s.cta} →</span>
           </a>
         ))}
       </div>
@@ -167,110 +176,105 @@ const vidThumb = `https://i.ytimg.com/vi/${vid}/hqdefault.jpg`;
   </section>
 
   <!-- WHAT IS RANGING -->
-  <section id="ranging" style="padding:88px 32px;background:#eef1f6;">
-    <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;">
-      <div>
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#1b355e;margin-bottom:14px;">WHAT IS MAGNETIC RANGING?</div>
-        <h2 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:38px;letter-spacing:-0.02em;line-height:1.08;margin:0 0 22px;">Finding one well from another — like GPS for underground wellbores.</h2>
-        <p style="font-size:16.5px;line-height:1.65;color:#3a4147;margin:0 0 18px;"><strong>Magnetic ranging is the only proven way to deterministically locate and intercept a target wellbore.</strong> After drilling, a well's exact position is only known approximately — by 10,000 ft, surveys can be off by hundreds of feet. Hitting a target by conventional means is practically impossible.</p>
-        <p style="font-size:16.5px;line-height:1.65;color:#3a4147;margin:0 0 28px;">Gunnar injects an electrical current that magnetizes the steel of a nearby target well. By measuring the strength and direction of that magnetic signal, we know exactly where the target is — and steer toward it in real time, <strong>accurate to within an inch at intercept.</strong></p>
-        <a href={url('/technology/')} style="font-size:15px;font-weight:600;color:#1b355e;">Explore our five ranging methods →</a>
+  <section class="section" style="background:var(--ground);" id="ranging">
+    <div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
+      <div data-reveal>
+        <div class="kicker-row" style="margin-bottom:22px;"><span class="eyebrow">What is magnetic ranging?</span></div>
+        <h2 class="display d-m" style="margin-bottom:24px;">Finding one well from another — like GPS for underground wellbores.</h2>
+        <p style="font-size:16px;line-height:1.7;color:var(--text-dim);margin:0 0 18px;"><strong style="color:var(--text);">Magnetic ranging is the only proven way to deterministically locate and intercept a target wellbore.</strong> After drilling, a well's exact position is only known approximately — by 10,000 ft, surveys can be off by hundreds of feet. Hitting a target by conventional means is practically impossible.</p>
+        <p style="font-size:16px;line-height:1.7;color:var(--text-dim);margin:0 0 28px;">Gunnar injects an electrical current that magnetizes the steel of a nearby target well. By measuring the strength and direction of that signal, we know exactly where the target is — and steer toward it in real time, <strong style="color:var(--text);">accurate to within an inch at intercept.</strong></p>
+        <a href={url('/technology/')} style="font-family:var(--mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);">Explore our five ranging methods →</a>
       </div>
-      <div style="background:#0f2240;color:#eef1f6;padding:34px;position:relative;overflow:hidden;">
-        <div style="position:absolute;bottom:-90px;right:-70px;width:260px;height:260px;border-radius:50%;border:1px solid rgba(254,238,0,0.18);"></div>
-        <div style="position:relative;">
-          <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#feee00;margin-bottom:22px;">WHERE RANGING IS ESSENTIAL</div>
-          {rangingUses.map((u) => (
-            <div style="display:flex;gap:16px;padding:16px 0;border-top:1px solid rgba(255,255,255,0.12);">
-              <span style="font-family:'Archivo',sans-serif;font-weight:800;font-size:18px;color:#feee00;flex:none;">{u.n}</span>
-              <div>
-                <div style="font-weight:600;font-size:15px;color:#eef1f6;margin-bottom:4px;">{u.t}</div>
-                <div style="font-size:13.5px;color:#8493ac;line-height:1.5;">{u.b}</div>
-              </div>
+      <div class="tile" data-reveal style="padding:36px;background:var(--surface);">
+        <div class="eyebrow" style="margin-bottom:24px;">Where ranging is essential</div>
+        {rangingUses.map((u) => (
+          <div style="display:flex;gap:18px;padding:18px 0;border-top:1px solid var(--line);">
+            <span class="display" style="font-size:20px;color:var(--accent);flex:none;">{u.n}</span>
+            <div>
+              <div style="font-weight:600;font-size:15px;color:var(--text);margin-bottom:5px;">{u.t}</div>
+              <div style="font-size:13.5px;color:var(--text-dim);line-height:1.55;">{u.b}</div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   </section>
 
   <!-- TECHNOLOGY PORTFOLIO -->
-  <section id="technology" style="padding:88px 32px;background:#0f2240;color:#eef1f6;">
-    <div style="max-width:1240px;margin:0 auto;">
-      <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#feee00;margin-bottom:14px;">TECHNOLOGY PORTFOLIO</div>
-      <h2 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:40px;letter-spacing:-0.02em;margin:0 0 14px;color:#eef1f6;">Five proprietary ranging methods. One software brain.</h2>
-      <p style="font-size:17px;color:#c3cee0;max-width:62ch;margin:0 0 44px;">Chosen for each well's specific geometry, access and risk profile — backed by multiple U.S. patents and an in-house R&amp;D team.</p>
-
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.12);margin-bottom:40px;">
+  <section class="section" style="background:var(--ground-2);border-top:1px solid var(--line);" id="technology">
+    <div class="wrap">
+      <div data-reveal style="max-width:62ch;margin-bottom:48px;">
+        <div class="kicker-row" style="margin-bottom:22px;"><span class="eyebrow">Technology portfolio</span></div>
+        <h2 class="display d-l">Five proprietary ranging methods. One software brain.</h2>
+        <p class="lede" style="margin-top:20px;">Chosen for each well's specific geometry, access and risk profile — backed by multiple U.S. patents and an in-house R&amp;D team.</p>
+      </div>
+      <div class="hgrid" style="grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin-bottom:24px;" data-reveal>
         {methods.map((m) => (
-          <div style="background:#0f2240;padding:26px 22px;">
-            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;color:#feee00;margin-bottom:10px;">{m.type}</div>
-            <h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:20px;margin:0 0 12px;color:#eef1f6;">{m.name}</h3>
-            <p style="font-size:13px;color:#8493ac;line-height:1.5;margin:0 0 18px;min-height:60px;">{m.desc}</p>
-            <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:12px;font-size:12px;">
-              <div style="display:flex;justify-content:space-between;margin-bottom:6px;"><span style="color:#5b6a85;font-family:'IBM Plex Mono',monospace;letter-spacing:0.06em;">RANGE</span><span style="color:#eef1f6;font-weight:600;">{m.range}</span></div>
-              <div style="display:flex;justify-content:space-between;gap:10px;"><span style="color:#5b6a85;font-family:'IBM Plex Mono',monospace;letter-spacing:0.06em;">BEST FOR</span><span style="color:#c3cee0;text-align:right;">{m.best}</span></div>
+          <div style="padding:28px 24px;background:var(--ground);">
+            <div class="eyebrow eyebrow--dim" style="margin-bottom:12px;">{m.type}</div>
+            <h3 class="h-card" style="font-size:21px;color:var(--accent);margin-bottom:12px;">{m.name}</h3>
+            <p style="font-size:13px;color:var(--text-dim);line-height:1.55;margin:0 0 20px;min-height:58px;">{m.desc}</p>
+            <div style="border-top:1px solid var(--line);padding-top:14px;font-size:12px;">
+              <div style="display:flex;justify-content:space-between;margin-bottom:7px;"><span class="faint" style="font-family:var(--mono);letter-spacing:0.06em;">RANGE</span><span style="color:var(--text);font-weight:600;">{m.range}</span></div>
+              <div style="display:flex;justify-content:space-between;gap:10px;"><span class="faint" style="font-family:var(--mono);letter-spacing:0.06em;">BEST FOR</span><span style="color:var(--text-dim);text-align:right;">{m.best}</span></div>
             </div>
           </div>
         ))}
       </div>
-
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;" class="cols-3" data-reveal>
         {software.map((sw) => (
-          <div style="border:1px solid rgba(254,238,0,0.35);background:rgba(254,238,0,0.05);padding:24px;">
-            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.12em;color:#feee00;margin-bottom:10px;">{sw.tag}</div>
-            <h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:19px;margin:0 0 10px;color:#eef1f6;">{sw.name}</h3>
-            <p style="font-size:13.5px;color:#c3cee0;line-height:1.55;margin:0;">{sw.desc}</p>
+          <div style="border:1px solid rgba(254,238,0,0.32);background:rgba(254,238,0,0.04);padding:26px;">
+            <div class="eyebrow" style="margin-bottom:12px;">{sw.tag}</div>
+            <h3 class="h-card" style="font-size:19px;margin-bottom:10px;color:var(--text);">{sw.name}</h3>
+            <p style="font-size:13.5px;color:var(--text-dim);line-height:1.55;margin:0;">{sw.desc}</p>
           </div>
         ))}
       </div>
     </div>
   </section>
 
-  <!-- PROOF: DEADAHEAD COMPARISON -->
-  <section style="padding:88px 32px;background:#fff;border-bottom:1px solid #d9dfe9;">
-    <div style="max-width:1240px;margin:0 auto;">
-      <div style="display:grid;grid-template-columns:0.9fr 1.1fr;gap:56px;align-items:center;">
-        <div>
-          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.18em;color:#1b355e;margin-bottom:14px;">OUR EDGE · DEADAHEAD™ AMR-WHILE-DRILLING</div>
-          <h2 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:36px;letter-spacing:-0.02em;line-height:1.1;margin:0 0 20px;">The world's first commercial wired-pipe ranging-while-drilling system.</h2>
-          <p style="font-size:16px;line-height:1.65;color:#454c52;margin:0 0 18px;">Continuous ranging from the BHA — no wireline trips. 18× more power delivery than traditional wireline AMR means an earlier locate, a stronger signal and zero re-entry runs for a relief well intercept and kill.</p>
-          <p style="font-size:13px;color:#8493ac;line-height:1.55;margin:0;font-style:italic;">U.S. Patent 11,781,421 B2 — reaffirmed by USPTO PTAB (2025). Co-presented at SPE/ISCWSA #62, Alaska, Sept 2025.</p>
-        </div>
-        <div style="background:#f5f7fb;border:1px solid #d9dfe9;padding:34px;">
-          <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;color:#0f2240;font-weight:600;margin-bottom:24px;">DOCUMENTED — EXXONMOBIL, NORTH DAKOTA, 2025</div>
-          {deadAhead.map((d) => (
-            <div style="display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center;padding:16px 0;border-top:1px solid #dde3ed;">
-              <div><div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:22px;color:#9097a0;">{d.from}</div><div style="font-size:11px;color:#9097a0;">{d.fromL}</div></div>
-              <div style="font-family:'IBM Plex Mono',monospace;color:#1b355e;font-size:18px;">→</div>
-              <div><div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:22px;color:#0f2240;">{d.to}</div><div style="font-size:11px;color:#5f676e;">{d.toL}</div></div>
-            </div>
-          ))}
-          <div style="margin-top:20px;background:#0f2240;color:#eef1f6;padding:16px 20px;font-size:14px;font-weight:600;">Result: ~2 weeks rig time &amp; ~$2M saved onshore — scaling to tens of millions per well offshore.</div>
-        </div>
+  <!-- DEADAHEAD PROOF -->
+  <section class="section" style="background:var(--ground);">
+    <div class="wrap" style="display:grid;grid-template-columns:0.95fr 1.05fr;gap:64px;align-items:center;">
+      <div data-reveal>
+        <div class="kicker-row" style="margin-bottom:22px;"><span class="eyebrow">Our edge · DeadAhead™ AMR-WD</span></div>
+        <h2 class="display d-m" style="margin-bottom:22px;">The world's first commercial wired-pipe ranging-while-drilling system.</h2>
+        <p style="font-size:16px;line-height:1.7;color:var(--text-dim);margin:0 0 20px;">Continuous ranging from the BHA — no wireline trips. 18× more power delivery than traditional wireline AMR means an earlier locate, a stronger signal and zero re-entry runs for a relief well intercept and kill.</p>
+        <p class="faint" style="font-size:12.5px;line-height:1.6;font-style:italic;margin:0;">U.S. Patent 11,781,421 B2 — reaffirmed by USPTO PTAB (2025). Co-presented at SPE/ISCWSA #62, Alaska, Sept 2025.</p>
+      </div>
+      <div class="tile" data-reveal style="padding:36px;background:var(--surface);">
+        <div class="eyebrow eyebrow--dim" style="margin-bottom:24px;">Documented — ExxonMobil, North Dakota, 2025</div>
+        {deadAhead.map((d) => (
+          <div style="display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:center;padding:16px 0;border-top:1px solid var(--line);">
+            <div><div class="display" style="font-size:22px;color:var(--text-faint);">{d.from}</div><div class="faint" style="font-size:11px;">{d.fromL}</div></div>
+            <div style="font-family:var(--mono);color:var(--accent);font-size:16px;">→</div>
+            <div><div class="display" style="font-size:22px;color:var(--text);">{d.to}</div><div style="font-size:11px;color:var(--text-dim);">{d.toL}</div></div>
+          </div>
+        ))}
+        <div style="margin-top:22px;background:var(--accent);color:#0A0C0F;padding:16px 20px;font-size:14px;font-weight:600;">Result: ~2 weeks rig time &amp; ~$2M saved onshore — scaling to tens of millions per well offshore.</div>
       </div>
     </div>
   </section>
 
   <!-- VIDEO BAND -->
-  <section id="video" style="padding:88px 32px;background:#0a1626;color:#eef1f6;">
-    <div style="max-width:1240px;margin:0 auto;">
-      <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;margin-bottom:30px;">
+  <section style="background:var(--ground-2);border-top:1px solid var(--line);padding-top:var(--section-y);padding-bottom:var(--section-y);" id="video">
+    <div class="wrap">
+      <div data-reveal style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;margin-bottom:34px;">
         <div>
-          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#feee00;margin-bottom:14px;">SEE IT IN ACTION</div>
-          <h2 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:40px;letter-spacing:-0.02em;margin:0;color:#eef1f6;">The technology, explained by the people who built it.</h2>
+          <div class="kicker-row" style="margin-bottom:22px;"><span class="eyebrow">See it in action</span></div>
+          <h2 class="display d-l">The technology, explained by the people who built it.</h2>
         </div>
-        <a href={url('/videos/')} style="color:#feee00;font-weight:600;font-size:15px;">Browse the video library →</a>
+        <a href={url('/videos/')} style="font-family:var(--mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);">Browse the video library →</a>
       </div>
-      <div data-video-frame style="position:relative;width:100%;aspect-ratio:16/9;max-height:560px;background:#0f2240;overflow:hidden;border:1px solid rgba(255,255,255,0.12);">
-        <div data-video-facade data-embed={vidEmbed} data-title="A Breakthrough in Directional Drilling & Magnetic Ranging" style={`position:absolute;inset:0;cursor:pointer;background-image:url('${vidThumb}');background-size:cover;background-position:center;`}>
-          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,22,38,0.15),rgba(10,22,38,0.6));"></div>
-          <div style="position:absolute;left:48px;bottom:40px;max-width:60%;">
-            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;color:#feee00;margin-bottom:10px;">CASE STUDY</div>
-            <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:26px;line-height:1.1;color:#fff;">A Breakthrough in Directional Drilling &amp; Magnetic Ranging</div>
+      <div data-video-frame data-reveal style="position:relative;width:100%;aspect-ratio:16/9;max-height:600px;background:var(--ground);overflow:hidden;border:1px solid var(--line);">
+        <div data-video-facade data-embed={vidEmbed} data-title="A Breakthrough in Directional Drilling & Magnetic Ranging" style={`position:absolute;inset:0;cursor:pointer;background-image:url('${vidThumb}');background-size:cover;background-position:center;filter:grayscale(0.2);`}>
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,12,15,0.2),rgba(10,12,15,0.72));"></div>
+          <div style="position:absolute;left:clamp(20px,4vw,52px);bottom:40px;max-width:60%;">
+            <div class="eyebrow" style="margin-bottom:12px;">Case study</div>
+            <div class="display d-m" style="color:#fff;">A Breakthrough in Directional Drilling &amp; Magnetic Ranging</div>
           </div>
-          <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:92px;height:92px;border-radius:50%;background:#feee00;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 36px rgba(0,0,0,0.4);">
-            <div style="width:0;height:0;border-left:28px solid #0a1626;border-top:17px solid transparent;border-bottom:17px solid transparent;margin-left:7px;"></div>
+          <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:92px;height:92px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;">
+            <div style="width:0;height:0;border-left:28px solid #0A0C0F;border-top:17px solid transparent;border-bottom:17px solid transparent;margin-left:7px;"></div>
           </div>
         </div>
       </div>
@@ -278,93 +282,99 @@ const vidThumb = `https://i.ytimg.com/vi/${vid}/hqdefault.jpg`;
   </section>
 
   <!-- CASE STUDIES -->
-  <section id="cases" style="padding:88px 32px;background:#eef1f6;">
-    <div style="max-width:1240px;margin:0 auto;">
-      <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#1b355e;margin-bottom:14px;">CASE STUDIES</div>
-      <h2 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:40px;letter-spacing:-0.02em;margin:0 0 44px;">Proof, not promises.</h2>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+  <section class="section" style="background:var(--ground);" id="cases">
+    <div class="wrap">
+      <div data-reveal style="margin-bottom:48px;">
+        <div class="kicker-row" style="margin-bottom:22px;"><span class="eyebrow">Case studies</span></div>
+        <h2 class="display d-l">Proof, not promises.</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;" class="cols-3" data-reveal>
         {cases.map((c) => (
-          <div style="background:#fff;border:1px solid #d9dfe9;display:flex;flex-direction:column;">
-            <div style="height:160px;background:#102444;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,0.05) 0 10px,transparent 10px 20px);display:flex;align-items:flex-end;padding:16px;position:relative;">
-              <span style="position:absolute;top:14px;left:16px;font-family:'IBM Plex Mono',monospace;font-size:10px;color:#5b6a85;">[ {c.imgLabel} ]</span>
-              <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;color:#feee00;">{c.scope}</span>
+          <div class="tile" style="display:flex;flex-direction:column;">
+            <div style="height:150px;background:var(--surface-2);background-image:repeating-linear-gradient(135deg,rgba(255,255,255,0.04) 0 10px,transparent 10px 20px);display:flex;align-items:flex-end;padding:16px;position:relative;border-bottom:1px solid var(--line);">
+              <span class="faint" style="position:absolute;top:14px;left:16px;font-family:var(--mono);font-size:10px;letter-spacing:0.06em;">[ {c.imgLabel} ]</span>
+              <span class="eyebrow" style="font-size:10px;">{c.scope}</span>
             </div>
-            <div style="padding:24px;flex:1;display:flex;flex-direction:column;">
-              <h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:19px;margin:0 0 4px;color:#0f2240;line-height:1.2;">{c.client}</h3>
-              <div style="font-size:12.5px;color:#8493ac;margin-bottom:16px;">{c.loc}</div>
-              <p style="font-size:13.5px;color:#454c52;line-height:1.55;margin:0 0 18px;flex:1;">{c.body}</p>
-              <div style="border-top:1px solid #e7ebf2;padding-top:16px;">
-                <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:26px;color:#1b355e;line-height:1;">{c.metric}</div>
-                <div style="font-size:12.5px;color:#5f676e;margin-top:5px;">{c.metricL}</div>
+            <div style="padding:26px;flex:1;display:flex;flex-direction:column;">
+              <h3 class="h-card" style="font-size:19px;margin-bottom:4px;color:var(--text);">{c.client}</h3>
+              <div class="faint" style="font-size:12px;margin-bottom:16px;">{c.loc}</div>
+              <p style="font-size:13.5px;color:var(--text-dim);line-height:1.55;margin:0 0 18px;flex:1;">{c.body}</p>
+              <div style="border-top:1px solid var(--line);padding-top:16px;">
+                <div class="display" style="font-size:26px;color:var(--accent);">{c.metric}</div>
+                <div style="font-size:12.5px;color:var(--text-dim);margin-top:5px;">{c.metricL}</div>
               </div>
             </div>
           </div>
         ))}
       </div>
-      <div style="margin-top:32px;"><a href={url('/case-studies/')} style="font-size:15px;font-weight:600;color:#1b355e;">See all case studies →</a></div>
+      <div style="margin-top:36px;"><a href={url('/case-studies/')} style="font-family:var(--mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);">See all case studies →</a></div>
     </div>
   </section>
 
   <!-- WHY GUNNAR -->
-  <section id="why" style="padding:88px 32px;background:#fff;border-top:1px solid #d9dfe9;border-bottom:1px solid #d9dfe9;">
-    <div style="max-width:1240px;margin:0 auto;">
-      <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#1b355e;margin-bottom:14px;">WHY GUNNAR</div>
-      <h2 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:40px;letter-spacing:-0.02em;margin:0 0 44px;max-width:22ch;">A defensible moat across technology, execution and integration.</h2>
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;">
+  <section class="section" style="background:var(--ground-2);border-top:1px solid var(--line);">
+    <div class="wrap">
+      <div data-reveal style="margin-bottom:48px;">
+        <div class="kicker-row" style="margin-bottom:22px;"><span class="eyebrow">Why Gunnar</span></div>
+        <h2 class="display d-l" style="max-width:22ch;">A defensible moat across technology, execution and integration.</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:28px;" class="cols-4" data-reveal>
         {diffs.map((d) => (
-          <div style="border-top:3px solid #1b355e;padding-top:18px;">
-            <h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:18px;margin:0 0 10px;color:#0f2240;">{d.t}</h3>
-            <p style="font-size:13.5px;color:#5f676e;line-height:1.55;margin:0;">{d.b}</p>
+          <div style="border-top:1px solid var(--accent);padding-top:20px;">
+            <h3 class="h-card" style="font-size:18px;margin-bottom:12px;color:var(--text);">{d.t}</h3>
+            <p style="font-size:13.5px;color:var(--text-dim);line-height:1.6;margin:0;">{d.b}</p>
           </div>
         ))}
       </div>
-      <div style="margin-top:40px;display:flex;gap:36px;flex-wrap:wrap;align-items:center;border:1px solid #d9dfe9;background:#f5f7fb;padding:22px 28px;">
-        <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#8493ac;">CERTIFIED &amp; COMPLIANT</span>
-        <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:15px;color:#454c52;">ISO 9001</span>
-        <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:15px;color:#454c52;">API Q1 / Q2</span>
-        <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:15px;color:#454c52;">ISNetworld</span>
-        <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:15px;color:#454c52;">Regulator-Witnessed</span>
-        <span style="font-size:11.5px;color:#9097a0;font-style:italic;">— confirm/replace badges with current certifications</span>
+      <div style="margin-top:44px;display:flex;gap:32px;flex-wrap:wrap;align-items:center;border:1px solid var(--line);background:var(--ground);padding:22px 28px;">
+        <span class="eyebrow eyebrow--dim">Certified &amp; compliant</span>
+        {['ISO 9001', 'API Q1 / Q2', 'ISNetworld', 'Regulator-Witnessed'].map((b) => (
+          <span style="font-family:var(--display-n);font-weight:700;font-size:15px;color:var(--text-dim);">{b}</span>
+        ))}
+        <span class="faint" style="font-size:11.5px;font-style:italic;">— confirm/replace badges with current certifications</span>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section style="padding:88px 32px;background:#eef1f6;">
-    <div style="max-width:920px;margin:0 auto;">
-      <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.2em;color:#1b355e;margin-bottom:14px;">FREQUENTLY ASKED</div>
-      <h2 style="font-family:'Archivo',sans-serif;font-weight:800;font-size:36px;letter-spacing:-0.02em;margin:0 0 36px;">Answers built for engineers — and AI search.</h2>
-      {faqs.map((f) => (
-        <div style="border-top:1px solid #d2d9e4;padding:24px 0;">
-          <h3 style="font-family:'Archivo',sans-serif;font-weight:700;font-size:19px;margin:0 0 10px;color:#0f2240;">{f.q}</h3>
-          <p style="font-size:15px;line-height:1.65;color:#454c52;margin:0;">{f.a}</p>
-        </div>
-      ))}
+  <section class="section" style="background:var(--ground);">
+    <div class="wrap" style="max-width:960px;">
+      <div data-reveal style="margin-bottom:40px;">
+        <div class="kicker-row" style="margin-bottom:22px;"><span class="eyebrow">Frequently asked</span></div>
+        <h2 class="display d-l">Answers built for engineers — and AI search.</h2>
+      </div>
+      <div data-reveal>
+        {faqs.map((f) => (
+          <div style="border-top:1px solid var(--line);padding:26px 0;">
+            <h3 class="h-card" style="font-size:19px;margin-bottom:10px;color:var(--text);">{f.q}</h3>
+            <p style="font-size:15px;line-height:1.7;color:var(--text-dim);margin:0;">{f.a}</p>
+          </div>
+        ))}
+      </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" style="padding:88px 32px;background:#0f2240;color:#eef1f6;position:relative;overflow:hidden;">
-    <div style="position:absolute;top:-160px;right:-120px;width:460px;height:460px;border-radius:50%;border:1px solid rgba(254,238,0,0.16);"></div>
-    <div style="max-width:1240px;margin:0 auto;position:relative;display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:center;">
-      <div>
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.18em;color:#feee00;margin-bottom:18px;">LET'S TALK</div>
-        <h2 style="font-family:'Archivo',sans-serif;font-weight:900;font-size:46px;letter-spacing:-0.025em;line-height:1.02;margin:0 0 22px;">Have a well that has to be hit?</h2>
-        <p style="font-size:18px;line-height:1.6;color:#c3cee0;max-width:50ch;margin:0 0 32px;">Tell us about the well — geometry, access and timeline — and a ranging engineer will scope a deterministic intercept plan. For active well-control emergencies, call the 24/7 line now.</p>
+  <section class="section dotgrid" style="background:var(--ground-2);border-top:1px solid var(--line);position:relative;overflow:hidden;" id="contact">
+    <div class="wrap" style="position:relative;display:grid;grid-template-columns:1.15fr 1fr;gap:64px;align-items:center;">
+      <div data-reveal>
+        <div class="kicker-row" style="margin-bottom:22px;"><span class="eyebrow">Let's talk</span></div>
+        <h2 class="display d-l">Have a well that has to be hit?</h2>
+        <p class="lede" style="margin:22px 0 32px;max-width:48ch;">Tell us about the well — geometry, access and timeline — and a ranging engineer will scope a deterministic intercept plan. For active well-control emergencies, call the 24/7 line now.</p>
         <div style="display:flex;gap:14px;flex-wrap:wrap;">
-          <a href="tel:+18325550100" style="background:#feee00;color:#0a1626;font-weight:700;font-size:15px;padding:15px 26px;border-radius:3px;">24/7 Emergency: +1 832 555 0100</a>
-          <a href="mailto:info@gunnarenergyservices.com" style="border:1px solid rgba(255,255,255,0.28);color:#eef1f6;font-weight:600;font-size:15px;padding:15px 26px;border-radius:3px;">Email an engineer</a>
+          <a href="tel:+18325550100" class="btn btn-primary">24/7 Emergency: +1 832 555 0100</a>
+          <a href="mailto:info@gunnarenergyservices.com" class="btn btn-ghost">Email an engineer</a>
         </div>
       </div>
-      <div style="background:#14294a;border:1px solid rgba(255,255,255,0.1);padding:30px;">
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;color:#feee00;margin-bottom:18px;">REQUEST A FEASIBILITY REVIEW</div>
+      <div class="tile" data-reveal style="padding:32px;background:var(--surface);">
+        <div class="eyebrow" style="margin-bottom:20px;">Request a feasibility review</div>
         <form data-feasibility style="display:grid;gap:12px;">
           <input class="gx-field" type="text" name="name" placeholder="Name" required />
           <input class="gx-field" type="text" name="company_email" placeholder="Company & email" required />
           <input class="gx-field" type="text" name="application" placeholder="Application — relief well / P&A / CCUS / geothermal" />
-          <textarea class="gx-field" name="details" placeholder="Well details & timeline" style="height:78px;"></textarea>
+          <textarea class="gx-field" name="details" placeholder="Well details & timeline" style="height:84px;"></textarea>
           <button class="gx-submit" type="submit">Submit request</button>
-          <p data-form-status style="font-size:12px;color:#8493ac;margin:2px 0 0;line-height:1.5;"></p>
+          <p data-form-status class="faint" style="font-size:12px;margin:2px 0 0;line-height:1.5;"></p>
         </form>
       </div>
     </div>
